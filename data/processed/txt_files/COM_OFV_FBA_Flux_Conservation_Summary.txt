@@ -1,0 +1,25 @@
+🔍 e_coli_core: Mean active = 47.0, Variance = 0.0, Conditions = 2
+🔍 iJO1366: Mean active = 424.2, Variance = 5.8, Conditions = 6
+🔍 iMS520: Mean active = 362.0, Variance = 1.3, Conditions = 6
+🔍 iKS1119: Mean active = 474.3, Variance = 14.2, Conditions = 6
+
+🧬 Conservation Score (Intersection / Union of Active Reactions):
+e_coli_core: 91.84%
+iJO1366: 85.68%
+iMS520: 92.17%
+iKS1119: 86.99%
+🔗 Condition Fructose — Intersection of Active Reactions (93 total):
+
+🔗 Condition Galactose — Intersection of Active Reactions (103 total):
+
+🔗 Condition Glucose — Intersection of Active Reactions (98 total):
+
+🔗 Condition Lactose — Intersection of Active Reactions (105 total):
+
+🔗 Condition Maltose — Intersection of Active Reactions (98 total):
+
+🔗 Condition Sucrose — Intersection of Active Reactions (100 total):
+
+🧬 Final Intersection Across All Conditions:
+• Number of reactions: 91
+• Percent (of union of all condition intersections): 83.49%

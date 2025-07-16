@@ -1,0 +1,24 @@
+Model: e_coli_core
+  Total reactions: 95
+  Avg. active in FBA: 47.0 (49.5%)
+  Variable reactions (FVA): 2 (2.1%)
+  Variable reactions as % of FBA-active: 4.3%
+--------------------------------------------------
+Model: iJO1366
+  Total reactions: 2583
+  Avg. active in FBA: 424.2 (16.4%)
+  Variable reactions (FVA): 130 (5.0%)
+  Variable reactions as % of FBA-active: 30.6%
+--------------------------------------------------
+Model: iMS520
+  Total reactions: 771
+  Avg. active in FBA: 362.0 (47.0%)
+  Variable reactions (FVA): 34 (4.4%)
+  Variable reactions as % of FBA-active: 9.4%
+--------------------------------------------------
+Model: iKS1119
+  Total reactions: 1777
+  Avg. active in FBA: 474.3 (26.7%)
+  Variable reactions (FVA): 85 (4.8%)
+  Variable reactions as % of FBA-active: 17.9%
+--------------------------------------------------

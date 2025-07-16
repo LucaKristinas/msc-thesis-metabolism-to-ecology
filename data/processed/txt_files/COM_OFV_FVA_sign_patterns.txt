@@ -1,0 +1,57 @@
+
+================ iJO1366 ================
+
+1) n_Combinations Distribution (non-zero only):
+   1 combinations: 14 reactions (10.8%)
+   3 combinations: 5 reactions (3.8%)
+   6 combinations: 111 reactions (85.4%)
+
+2) Combination Variability (True/False):
+   False: 93 reactions (71.5%)
+   True: 37 reactions (28.5%)
+
+3) Same Signs (within reactions with combination variability):
+   True: 34 reactions (91.9%)
+   False: 3 reactions (8.1%)
+
+4) Unique Sign Sets (where signs differ):
+   [('-', '+'), ('-', '0')]: 1 reactions (2.7%)
+   [('+', '+'), ('0', '+')]: 1 reactions (2.7%)
+   [('0', '+'), ('-', '0')]: 1 reactions (2.7%)
+
+================ iMS520 ================
+
+1) n_Combinations Distribution (non-zero only):
+   1 combinations: 3 reactions (8.8%)
+   5 combinations: 5 reactions (14.7%)
+   6 combinations: 26 reactions (76.5%)
+
+2) Combination Variability (True/False):
+   True: 20 reactions (58.8%)
+   False: 14 reactions (41.2%)
+
+3) Same Signs (within reactions with combination variability):
+   True: 19 reactions (95.0%)
+   False: 1 reactions (5.0%)
+
+4) Unique Sign Sets (where signs differ):
+   [('0', '+'), ('-', '0')]: 1 reactions (5.0%)
+
+================ iKS1119 ================
+
+1) n_Combinations Distribution (non-zero only):
+   1 combinations: 8 reactions (9.4%)
+   2 combinations: 2 reactions (2.4%)
+   4 combinations: 1 reactions (1.2%)
+   6 combinations: 74 reactions (87.1%)
+
+2) Combination Variability (True/False):
+   False: 50 reactions (58.8%)
+   True: 35 reactions (41.2%)
+
+3) Same Signs (within reactions with combination variability):
+   True: 34 reactions (97.1%)
+   False: 1 reactions (2.9%)
+
+4) Unique Sign Sets (where signs differ):
+   [('-', '+'), ('-', '0')]: 1 reactions (2.9%)

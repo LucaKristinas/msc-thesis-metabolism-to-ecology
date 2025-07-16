@@ -403,3 +403,76 @@ def convexly_independent_set(vectors):
                 changed = True
                 break  # Restart loop after any removal
     return keep
+
+def match_reactions_to_bigg(reaction_ids, reaction_df):
+    found_mask = reaction_df["bigg_id"].isin(reaction_ids)
+    matched_df = reaction_df[found_mask].copy()
+    matched_ids = set(matched_df["bigg_id"])
+    not_yet_matched = [rxn for rxn in reaction_ids if rxn not in matched_ids]
+
+    # Search in old_bigg_ids
+    matches_in_old = []
+    for idx, row in reaction_df.iterrows():
+        old_ids = row["old_bigg_ids"]
+        if isinstance(old_ids, list):
+            if any(rxn in old_ids for rxn in not_yet_matched):
+                matches_in_old.append(idx)
+
+    matched_old_df = reaction_df.loc[matches_in_old].copy()
+
+    # Determine still missing
+    found_in_old_ids = set()
+    for old_list in matched_old_df["old_bigg_ids"]:
+        for rxn in old_list:
+            if rxn in not_yet_matched:
+                found_in_old_ids.add(rxn)
+
+    still_missing = [rxn for rxn in not_yet_matched if rxn not in found_in_old_ids]
+
+    return matched_df, matched_old_df, still_missing
+
+def print_summary_to_file(category_name, result_dict, file_path, total_counts=None):
+    """
+    Writes a formatted summary of reaction ID matching results for multiple models to a text file.
+
+    Parameters:
+    ----------
+    category_name : str
+        A label for the category of reactions being summarized (e.g., "Exchange Reactions").
+
+    result_dict : dict
+        A dictionary where each key is a model name (str), and each value is a tuple:
+        (matched_df, matched_old_df, missing), where:
+            - matched_df (pd.DataFrame): reactions matched via "bigg_id"
+            - matched_old_df (pd.DataFrame): reactions matched via "old_bigg_ids"
+            - missing (list of str): reaction IDs not matched at all
+
+    file_path : Path or str
+        Full path to the `.txt` file where the summary should be written.
+
+    total_counts : dict, optional
+        Dictionary mapping model names to total number of reaction IDs originally attempted for matching.
+        If not provided, the total is computed from the result_dict.
+
+    Returns:
+    -------
+    None
+        Writes the summary to the specified text file.
+    """
+    with open(file_path, "a") as f:
+        f.write(f"\n=== Matching Summary for {category_name} ===\n\n")
+        for model_name, (matched_df, matched_old_df, missing) in result_dict.items():
+            total = total_counts.get(model_name) if total_counts else (
+                len(matched_df) + len(matched_old_df) + len(missing)
+            )
+            n_direct = len(matched_df)
+            n_old = len(matched_old_df)
+            n_missing = len(missing)
+            coverage = 100 * (n_direct + n_old) / total if total else 0
+
+            f.write(f"🔍 {model_name}\n")
+            f.write(f"   Total:                   {total}\n")
+            f.write(f"✅ Found in bigg_id:        {n_direct}\n")
+            f.write(f"✅ Found in old_bigg_ids:   {n_old}\n")
+            f.write(f"❌ Still not found:         {n_missing}\n")
+            f.write(f"🔎 BiGG Coverage:           {coverage:.1f}%\n\n")

@@ -1,0 +1,435 @@
+
+=== Matching Summary for All Reactions ===
+
+
+=== Matching Summary for All Reactions ===
+
+🔍 iMS520
+   Total:                   771
+✅ Found in bigg_id:        570
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         201
+🔎 BiGG Coverage:           73.9%
+
+🔍 iKS1119
+   Total:                   1777
+✅ Found in bigg_id:        1121
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         656
+🔎 BiGG Coverage:           63.1%
+
+🔍 iJO1366
+   Total:                   2583
+✅ Found in bigg_id:        2561
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         22
+🔎 BiGG Coverage:           99.1%
+
+
+=== Matching Summary for FBA-Active Reactions ===
+
+🔍 iMS520
+   Total:                   383
+✅ Found in bigg_id:        285
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         98
+🔎 BiGG Coverage:           74.4%
+
+🔍 iKS1119
+   Total:                   515
+✅ Found in bigg_id:        354
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         161
+🔎 BiGG Coverage:           68.7%
+
+🔍 iJO1366
+   Total:                   468
+✅ Found in bigg_id:        466
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         2
+🔎 BiGG Coverage:           99.6%
+
+
+=== Matching Summary for FVA-Variable Reactions ===
+
+🔍 iMS520
+   Total:                   34
+✅ Found in bigg_id:        29
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         5
+🔎 BiGG Coverage:           85.3%
+
+🔍 iKS1119
+   Total:                   85
+✅ Found in bigg_id:        66
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         19
+🔎 BiGG Coverage:           77.6%
+
+🔍 iJO1366
+   Total:                   130
+✅ Found in bigg_id:        108
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         22
+🔎 BiGG Coverage:           83.1%
+
+
+=== Matching Summary for All Reactions ===
+
+🔍 iMS520
+   Total:                   771
+✅ Found in bigg_id:        570
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         201
+🔎 BiGG Coverage:           73.9%
+
+🔍 iKS1119
+   Total:                   1777
+✅ Found in bigg_id:        1121
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         656
+🔎 BiGG Coverage:           63.1%
+
+🔍 iJO1366
+   Total:                   2583
+✅ Found in bigg_id:        2561
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         22
+🔎 BiGG Coverage:           99.1%
+
+
+=== Matching Summary for FBA-Active Reactions ===
+
+🔍 iMS520
+   Total:                   383
+✅ Found in bigg_id:        285
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         98
+🔎 BiGG Coverage:           74.4%
+
+🔍 iKS1119
+   Total:                   515
+✅ Found in bigg_id:        354
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         161
+🔎 BiGG Coverage:           68.7%
+
+🔍 iJO1366
+   Total:                   468
+✅ Found in bigg_id:        466
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         2
+🔎 BiGG Coverage:           99.6%
+
+
+=== Matching Summary for FVA-Variable Reactions ===
+
+🔍 iMS520
+   Total:                   34
+✅ Found in bigg_id:        29
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         5
+🔎 BiGG Coverage:           85.3%
+
+🔍 iKS1119
+   Total:                   85
+✅ Found in bigg_id:        66
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         19
+🔎 BiGG Coverage:           77.6%
+
+🔍 iJO1366
+   Total:                   130
+✅ Found in bigg_id:        108
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         22
+🔎 BiGG Coverage:           83.1%
+
+
+=== Matching Summary for All Reactions ===
+
+🔍 iMS520
+   Total:                   771
+✅ Found in bigg_id:        570
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         201
+🔎 BiGG Coverage:           73.9%
+
+🔍 iKS1119
+   Total:                   1777
+✅ Found in bigg_id:        1121
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         656
+🔎 BiGG Coverage:           63.1%
+
+🔍 iJO1366
+   Total:                   2583
+✅ Found in bigg_id:        2561
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         22
+🔎 BiGG Coverage:           99.1%
+
+
+=== Matching Summary for FBA-Active Reactions ===
+
+🔍 iMS520
+   Total:                   383
+✅ Found in bigg_id:        285
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         98
+🔎 BiGG Coverage:           74.4%
+
+🔍 iKS1119
+   Total:                   515
+✅ Found in bigg_id:        354
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         161
+🔎 BiGG Coverage:           68.7%
+
+🔍 iJO1366
+   Total:                   468
+✅ Found in bigg_id:        466
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         2
+🔎 BiGG Coverage:           99.6%
+
+
+=== Matching Summary for FVA-Variable Reactions ===
+
+🔍 iMS520
+   Total:                   34
+✅ Found in bigg_id:        29
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         5
+🔎 BiGG Coverage:           85.3%
+
+🔍 iKS1119
+   Total:                   85
+✅ Found in bigg_id:        66
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         19
+🔎 BiGG Coverage:           77.6%
+
+🔍 iJO1366
+   Total:                   130
+✅ Found in bigg_id:        108
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         22
+🔎 BiGG Coverage:           83.1%
+
+
+=== Matching Summary for All Reactions ===
+
+🔍 iMS520
+   Total:                   771
+✅ Found in bigg_id:        570
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         201
+🔎 BiGG Coverage:           73.9%
+
+🔍 iKS1119
+   Total:                   1777
+✅ Found in bigg_id:        1121
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         656
+🔎 BiGG Coverage:           63.1%
+
+🔍 iJO1366
+   Total:                   2583
+✅ Found in bigg_id:        2561
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         22
+🔎 BiGG Coverage:           99.1%
+
+
+=== Matching Summary for FBA-Active Reactions ===
+
+🔍 iMS520
+   Total:                   383
+✅ Found in bigg_id:        285
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         98
+🔎 BiGG Coverage:           74.4%
+
+🔍 iKS1119
+   Total:                   515
+✅ Found in bigg_id:        354
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         161
+🔎 BiGG Coverage:           68.7%
+
+🔍 iJO1366
+   Total:                   468
+✅ Found in bigg_id:        466
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         2
+🔎 BiGG Coverage:           99.6%
+
+
+=== Matching Summary for FVA-Variable Reactions ===
+
+🔍 iMS520
+   Total:                   34
+✅ Found in bigg_id:        29
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         5
+🔎 BiGG Coverage:           85.3%
+
+🔍 iKS1119
+   Total:                   85
+✅ Found in bigg_id:        66
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         19
+🔎 BiGG Coverage:           77.6%
+
+🔍 iJO1366
+   Total:                   130
+✅ Found in bigg_id:        108
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         22
+🔎 BiGG Coverage:           83.1%
+
+
+=== Matching Summary for All Reactions ===
+
+🔍 iMS520
+   Total:                   771
+✅ Found in bigg_id:        570
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         201
+🔎 BiGG Coverage:           73.9%
+
+🔍 iKS1119
+   Total:                   1777
+✅ Found in bigg_id:        1121
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         656
+🔎 BiGG Coverage:           63.1%
+
+🔍 iJO1366
+   Total:                   2583
+✅ Found in bigg_id:        2561
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         22
+🔎 BiGG Coverage:           99.1%
+
+
+=== Matching Summary for FBA-Active Reactions ===
+
+🔍 iMS520
+   Total:                   383
+✅ Found in bigg_id:        285
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         98
+🔎 BiGG Coverage:           74.4%
+
+🔍 iKS1119
+   Total:                   515
+✅ Found in bigg_id:        354
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         161
+🔎 BiGG Coverage:           68.7%
+
+🔍 iJO1366
+   Total:                   468
+✅ Found in bigg_id:        466
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         2
+🔎 BiGG Coverage:           99.6%
+
+
+=== Matching Summary for FVA-Variable Reactions ===
+
+🔍 iMS520
+   Total:                   34
+✅ Found in bigg_id:        29
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         5
+🔎 BiGG Coverage:           85.3%
+
+🔍 iKS1119
+   Total:                   85
+✅ Found in bigg_id:        66
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         19
+🔎 BiGG Coverage:           77.6%
+
+🔍 iJO1366
+   Total:                   130
+✅ Found in bigg_id:        108
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         22
+🔎 BiGG Coverage:           83.1%
+
+
+=== Matching Summary for All Reactions ===
+
+🔍 iMS520
+   Total:                   771
+✅ Found in bigg_id:        570
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         201
+🔎 BiGG Coverage:           73.9%
+
+🔍 iKS1119
+   Total:                   1777
+✅ Found in bigg_id:        1121
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         656
+🔎 BiGG Coverage:           63.1%
+
+🔍 iJO1366
+   Total:                   2583
+✅ Found in bigg_id:        2561
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         22
+🔎 BiGG Coverage:           99.1%
+
+
+=== Matching Summary for FBA-Active Reactions ===
+
+🔍 iMS520
+   Total:                   383
+✅ Found in bigg_id:        285
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         98
+🔎 BiGG Coverage:           74.4%
+
+🔍 iKS1119
+   Total:                   515
+✅ Found in bigg_id:        354
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         161
+🔎 BiGG Coverage:           68.7%
+
+🔍 iJO1366
+   Total:                   468
+✅ Found in bigg_id:        466
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         2
+🔎 BiGG Coverage:           99.6%
+
+
+=== Matching Summary for FVA-Variable Reactions ===
+
+🔍 iMS520
+   Total:                   34
+✅ Found in bigg_id:        29
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         5
+🔎 BiGG Coverage:           85.3%
+
+🔍 iKS1119
+   Total:                   85
+✅ Found in bigg_id:        66
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         19
+🔎 BiGG Coverage:           77.6%
+
+🔍 iJO1366
+   Total:                   130
+✅ Found in bigg_id:        108
+✅ Found in old_bigg_ids:   0
+❌ Still not found:         22
+🔎 BiGG Coverage:           83.1%
+

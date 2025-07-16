@@ -1,0 +1,24 @@
+
+=== Reactions in <10 models ===
+
+✅ iJO1366: All matched reactions appear in ≥10 models
+
+🔎 iMS520: 7 reactions in <10 models
+ - ADK2: Adenylate kinase (Inorganic triphosphate)
+ - GALM1: Aldose 1-epimerase (glucose)
+ - GK2: Guanylate kinase  GMPdATP 
+ - SUCRt2: Sucrose transport in via proton symport
+ - ADKd: Adenylate kinase (d form)
+ - FRD7: Fumarate reductase
+ - GLUK_syn: Glucokinase
+
+🔎 iKS1119: 8 reactions in <10 models
+ - PPND2: Prephenate dehydrogenase  NADP 
+ - ADK2: Adenylate kinase (Inorganic triphosphate)
+ - GLCt4: Glucose transport via sodium symport
+ - GK2: Guanylate kinase  GMPdATP 
+ - GLCS2: Glycogen synthase  UDPGlc 
+ - NP1: Nucleotide phosphatase
+ - PRO1x: Proline oxidase  L proline  NAD 
+ - AROH: L-Arogenate hydro-lyase
+
