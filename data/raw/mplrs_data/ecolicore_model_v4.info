@@ -1,0 +1,53 @@
+bounds 6
+deadend_1
+end
+many2one_1
+merged 102:67 reactions
+remove R75:1 keep R56:1 
+remove R47:1 keep R56:1 
+remove R2:1 keep R5:1 
+remove R5:1 keep R19:1 
+remove R0:1 keep R1:1 keep R9:1 
+remove R1:1 keep R20:1 
+remove R3:1 keep R4:1 
+remove R81:1 keep R19:1 
+remove R8:1 keep R21:1 
+remove R80:1 keep R6:1 
+remove R14:1 keep R4:1 
+remove R13:1 keep R22:1 
+remove R9:1 keep R18:1 
+remove R18:1 keep R23:1 
+remove R42:1 keep R41:1 keep R72:1 
+remove R72:1 keep R24:1 
+remove R25:1 keep R44:1 
+remove R26:1 keep R46:1 
+remove R27:1 keep R49:1 
+remove R28:1 keep R51:1 
+remove R55:1 keep R29:1 
+remove R59:1 keep R61:1 
+remove R57:1 keep R30:1 
+remove R60:1 keep R16:1 
+remove R16:1 keep R32:1 
+remove R33:1 keep R62:1 
+remove R34:1 keep R68:1 
+remove R69:1 keep R15:1/2 
+remove R35:1 keep R15:1 
+remove R36:1 keep R77:1 
+remove R83:1 keep R37:1 
+remove R87:1 keep R38:1 keep R86:1 
+remove R7:1 keep R89:1 
+remove R10:1 keep R95:1 keep R101:839/100 
+remove R101:500/839 keep R44:1 keep R96:1 
+end
+nullspace_1
+R0 R1 R2 R3,47:10000/36787 R4 R5,46:-1 R6 R7 R8 R9 R10 R11 R12 R13 R14 R15 R16 R17 R18,60:1 R19 R20 R21 R22 R23 R24 R25,45:-1 R26 R27 R28 R29 R30 R31 R32 R33 R34 R35 R36 R37 R38 R39 R40 R41 R42 R43 R44 R48 R49 R50 R51 R52 R53 R54 R55 R56,58:1 R57 R59 R61 R62 R63 R64 R65 R66 
+end
+deadend_2
+end
+many2one_2
+merged 62:62 reactions
+end
+nullspace_2
+end
+rv: 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 1 0 0 0 1 0 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 
+counter 2

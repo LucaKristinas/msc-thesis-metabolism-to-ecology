@@ -1,0 +1,226 @@
+2025-06-23 11:50:15.852399 *** efmlrs.preprocessing.compressions.deadend ***
+2025-06-23 11:50:15.864608 *** efmlrs.preprocessing.compressions.many2one ***
+2025-06-23 11:50:15.892859 deleting metabolite 13dpg_c 
+2025-06-23 11:50:15.897567 deleting metabolite 2pg_c 
+2025-06-23 11:50:15.903052 deleting metabolite 3pg_c 
+2025-06-23 11:50:15.907503 deleting metabolite 6pgc_c 
+2025-06-23 11:50:15.911685 deleting metabolite 6pgl_c 
+2025-06-23 11:50:15.915864 deleting metabolite ac_c 
+2025-06-23 11:50:15.920167 deleting metabolite ac_e 
+2025-06-23 11:50:15.924868 deleting metabolite acald_c 
+2025-06-23 11:50:15.928934 deleting metabolite acald_e 
+2025-06-23 11:50:15.933327 deleting metabolite acon_C_c 
+2025-06-23 11:50:15.937582 deleting metabolite actp_c 
+2025-06-23 11:50:15.941867 deleting metabolite akg_e 
+2025-06-23 11:50:15.945926 deleting metabolite amp_c 
+2025-06-23 11:50:15.949933 deleting metabolite cit_c 
+2025-06-23 11:50:15.954217 deleting metabolite co2_e 
+2025-06-23 11:50:15.958839 deleting metabolite etoh_c 
+2025-06-23 11:50:15.963059 deleting metabolite etoh_e 
+2025-06-23 11:50:15.967814 deleting metabolite for_c 
+2025-06-23 11:50:15.972187 deleting metabolite for_e 
+2025-06-23 11:50:15.976579 deleting metabolite glc__D_e 
+2025-06-23 11:50:15.982161 deleting metabolite gln__L_c 
+2025-06-23 11:50:15.986736 deleting metabolite glu__L_e 
+2025-06-23 11:50:15.991131 deleting metabolite glx_c 
+2025-06-23 11:50:15.995475 deleting metabolite h2o_e 
+2025-06-23 11:50:16.000334 deleting metabolite icit_c 
+2025-06-23 11:50:16.004745 deleting metabolite lac__D_c 
+2025-06-23 11:50:16.008925 deleting metabolite lac__D_e 
+2025-06-23 11:50:16.013383 deleting metabolite nh4_e 
+2025-06-23 11:50:16.017854 deleting metabolite o2_c 
+2025-06-23 11:50:16.022397 deleting metabolite o2_e 
+2025-06-23 11:50:16.027032 deleting metabolite pi_e 
+2025-06-23 11:50:16.031765 deleting metabolite pyr_e 
+2025-06-23 11:50:16.037686 deleting metabolite succ_e 
+2025-06-23 11:50:16.042890 deleting metabolite succoa_c 
+2025-06-23 11:50:16.048696 deleting metabolite MS_ATPM_min 
+2025-06-23 11:50:16.054700 deleting metabolite MS_EX_glc__D_e_rev_max 
+2025-06-23 11:50:16.057403 merging 1 ...
+2025-06-23 11:50:16.057409    [-] GAPD factor: 1 
+2025-06-23 11:50:16.057436    [+] PGK_rev factor: 1 
+2025-06-23 11:50:16.057448    [>] PGK_rev:GAPD
+2025-06-23 11:50:16.057454 merging 1 ...
+2025-06-23 11:50:16.057457    [-] PGM_rev factor: 1 
+2025-06-23 11:50:16.057465    [+] ENO factor: 1 
+2025-06-23 11:50:16.057474    [>] ENO:PGM_rev
+2025-06-23 11:50:16.057480 merging 2 ...
+2025-06-23 11:50:16.057482    [-] PGK_rev:GAPD factor: 1 
+2025-06-23 11:50:16.057491    [+] BIOMASS_Ecoli_core_w_GAM factor: 187/125 
+2025-06-23 11:50:16.057501    [>] BIOMASS_Ecoli_core_w_GAM:PGK_rev:GAPD
+2025-06-23 11:50:16.057503    [+] ENO:PGM_rev factor: 1 
+2025-06-23 11:50:16.057512    [>] ENO:PGM_rev:PGK_rev:GAPD
+2025-06-23 11:50:16.057516 merging 1 ...
+2025-06-23 11:50:16.057518    [-] PGL factor: 1 
+2025-06-23 11:50:16.057527    [+] GND factor: 1 
+2025-06-23 11:50:16.057536    [>] GND:PGL
+2025-06-23 11:50:16.057540 merging 1 ...
+2025-06-23 11:50:16.057542    [-] G6PDH2r factor: 1 
+2025-06-23 11:50:16.057551    [+] GND:PGL factor: 1 
+2025-06-23 11:50:16.057559    [>] GND:PGL:G6PDH2r
+2025-06-23 11:50:16.057563 merging 1 ...
+2025-06-23 11:50:16.057566    [-] ACKr_rev factor: 1 
+2025-06-23 11:50:16.057574    [+] ACt2r_rev factor: 1 
+2025-06-23 11:50:16.057583    [>] ACt2r_rev:ACKr_rev
+2025-06-23 11:50:16.057591 merging 1 ...
+2025-06-23 11:50:16.057593    [-] ACt2r_rev:ACKr_rev factor: 1 
+2025-06-23 11:50:16.057602    [+] EX_ac_e factor: 1 
+2025-06-23 11:50:16.057610    [>] EX_ac_e:ACt2r_rev:ACKr_rev
+2025-06-23 11:50:16.057615 merging 2 ...
+2025-06-23 11:50:16.057617    [-] ACALD_rev factor: 1 
+2025-06-23 11:50:16.057625    [+] ACALDt_rev factor: 1 
+2025-06-23 11:50:16.057634    [>] ACALDt_rev:ACALD_rev
+2025-06-23 11:50:16.057636    [+] ALCD2x_rev factor: 1 
+2025-06-23 11:50:16.057644    [>] ALCD2x_rev:ACALD_rev
+2025-06-23 11:50:16.057648 merging 1 ...
+2025-06-23 11:50:16.057651    [-] ACALDt_rev:ACALD_rev factor: 1 
+2025-06-23 11:50:16.057659    [+] EX_acald_e factor: 1 
+2025-06-23 11:50:16.057667    [>] EX_acald_e:ACALDt_rev:ACALD_rev
+2025-06-23 11:50:16.057672 merging 1 ...
+2025-06-23 11:50:16.057674    [-] ACONTa factor: 1 
+2025-06-23 11:50:16.057682    [+] ACONTb factor: 1 
+2025-06-23 11:50:16.057691    [>] ACONTb:ACONTa
+2025-06-23 11:50:16.057695 merging 1 ...
+2025-06-23 11:50:16.057697    [-] PTAr factor: 1 
+2025-06-23 11:50:16.057706    [+] EX_ac_e:ACt2r_rev:ACKr_rev factor: 1 
+2025-06-23 11:50:16.057714    [>] EX_ac_e:ACt2r_rev:ACKr_rev:PTAr
+2025-06-23 11:50:16.057718 merging 1 ...
+2025-06-23 11:50:16.057720    [-] AKGt2r_rev factor: 1 
+2025-06-23 11:50:16.057728    [+] EX_akg_e factor: 1 
+2025-06-23 11:50:16.057737    [>] EX_akg_e:AKGt2r_rev
+2025-06-23 11:50:16.057741 merging 1 ...
+2025-06-23 11:50:16.057743    [-] PPS factor: 1 
+2025-06-23 11:50:16.057755    [+] ADK1 factor: 1 
+2025-06-23 11:50:16.057763    [>] ADK1:PPS
+2025-06-23 11:50:16.057767 merging 1 ...
+2025-06-23 11:50:16.057769    [-] CS factor: 1 
+2025-06-23 11:50:16.057777    [+] ACONTb:ACONTa factor: 1 
+2025-06-23 11:50:16.057786    [>] ACONTb:ACONTa:CS
+2025-06-23 11:50:16.057790 merging 1 ...
+2025-06-23 11:50:16.057792    [-] CO2t_rev factor: 1 
+2025-06-23 11:50:16.057800    [+] EX_co2_e factor: 1 
+2025-06-23 11:50:16.057808    [>] EX_co2_e:CO2t_rev
+2025-06-23 11:50:16.057812 merging 1 ...
+2025-06-23 11:50:16.057815    [-] ALCD2x_rev:ACALD_rev factor: 1 
+2025-06-23 11:50:16.057823    [+] ETOHt2r_rev factor: 1 
+2025-06-23 11:50:16.057831    [>] ETOHt2r_rev:ALCD2x_rev:ACALD_rev
+2025-06-23 11:50:16.057836 merging 1 ...
+2025-06-23 11:50:16.057838    [-] ETOHt2r_rev:ALCD2x_rev:ACALD_rev factor: 1 
+2025-06-23 11:50:16.057846    [+] EX_etoh_e factor: 1 
+2025-06-23 11:50:16.057854    [>] EX_etoh_e:ETOHt2r_rev:ALCD2x_rev:ACALD_rev
+2025-06-23 11:50:16.057859 merging 2 ...
+2025-06-23 11:50:16.057861    [-] FORt_rev factor: 1 
+2025-06-23 11:50:16.057869    [+] FORt2 factor: 1 
+2025-06-23 11:50:16.057878    [>] FORt2:FORt_rev
+2025-06-23 11:50:16.057880    [+] PFL factor: 1 
+2025-06-23 11:50:16.057888    [>] PFL:FORt_rev
+2025-06-23 11:50:16.057892 merging 1 ...
+2025-06-23 11:50:16.057895    [-] PFL:FORt_rev factor: 1 
+2025-06-23 11:50:16.057903    [+] EX_for_e factor: 1 
+2025-06-23 11:50:16.057911    [>] EX_for_e:PFL:FORt_rev
+2025-06-23 11:50:16.057915 merging 1 ...
+2025-06-23 11:50:16.057918    [-] EX_glc__D_e_rev factor: 1 
+2025-06-23 11:50:16.057928    [+] GLCpts factor: 1 
+2025-06-23 11:50:16.057936    [>] GLCpts:EX_glc__D_e_rev
+2025-06-23 11:50:16.057941 merging 3 ...
+2025-06-23 11:50:16.057943    [-] GLNS factor: 1 
+2025-06-23 11:50:16.057951    [+] BIOMASS_Ecoli_core_w_GAM:PGK_rev:GAPD factor: 2557/14960 
+2025-06-23 11:50:16.057959    [>] BIOMASS_Ecoli_core_w_GAM:PGK_rev:GAPD:GLNS
+2025-06-23 11:50:16.057961    [+] GLUN factor: 1 
+2025-06-23 11:50:16.057970    [>] GLUN:GLNS
+2025-06-23 11:50:16.057972    [+] GLUSy factor: 1 
+2025-06-23 11:50:16.057980    [>] GLUSy:GLNS
+2025-06-23 11:50:16.057984 merging 1 ...
+2025-06-23 11:50:16.057987    [-] GLUt2r_rev factor: 1 
+2025-06-23 11:50:16.057995    [+] EX_glu__L_e factor: 1 
+2025-06-23 11:50:16.058003    [>] EX_glu__L_e:GLUt2r_rev
+2025-06-23 11:50:16.058007 merging 1 ...
+2025-06-23 11:50:16.058010    [-] ICL factor: 1 
+2025-06-23 11:50:16.058018    [+] MALS factor: 1 
+2025-06-23 11:50:16.058026    [>] MALS:ICL
+2025-06-23 11:50:16.058030 merging 1 ...
+2025-06-23 11:50:16.058033    [-] H2Ot_rev factor: 1 
+2025-06-23 11:50:16.058041    [+] EX_h2o_e factor: 1 
+2025-06-23 11:50:16.058049    [>] EX_h2o_e:H2Ot_rev
+2025-06-23 11:50:16.058053 merging 2 ...
+2025-06-23 11:50:16.058055    [-] ACONTb:ACONTa:CS factor: 1 
+2025-06-23 11:50:16.058063    [+] ICDHyr factor: 1 
+2025-06-23 11:50:16.058071    [>] ICDHyr:ACONTb:ACONTa:CS
+2025-06-23 11:50:16.058074    [+] MALS:ICL factor: 1 
+2025-06-23 11:50:16.058083    [>] MALS:ICL:ACONTb:ACONTa:CS
+2025-06-23 11:50:16.058087 merging 1 ...
+2025-06-23 11:50:16.058090    [-] LDH_D_rev factor: 1 
+2025-06-23 11:50:16.058098    [+] D_LACt2_rev factor: 1 
+2025-06-23 11:50:16.058106    [>] D_LACt2_rev:LDH_D_rev
+2025-06-23 11:50:16.058265 merging 1 ...
+2025-06-23 11:50:16.058269    [-] D_LACt2_rev:LDH_D_rev factor: 1 
+2025-06-23 11:50:16.058279    [+] EX_lac__D_e factor: 1 
+2025-06-23 11:50:16.058287    [>] EX_lac__D_e:D_LACt2_rev:LDH_D_rev
+2025-06-23 11:50:16.058291 merging 1 ...
+2025-06-23 11:50:16.058294    [-] EX_nh4_e_rev factor: 1 
+2025-06-23 11:50:16.058302    [+] NH4t factor: 1 
+2025-06-23 11:50:16.058310    [>] NH4t:EX_nh4_e_rev
+2025-06-23 11:50:16.058315 merging 1 ...
+2025-06-23 11:50:16.058317    [-] O2t factor: 1 
+2025-06-23 11:50:16.058325    [+] CYTBD factor: 1/2 
+2025-06-23 11:50:16.058337    [>] CYTBD:O2t
+2025-06-23 11:50:16.058341 merging 1 ...
+2025-06-23 11:50:16.058343    [-] EX_o2_e_rev factor: 1 
+2025-06-23 11:50:16.058351    [+] CYTBD:O2t factor: 1 
+2025-06-23 11:50:16.058360    [>] CYTBD:O2t:EX_o2_e_rev
+2025-06-23 11:50:16.058363 merging 1 ...
+2025-06-23 11:50:16.058366    [-] EX_pi_e_rev factor: 1 
+2025-06-23 11:50:16.058374    [+] PIt2r factor: 1 
+2025-06-23 11:50:16.058383    [>] PIt2r:EX_pi_e_rev
+2025-06-23 11:50:16.058387 merging 1 ...
+2025-06-23 11:50:16.058389    [-] PYRt2_rev factor: 1 
+2025-06-23 11:50:16.058397    [+] EX_pyr_e factor: 1 
+2025-06-23 11:50:16.058405    [>] EX_pyr_e:PYRt2_rev
+2025-06-23 11:50:16.058410 merging 2 ...
+2025-06-23 11:50:16.058412    [-] SUCCt3 factor: 1 
+2025-06-23 11:50:16.058420    [+] EX_succ_e factor: 1 
+2025-06-23 11:50:16.058428    [>] EX_succ_e:SUCCt3
+2025-06-23 11:50:16.058431    [+] SUCCt2_2 factor: 1 
+2025-06-23 11:50:16.058439    [>] SUCCt2_2:SUCCt3
+2025-06-23 11:50:16.058443 merging 1 ...
+2025-06-23 11:50:16.058445    [-] AKGDH factor: 1 
+2025-06-23 11:50:16.058453    [+] SUCOAS_rev factor: 1 
+2025-06-23 11:50:16.058462    [>] SUCOAS_rev:AKGDH
+2025-06-23 11:50:16.058466 merging 2 ...
+2025-06-23 11:50:16.058468    [-] ATPM factor: 1 
+2025-06-23 11:50:16.058476    [+] RS_ATPM_min factor: 1 
+2025-06-23 11:50:16.058485    [>] RS_ATPM_min:ATPM
+2025-06-23 11:50:16.058488    [+] RS_lambda factor: 839/100 
+2025-06-23 11:50:16.058495    [>] RS_lambda:ATPM
+2025-06-23 11:50:16.058499 merging 2 ...
+2025-06-23 11:50:16.058502    [-] RS_lambda:ATPM factor: 1000/839 
+2025-06-23 11:50:16.058509    [+] GLCpts:EX_glc__D_e_rev factor: 1 
+2025-06-23 11:50:16.058517    [>] GLCpts:EX_glc__D_e_rev:RS_lambda:ATPM
+2025-06-23 11:50:16.058519    [+] RS_EX_glc__D_e_rev_max factor: 1 
+2025-06-23 11:50:16.058528    [>] RS_EX_glc__D_e_rev_max:RS_lambda:ATPM
+2025-06-23 11:50:16.060400 *** efmlrs.preprocessing.compressions.nullspace ***
+2025-06-23 11:50:16.177262 merging ...
+2025-06-23 11:50:16.177281    [-] PIt2r:EX_pi_e_rev factor: 2557/36787 
+2025-06-23 11:50:16.177312    [+] BIOMASS_Ecoli_core_w_GAM:PGK_rev:GAPD:GLNS 
+2025-06-23 11:50:16.177316    [>] BIOMASS_Ecoli_core_w_GAM:PGK_rev:GAPD:GLNS:PIt2r:EX_pi_e_rev 
+2025-06-23 11:50:16.209536 merging ...
+2025-06-23 11:50:16.209554    [-] TPI factor: 1 
+2025-06-23 11:50:16.209582    [+] FBA 
+2025-06-23 11:50:16.209586    [>] FBA:TPI 
+2025-06-23 11:50:16.383395 merging ...
+2025-06-23 11:50:16.383417    [-] TKT1 factor: 1 
+2025-06-23 11:50:16.383450    [+] TALA 
+2025-06-23 11:50:16.383454    [>] TALA:TKT1 
+2025-06-23 11:50:16.420948 deleting metabolite s7p_c 
+2025-06-23 11:50:16.420962 deleting metabolite dhap_c 
+2025-06-23 11:50:16.524925 *** efmlrs.preprocessing.compressions.echelon ***
+2025-06-23 11:50:16.571830 deleting metabolite xu5p__D_c 
+2025-06-23 11:50:16.571861 deleting metabolite q8h2_c 
+2025-06-23 11:50:16.571865 deleting metabolite nadph_c 
+2025-06-23 11:50:16.571869 deleting metabolite nadh_c 
+2025-06-23 11:50:16.571872 deleting metabolite coa_c 
+2025-06-23 11:50:16.571876 deleting metabolite atp_c 
+2025-06-23 11:50:16.612668 *** efmlrs.preprocessing.compressions.deadend ***
+2025-06-23 11:50:16.615580 *** efmlrs.preprocessing.compressions.many2one ***
+2025-06-23 11:50:16.622902 *** efmlrs.preprocessing.compressions.nullspace ***
+2025-06-23 11:50:16.715010 *** efmlrs.preprocessing.compressions.echelon ***

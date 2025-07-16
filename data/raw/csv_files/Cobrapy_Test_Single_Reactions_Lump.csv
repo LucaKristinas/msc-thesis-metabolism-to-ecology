@@ -1,0 +1,98 @@
+Model,Pseudo_Reaction_ID,Original_Reactions,COBRA_Groups,Original_Model_Objective,Reimported_Model_Objective
+lumped_model_0,Pseudo_Group_0,"['XYLK', 'XYLI1', 'XYLabc', 'EX_xyl-D(e)']","['Transport', 'Pentose and Glucoronate Metabolism ', 'Exchange']",10.2274,10.0003
+lumped_model_1,Pseudo_Group_0,"['EX_gal(e)', 'GALt2']","['Transport', 'Exchange']",10.2274,9.7163
+lumped_model_2,Pseudo_Group_0,"['FRUabc', 'EX_fru(e)']","['Transport ', 'Exchange']",10.2274,9.8867
+lumped_model_3,Pseudo_Group_0,"['MALTabc', 'EX_malt(e)', 'MALT']","['Transport', 'Exchange', 'Starch sucrose Metabolism']",10.2274,9.3756
+lumped_model_4,Pseudo_Group_0,"['RIBabc', 'EX_rib-D(e)']","['Transport', 'Exchange']",10.2274,10.0003
+lumped_model_7,Pseudo_Group_0,"['MELIBabc', 'EX_melib(e)']","['Transport', 'Exchange']",10.2274,9.3756
+lumped_model_8,Pseudo_Group_0,"['EX_raffin(e)', 'RAFFINabc']","['Transport', 'Exchange']",10.2274,8.6326
+lumped_model_9,Pseudo_Group_0,"['LNBP_new', 'EX_lnb(e)', 'LNBabc']","['Transport ', 'Lacto-N-biose', 'Exchange']",10.2274,9.2052
+lumped_model_10,Pseudo_Group_0,"['EX_gnb(e)', 'UAG4E', 'ACGALK', 'UGLT_new', 'GNBP_new', 'GNBabc']","['Transport', 'Lacto-N-biose', 'Exchange']",10.2274,9.2052
+lumped_model_11,Pseudo_Group_0,"['EX_nh4(e)', 'NH4t']","['Transport', 'Exchange']",10.2274,10.019
+lumped_model_13,Pseudo_Group_0,"['METGL', 'CH4St', 'EX_ch4s(e)']","['Transport', 'Methionine Metabolism', 'Exchange']",10.2274,10.2274
+lumped_model_14,Pseudo_Group_0,"['METabc', 'EX_met-L(e)']","['Transport', 'Exchange']",10.2274,10.2233
+lumped_model_15,Pseudo_Group_0,"['CYSt2', 'EX_cys-L(e)']","['Transport', 'Exchange']",10.2274,10.224
+lumped_model_16,Pseudo_Group_0,"['EX_his-L(e)', 'HISabc']","['Transport', 'Exchange']",10.2274,9.9467
+lumped_model_17,Pseudo_Group_0,"['THRabc', 'EX_thr-L(e)']","['Transport', 'Exchange']",10.2274,10.2274
+lumped_model_18,Pseudo_Group_0,"['TRPt2r', 'EX_trp-L(e)']","['Transport', 'Exchange']",10.2274,10.1642
+lumped_model_19,Pseudo_Group_0,"['EX_phe-L(e)', 'PHEt2']","['Transport', 'Exchange']",10.2274,10.1646
+lumped_model_20,Pseudo_Group_0,"['EX_tyr-L(e)', 'TYRt2']","['Transport', 'Exchange']",10.2274,10.1641
+lumped_model_21,Pseudo_Group_0,"['LYSt5r', 'EX_lys-L(e)']","['Transport', 'Exchange']",10.2274,10.1216
+lumped_model_22,Pseudo_Group_0,"['GLYt2r', 'EX_gly(e)']","['Transport', 'Exchange']",10.2274,10.2208
+lumped_model_23,Pseudo_Group_0,"['EX_ala-L(e)', 'ALAt2r']","['Transport', 'Exchange']",10.2274,10.1422
+lumped_model_24,Pseudo_Group_0,"['SERt2r', 'EX_ser-L(e)']","['Transport', 'Exchange']",10.2274,9.9825
+lumped_model_25,Pseudo_Group_0,"['GLUabc', 'EX_glu-L(e)']","['Transport ', 'Exchange']",10.2274,10.2274
+lumped_model_26,Pseudo_Group_0,"['EX_gln-L(e)', 'GLNabc']","['Transport ', 'Exchange']",10.2274,10.1503
+lumped_model_27,Pseudo_Group_0,"['ASPt2r', 'EX_asp-L(e)']","['Transport', 'Exchange']",10.2274,10.0593
+lumped_model_28,Pseudo_Group_0,"['CGLYabc', 'EX_cgly(e)', 'AMPTASECG']","['Transport', 'Exchange', 'Cysteine Metabolism']",10.2274,10.2274
+lumped_model_29,Pseudo_Group_0,"['METSOXR1', 'EX_metsox-S-L(e)', 'METSOX1abc']","['Transport', 'Methionine Metabolism', 'Exchange']",10.2274,10.2274
+lumped_model_30,Pseudo_Group_0,"['EX_skm(e)', 'SKMt2']","['Transport', 'Exchange']",10.2274,10.2272
+lumped_model_32,Pseudo_Group_0,"['NADK', 'EX_ptt(e)', 'PTTR', 'PTTt', 'PTPAT', 'PTTK', 'DPCOAK']","['Transport', 'Pantothenate and CoA biosynthesis ', 'Nicotinate and Nicotinamide Metabolism ', 'Pantothenate and CoA biosynthesis', 'Exchange']",10.2274,-0.0
+lumped_model_33,Pseudo_Group_0,"['NNAM', 'NCAMUP', 'EX_ncam(e)']","['Transport', 'Nicotinate and Nicotinamide Metabolism ', 'Exchange']",10.2274,10.2274
+lumped_model_34,Pseudo_Group_0,"['EX_nac(e)', 'NACt']","['Transport', 'Exchange']",10.2274,10.2274
+lumped_model_35,Pseudo_Group_0,"['EX_fol(e)', 'FOLt', 'FOLR2']","['Transport', 'Exchange', 'Folate Biosynthesis']",10.2274,10.2252
+lumped_model_36,Pseudo_Group_0,"['EX_h2o(e)', 'H2Ot']","['Transport', 'Exchange']",10.2842,10.1706
+lumped_model_37,Pseudo_Group_0,"['EX_h2s(e)', 'H2St']","['Transport', 'Exchange']",10.2274,10.2274
+lumped_model_38,Pseudo_Group_0,"['CO2t', 'EX_co2(e)']","['Transport', 'Exchange']",10.2274,8.6656
+lumped_model_39,Pseudo_Group_0,"['EX_ac(e)', 'ACt2r']","['Transport', 'Exchange']",10.2274,4.6641
+lumped_model_40,Pseudo_Group_0,"['ETOHt2r', 'EX_etoh(e)', 'ALCD2x']","['Transport', 'Exchange', 'Pyruvate Metabolism']",10.2274,9.9677
+lumped_model_41,Pseudo_Group_0,"['ACALDt', 'EX_acald(e)']","['Transport', 'Exchange']",10.341,10.1138
+lumped_model_42,Pseudo_Group_0,"['EX_lac-L(e)', 'L-LACt2r', 'LDH_L']","['Transport', 'Exchange', 'Pyruvate Metabolism']",10.2274,10.0684
+lumped_model_43,Pseudo_Group_0,"['EX_succ(e)', 'SUCCt3']","['Transport', 'Exchange']",10.2274,10.2274
+lumped_model_44,Pseudo_Group_0,"['THIORDXi', 'EX_h2o2(e)', 'H2O2t']","['Transport ', 'Exchange', 'Oxidative Phosphorylation']",10.2274,10.199
+lumped_model_45,Pseudo_Group_0,"['EX_for(e)', 'FORt3']","['Transport ', 'Exchange']",10.2274,10.2274
+lumped_model_46,Pseudo_Group_0,"['URAt2', 'EX_ura(e)']","['Transport', 'Exchange']",10.2274,10.1425
+lumped_model_47,Pseudo_Group_0,"['EX_xan(e)', 'XANt2']","['Transport', 'Exchange']",10.2274,10.217
+lumped_model_48,Pseudo_Group_0,"['HXANt2r', 'EX_hxan(e)']","['Transport', 'Exchange']",10.2274,10.1305
+lumped_model_49,Pseudo_Group_0,"['ARGSS', 'ARGSL', 'OCBT']",['Arginine Proline Metabolism'],10.2274,10.2274
+lumped_model_50,Pseudo_Group_0,"['ACOTA', 'ORNTAC', 'ACGK', 'AGPR']","['Proline, Arginine Metabolism', 'Arginine Proline Metabolism']",10.2274,0.0
+lumped_model_51,Pseudo_Group_0,"['GLU5K', 'G5SADr', 'G5SD']",['Arginine Proline Metabolism'],10.2274,10.2274
+lumped_model_52,Pseudo_Group_0,"['ASAD', 'ASPK']","['Glycine, Serine Threonine Metabolism']",10.2274,10.2274
+lumped_model_53,Pseudo_Group_0,"['HSK', 'THRS']","['Glycine, Serine Threonine Metabolism']",10.2274,10.2274
+lumped_model_54,Pseudo_Group_0,"['PGCD', 'PSERT', 'PSP_L']","['Glycine, Serine Threonine Metabolism']",10.2274,10.2274
+lumped_model_55,Pseudo_Group_0,"['HSTPT', 'ATPPRT', 'IGPDH', 'PRMICI', 'PRATPP', 'HISTD', 'PRAMPC', 'IG3PS', 'HISTP']",['Histidine Metabolism'],10.2274,10.2274
+lumped_model_56,Pseudo_Group_0,"['SDPDS', 'THDPS', 'DAPE', 'DAPDC', 'DHDPRy', 'SDPTA', 'DHDPS']","['Threonine Lysine Metabolism', 'Lysine Biosynthesis']",10.2274,10.2274
+lumped_model_57,Pseudo_Group_0,"['MTHFR_new', 'DM_hpglu', 'MHPGLUT']","['Methionine Metabolism', 'Exchange ']",10.2274,10.2274
+lumped_model_58,Pseudo_Group_0,"['RHCCE', 'AHCYSNS', 'MTHTHFSs', 'DHPTDCs2', 'DM_MTHTHF']","['Methionine Metabolism', 'Exchange']",10.2274,10.2274
+lumped_model_59,Pseudo_Group_0,"['TYRTA', 'PPND']","['Tyrosine, Tryptophan, Phenylalanine Biosynthesis', 'Tyrosine, Tryptophan, Phenylalanine Metabolism']",10.2274,10.2274
+lumped_model_60,Pseudo_Group_0,"['CHORS', 'SHKK', 'PSCVTi']","['Tyrosine, Tryptophan, Phenylalanine Biosynthesis', 'Tyrosine, Tryptophan, Phenylalanine Metabolism']",10.2274,10.2274
+lumped_model_61,Pseudo_Group_0,"['SHK3D', 'DDPA', 'DHQS', 'DHQD']","['Phenylalanine, tyrosine tryptophan biosynthesis', 'Tyrosine, Tryptophan, Phenylalanine Biosynthesis', 'Tyrosine, Tryptophan, Phenylalanine Metabolism']",10.2274,10.2274
+lumped_model_62,Pseudo_Group_0,"['ANPRT', 'PRAI', 'IGPS']","['Tyrosine, Tryptophan, Phenylalanine Biosynthesis', 'Tyrosine, Tryptophan, Phenylalanine Metabolism']",10.2274,10.2274
+lumped_model_63,Pseudo_Group_0,"['TRPS3', 'TRPS2']","['Tyrosine, Tryptophan, Phenylalanine Metabolism']",10.2274,10.2274
+lumped_model_64,Pseudo_Group_0,"['PPNDH', 'PHETA1']","['Tyrosine, Tryptophan, Phenylalanine Metabolism']",10.2274,10.2274
+lumped_model_65,Pseudo_Group_0,"['KARA2', 'DHAD2', 'ILETA', 'ACHBS']","['Valine, Leucine, Isoleucine Biosynthesis', 'Valine, leucine isoleucine degradationValine, leucine isoleucine biosynthesis']",10.2274,10.2244
+lumped_model_66,Pseudo_Group_0,"['IPPMIb', 'OMCDC', 'LEUTA', 'IPMD', 'IPPMIa', 'IPPS']","['Valine, leucine isoleucine degradationValine, leucine isoleucine biosynthesis', 'Valine, Leucine, Isoleucine Metabolism']",10.2274,10.2274
+lumped_model_67,Pseudo_Group_0,"['KARA1', 'ACLS', 'DHAD1']","['Valine, Leucine, Isoleucine Biosynthesis', 'Valine, Leucine, Isoleucine Metabolism']",10.2274,10.2274
+lumped_model_68,Pseudo_Group_0,"['ENO', 'PGM']",['Glycolysis/Gluconeogenesis'],10.2274,0.0
+lumped_model_69,Pseudo_Group_0,"['GAPD', 'PGK']",['Glycolysis/Gluconeogenesis'],10.2274,0.0
+lumped_model_70,Pseudo_Group_0,"['GALM1', 'GLUK_syn']",['Glycolysis/Gluconeogenesis'],10.2274,10.2274
+lumped_model_71,Pseudo_Group_0,"['TALA', 'TKT1']","['Pentose Phosphate Pathway', 'Phosphoketolase Pathway']",10.2274,10.2274
+lumped_model_72,Pseudo_Group_0,"['PGL', 'GND']",['Pentose Phosphate Pathway'],10.2274,10.2274
+lumped_model_73,Pseudo_Group_0,"['ICDHy', 'ACONTa', 'CS', 'ACONTb']","['Citrate Acid Cycle', 'Citric Acid Cycle']",10.2274,10.2274
+lumped_model_74,Pseudo_Group_0,"['FRD2', 'DHORD5']","['Purine Pyrimidine Biosynthesis', 'Citric Acid Cycle']",10.2274,10.2274
+lumped_model_75,Pseudo_Group_0,"['DHORD2', 'FRD7']","['Purine Pyrimidine Biosynthesis', 'Citric Acid Cycle']",10.2274,10.2274
+lumped_model_76,Pseudo_Group_0,"['GLCS1', 'GLGC']","['Starch sucrose Metabolism', 'Glycogen Metabolism']",10.2274,10.2274
+lumped_model_77,Pseudo_Group_0,"['FACOAL140', 'FACOAE140']",['Cell Envelope Biosynthesis'],10.2274,10.2274
+lumped_model_78,Pseudo_Group_0,"['FACOAL160', 'FACOAE160']",['Cell Envelope Biosynthesis'],10.2274,10.2274
+lumped_model_79,Pseudo_Group_0,"['FACOAE161', 'FACOAL161']",['Cell Envelope Biosynthesis'],10.2274,10.2274
+lumped_model_80,Pseudo_Group_0,"['FACOAE181', 'FACOAL181']",['Cell Envelope Biosynthesis'],10.2274,10.2274
+lumped_model_81,Pseudo_Group_0,"['FACOAE182', 'FACOAL182']",['Cell Envelope Biosynthesis'],10.2274,10.2274
+lumped_model_82,Pseudo_Group_0,"['PGAMTi', 'G1PACT']",['Cell Envelope Biosynthesis'],10.2274,10.2274
+lumped_model_83,Pseudo_Group_0,"['ACOATA', 'KAS14']","['Membrane Lipid Metabolism', 'Cell Envelope Biosynthesis']",10.2274,10.2274
+lumped_model_84,Pseudo_Group_0,"['NNDPR', 'ASPO5', 'QULNS']",['Nicotinate and Nicotinamide Metabolism '],10.2274,10.2274
+lumped_model_85,Pseudo_Group_0,"['NMNDA', 'NADDP']",['Nicotinate and Nicotinamide Metabolism '],10.2274,10.2274
+lumped_model_86,Pseudo_Group_0,"['PYDXK', 'PYDXPP']",['Vitamine B6 Metabolism '],10.2274,10.2274
+lumped_model_87,Pseudo_Group_0,"['DHPS2', 'HPPK2', 'DHNPA2']",['Folate Biosynthesis'],10.2274,10.2274
+lumped_model_88,Pseudo_Group_0,"['FOLD3', 'HPPK']","['Folate Biosynthesis', 'Folate Metabolism']",10.2274,10.2274
+lumped_model_89,Pseudo_Group_0,"['MTHFD', 'MTHFC']",['One Carbon Pool by Folate'],10.2274,10.2274
+lumped_model_90,Pseudo_Group_0,"['URIDK2r', 'RNDR4']","['Nucleotide Salvage Pathway', 'Pyrimidine Metabolism']",10.2274,10.2161
+lumped_model_91,Pseudo_Group_0,"['GNNUC', 'GUAPRT']","['Nucleotide Salvage Pathway', 'Purine Metabolism']",10.2274,10.2274
+lumped_model_93,Pseudo_Group_0,"['NTD10', 'XTSNH']",['Nucleotide Salvage Pathway'],10.2274,10.2274
+lumped_model_94,Pseudo_Group_0,"['URIH', 'NTD2']","['Nucleotide Salvage Pathway', 'Pyrimidine Metabolism']",10.2274,10.2274
+lumped_model_95,Pseudo_Group_0,"['NTD4', 'CYTDH', 'CSND']","['Nucleotide Salvage Pathway', 'Pyrimidine Metabolism']",10.2274,10.2274
+lumped_model_96,Pseudo_Group_0,"['PRAGS', 'PRFGS', 'AIRCr', 'PRASCS', 'GART', 'ADSL2', 'GLUPRT', 'PRAIS']","['Purine Pyrimidine Biosynthesis', 'Purine Metabolism']",10.2274,10.2274
+lumped_model_97,Pseudo_Group_0,"['ADSL1', 'ADSS']","['Purine Pyrimidine Biosynthesis', 'Purine Metabolism']",10.2274,10.2274
+lumped_model_98,Pseudo_Group_0,"['IMPC', 'AICART']",['Purine Pyrimidine Biosynthesis'],10.2274,10.2274
+lumped_model_99,Pseudo_Group_0,"['DHORTS', 'ASPCT', 'ORPT', 'OMPDC']",['Purine Pyrimidine Biosynthesis'],10.2274,0.0
+lumped_model_101,Pseudo_Group_0,"['CD2abcpp', 'CD2t3']","['Transport', 'Transport ']",10.2274,10.2274
+lumped_model_102,Pseudo_Group_0,"['BILEt_new', 'BILEt4']","['Transport ', 'Transport']",10.2274,10.2274

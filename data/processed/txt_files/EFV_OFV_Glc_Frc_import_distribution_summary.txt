@@ -1,0 +1,64 @@
+
+--- Binned Value Counts for 'EX_fru_e_rev' ---
+
+OFVs:
+(-0.001, 1e-06]      : 1
+(0.9, 1.0]           : 1
+> Sanity check passed: 2 values binned (out of 2)
+> Entries exactly equal to 1.0: 1
+> Entries exactly equal to 0.0: 1
+
+EFVs:
+(-0.001, 1e-06]      : 78644
+(0.0001, 0.001]      : 2
+(0.001, 0.01]        : 10
+(0.01, 0.1]          : 85
+(0.1, 0.2]           : 218
+(0.2, 0.3]           : 578
+(0.3, 0.4]           : 455
+(0.4, 0.5]           : 85734
+(0.5, 0.6]           : 350
+(0.6, 0.7]           : 425
+(0.7, 0.8]           : 348
+(0.8, 0.9]           : 1420
+(0.9, 1.0]           : 124807
+> Sanity check passed: 293076 values binned (out of 293076)
+> Entries exactly equal to 1.0: 68666
+> Entries exactly equal to 0.0: 78644
+
+--- Binned Value Counts for 'EX_glc__D_e_rev' ---
+
+OFVs:
+(-0.001, 1e-06]      : 1
+(0.9, 1.0]           : 1
+> Sanity check passed: 2 values binned (out of 2)
+> Entries exactly equal to 1.0: 1
+> Entries exactly equal to 0.0: 1
+
+EFVs:
+(-0.001, 1e-06]      : 68666
+(1e-05, 0.0001]      : 1
+(0.0001, 0.001]      : 4307
+(0.001, 0.01]        : 26344
+(0.01, 0.1]          : 25489
+(0.1, 0.2]           : 1420
+(0.2, 0.3]           : 348
+(0.3, 0.4]           : 425
+(0.4, 0.5]           : 85766
+(0.5, 0.6]           : 369
+(0.6, 0.7]           : 404
+(0.7, 0.8]           : 578
+(0.8, 0.9]           : 218
+(0.9, 1.0]           : 78741
+> Sanity check passed: 293076 values binned (out of 293076)
+> Entries exactly equal to 1.0: 78644
+> Entries exactly equal to 0.0: 68666
+
+--- Co-occurrence Analysis for df1 ---
+fru>0: False | glc>0: True → count: 1
+fru>0: True | glc>0: False → count: 1
+
+--- Co-occurrence Analysis for df2 ---
+fru>0: True | glc>0: True → count: 145766
+fru>0: False | glc>0: True → count: 78644
+fru>0: True | glc>0: False → count: 68666

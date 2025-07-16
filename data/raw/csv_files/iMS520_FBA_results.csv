@@ -1,0 +1,13 @@
+,Model,Carbon_Source,Objective_Value
+0,Final_Model,EX_glc-D(e),8.517918258405853
+1,Final_Model,EX_fru(e),8.34595490191047
+2,Final_Model,EX_gal(e),8.517918258405876
+3,Final_Model,EX_malt(e),8.8618449713967
+0,Consistent,EX_glc-D(e),8.517918258405855
+1,Consistent,EX_fru(e),8.345954901910448
+2,Consistent,EX_gal(e),8.517918258405855
+3,Consistent,EX_malt(e),8.861844971396648
+0,Context,EX_glc-D(e)_flipped,25.70548164229853
+1,Context,EX_fru(e)_flipped,22.42930586428975
+2,Context,EX_gal(e)_flipped,25.705481642298633
+3,Context,EX_malt(e)_flipped,22.42930586428975

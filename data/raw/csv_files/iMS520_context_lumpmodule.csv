@@ -1,0 +1,52 @@
+,COBRA_Group,Reactions,Reaction_Count,Cluster
+0,Alanine Aspartate Metabolism,"['ALATRS', 'ADSL1', 'ALAR', 'ASPTA', 'ASNTRAT', 'ALATA_L', 'ASPTRS(Asn)', 'ASPT']",8,True
+1,Aminoacyl-Trna Biosynthesis,"['GLNTRAT', 'GLUTRS(Gln)']",2,True
+2,Aminosugars Metabolism,['GF6PTA'],1,True
+3,Anaplerotic Reactions,"['PPC', 'PPA']",2,True
+4,Arginine Proline Metabolism,"['PROTRS', 'ARGSS', 'CBPS', 'ACOTA', 'G5SADr', 'ARGSL', 'ARGTRS', 'OCBT', 'GLU5K', 'G5SD', 'P5CRx', 'P5CR']",12,True
+5,Cell Envelope Biosynthesis,"['EAR140y', 'FACOAE181', '3OAS120', 'EAR120y', '3OAS181', 'AACPS_fa1', '3OAR180', '3OAR141', 'FACOAE160', 'EAR100x', '3OAS121', 'FAS182ACP_BIF', 'EAR80y', '3HAD160', 'EAR60y', 'FACOAL161', '3HAD140', '3HAD161', 'EAR161y', '3OAR121', 'EAR140x', '3HAD121', 'EAR141x', '3OAR100', 'G1PACT', '3OAR140', 'EAR40y', '3HAD141', 'FACOAE140', '3OAR80', 'PPTGS_BL', 'UAMAGS', '3HAD181', '3HAD80', '3OAR161', 'EAR40x', '3OAS141', 'PGAMTi', 'KAS1', '3HAD100', 'UAMAS', '3OAS160', '3OAS161', '3OAS100', 'T2DECAI', 'FACOAE161', 'FACOAE182', 'EAR60x', '3HAD60', '3HAD120', 'PAPPT2_new', '3OAS60', 'UGODDS', 'CFAS_181', 'TDPDRR', 'ALAALAr', 'UAGDP', '3OAR40', 'EAR121y', 'FACOAL160', '3OAS140', '3OAR120', 'FACOAL181', 'Pseudo_Group_25', 'FACOAL182', '3HAD180', 'UAGPT2_new', 'EAR120x', 'EAR121x', 'EAR180y', 'EAR161x', '3OAR181', 'EAR141y', 'EAR180x', 'EAR80x', 'UDCPDP', '3OAS80', '3OAR60', 'TDPGDH', 'EAR160y', '3OAS180', 'KAS14', 'EAR100y', 'UAGCVT', 'EAR181x', 'tempname_new', 'FACOAL140', '3OAR160', 'EAR181y', 'GLUR', 'EAR160x', '3HAD40']",92,True
+6,Citrate Acid Cycle,"['ICDHy', 'FRD2', 'ACONTb', 'ACONTa', 'SUCOAS', 'FRD7', 'Pseudo_Group_22']",7,True
+8,Energy Metabolism,['Pseudo_Group_32'],1,True
+10,Fatty Acid Metabolism,['ACCOAC'],1,True
+11,Folate Biosynthesis,"['DHFR', 'DHPS', 'DHFS', 'DNMPPA', 'Pseudo_Group_33', 'HPPK2', 'DHNPA2', 'DHNPA', 'Pseudo_Group_31', 'FOLR2', 'HPPK', 'GTPCI']",12,True
+12,Folate Metabolism,['FOLD3'],1,True
+13,Fructose And Mannose Metabolism,['XYLI2'],1,True
+15,Galactose Metabolism,"['GALT', 'GALU']",2,True
+16,Glutamate Metabolism,"['GF6PTA', 'NADS2', 'GLUTRS(Gln)', 'GLNS', 'GLUSy', 'GLUDy', 'GLNTRAT']",7,True
+17,Glycerolipid Metabolism,"['G3POA_BIF', 'G3PD1', 'AGPATr_BIF', 'LPAS_BIF', 'ALCD19', 'CDGPT_BIF', 'UGALT_BIF', 'PGPPH_BIF', 'CPD15S_BIF', 'CPD15L_BIF', 'PHCYT_BIF', 'CLPNS2_BIF']",12,True
+18,"Glycine, Serine Threonine Metabolism","['ASPK', 'ASAD', 'HSDx', 'HSK', 'Pseudo_Group_3', 'PSP_L', 'PSERT', 'SERD_L', 'GLYCK', 'CYSTS', 'THRAr', 'PGCD', 'Pseudo_Group_18', 'THRS', 'THRAL']",15,True
+19,Glycogen Metabolism,"['GLCP', 'Pseudo_Group_23', 'GLDBRAN2', 'GLCP2']",4,True
+20,Glycolysis,['Pseudo_Group_19'],1,True
+21,Glycolysis / Gluconeogenesis,"['HEX1', 'GALM1', 'Pseudo_Group_20', 'PGI', 'GLUK_syn', 'LDH_L', 'PYK', 'PGM', 'HEX7', 'G6PI3', 'TPI', 'PGMT', 'Pseudo_Group_18']",13,True
+22,Histidine Metabolism,"['PRMICI', 'Pseudo_Group_8', 'IG3PS', 'PRAMPC', 'Pseudo_Group_7', 'IGPDH', 'HISTRS', 'HISTD', 'ATPPRT', 'HSTPT']",10,True
+25,Membrane Lipid Metabolism,"['MCOATA', 'KAS15', 'ACOATA']",3,True
+26,Methionine Metabolism,"['METAT', 'RHCCE', 'MTHFR_new', 'Pseudo_Group_3', 'AhCi', 'GHMT2', 'MTHTHFSs', 'DHPTDCs2', 'Pseudo_Group_7', 'HSST', 'MHPGLUT']",11,True
+27,Nicotinate And Nicotinamide Metabolism,"['NNAT', 'QULNS', 'NADS2', 'NNDPR', 'NAPRT', 'NADDP', 'ASPO5', 'NADTRHD', 'NADK', 'Pseudo_Group_31', 'NNAM', 'NMNDA']",12,True
+28,Nucleotide Salvage Pathway,"['GK1', 'ADNUC', 'DCTPD', 'GUAPRT', 'ADA', 'NTD4', 'Pseudo_Group_38', 'ADK1', 'NTD7', 'XPPT', 'XTSNH', 'INSH', 'Pseudo_Group_33', 'NTD2', 'ADPT', 'NTPP4', 'NTD10', 'RNTR2', 'RNDR1', 'NTD9', 'NTD11', 'RNDR4', 'Pseudo_Group_37', 'HXPRT']",24,True
+30,One Carbon Pool By Folate,"['MTHFC', 'FTHFL', 'MTHFD', 'MTHFR3', 'MTHFR2']",5,True
+31,Other,"['PPA2', 'HCO3E']",2,True
+32,Oxidative Phosphorylation,['TRDR'],1,True
+33,Pantothenate And Coa Biosynthesis,"['DPCOAK', 'PTPAT', 'PTTR', 'PTTK']",4,True
+34,Pentose And Glucoronate Interconversions,"['ARAI', 'RBP4E', 'RBK_L1']",3,True
+35,Pentose Phosphate Pathway,"['TKT1', 'TALA', 'PRPPS', 'G6PDH2', 'PGL', 'RPE', 'TKT2', 'GND', 'RBI', 'RBK']",10,True
+36,"Phenylalanine, Tyrosine Tryptophan Biosynthesis","['DHQD', 'ANS2']",2,True
+37,Phosphoketolase Pathway,"['PK', 'F6PPK', 'TKT1', 'TKT2']",4,True
+38,Polyketide Sugar Unit Biosynthesis,['TDPDRE'],1,True
+39,Porphyrin And Chlorophyll Metabolism,['CBLAT'],1,True
+40,"Proline, Arginine Metabolism","['Pseudo_Group_14', 'AGPR', 'ACGK']",3,True
+41,Purine Metabolism,"['GK2', 'NTPP5', 'ADSL1', 'PPK2', 'ADSL2', 'Pseudo_Group_20', 'RNTR1', 'NTPTP2', 'NTP1', 'NTPP2', 'AIRCr', 'Pseudo_Group_19', 'PRAGS', 'NTP3', 'GPPT', 'GNNUC', 'Pseudo_Group_31', 'NTP2']",18,True
+42,Purine Pyrimidine Biosynthesis,"['DHORD5', 'AICART', 'IMPC', 'GMPS2', 'DHORDfum', 'ORPT', 'Pseudo_Group_32', 'ADK2', 'ASPCT', 'GLUPRT', 'IMPD', 'CTPS2', 'OMPDC', 'DHORD2', 'PRAIS', 'DHORTS', 'ADSS', 'DHORD_NAD', 'GART']",19,True
+43,Pyrimidine Metabolism,"['RNTR4', 'CYTDH', 'URIDK2r', 'CTPS1', 'Pseudo_Group_40', 'RNTR3', 'URIDK1r', 'DCTPD2', 'DTPPT', 'URIH', 'CSND']",11,True
+44,Pyruvate Metabolism,"['PPC', 'ALCD2x', 'ACKr', 'LDH_L', 'PFL', 'ACALD', 'Pseudo_Group_22']",7,True
+45,Starch Sucrose Metabolism,"['GLGC', 'SUCPHOS']",2,True
+46,Starch Sucrose Metabolismgalactose Metabolism,['SUCR'],1,True
+47,Streptomycin Biosynthesis,['TDPDRE'],1,True
+48,Terpenoid Biosynthesis,"['Pseudo_Group_30', 'DXPRIi', 'Pseudo_Group_29', 'MECDPS', 'DXPS', 'UDCPDPS', 'GRTT', 'CDPMEK']",8,True
+49,Thiamine Metabolism,['TMDPK'],1,True
+50,Threonine Lysine Metabolism,"['DAPE', 'SDPDS', 'THDPS', 'Pseudo_Group_7', 'SDPTA']",5,True
+52,Trna Charging,"['SERTRS', 'GLYTRS', 'METTRS', 'GLUTRS', 'THRTRS', 'ASPTRS']",6,True
+54,"Tyrosine, Tryptophan, Phenylalanine Metabolism","['SHKK', 'CHORS', 'TRPS2', 'ANS', 'TRPS3', 'DHQS', 'TRPS1', 'CHORM', 'TYRTA', 'TYRTRS', 'IGPS', 'PHETA1', 'DDPA', 'PPNDH', 'ANPRT']",15,True
+55,Unassigned,['ATPM'],1,True
+56,Urea Cycle Metabolism Of Amino Groups,"['AGPR', 'ACGK']",2,True
+57,"Valine, Leucine Isoleucine Degradationvaline, Leucine Isoleucine Biosynthesis","['Pseudo_Group_14', 'LEUTA']",2,True
+60,Vitamine B6 Metabolism,"['Pseudo_Group_28', 'PYDXK', 'PLPS']",3,True

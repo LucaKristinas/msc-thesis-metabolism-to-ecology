@@ -1,0 +1,3 @@
+ID,Name,LB,UB,Sugar
+EX_fru_e,D-Fructose exchange,0,1000,Fructose
+EX_glc__D_e,D-Glucose exchange,-10,1000,Glucose

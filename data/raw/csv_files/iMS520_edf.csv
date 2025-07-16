@@ -1,0 +1,7 @@
+ID,Name,LB,UB,Sugar
+EX_fru(e),fructose exchange,0,1000,Fructose
+EX_gal(e),galactose exchange,0,1000,Galactose
+EX_glc-D(e),D-glucose exchange,-10,1000,Glucose
+EX_lcts(e),lactose exchange,0,1000,Lactose
+EX_malt(e),maltose exchange,0,1000,Maltose
+EX_sucr(e),sucrose exchange,0,1000,Sucrose

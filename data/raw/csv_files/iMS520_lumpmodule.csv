@@ -1,0 +1,57 @@
+,COBRA_Group,Reactions,Reaction_Count,Cluster
+0,Alanine Aspartate Metabolism,"['ASNTRAT', 'ASPTA', 'ALATA_L', 'ASPTRS(Asn)', 'ALAR', 'ALATRS', 'ASPT']",7,True
+1,Aminoacyl-Trna Biosynthesis,"['GLNTRAT', 'GLUTRS(Gln)']",2,True
+2,Aminosugars Metabolism,['GF6PTA'],1,True
+3,Anaplerotic Reactions,"['PPA', 'PPC']",2,True
+4,Arginine Proline Metabolism,"['ARGTRS', 'Pseudo_Group_14', 'Pseudo_Group_13', 'Pseudo_Group_15', 'CBPS', 'PROTRS', 'P5CR', 'P5CRx']",8,True
+5,Cell Envelope Biosynthesis,"['Pseudo_Group_46', '3HAD160', 'T2DECAI', 'EAR120y', 'EAR140x', 'EAR60y', 'EAR160x', 'Pseudo_Group_47', 'EAR180y', 'EAR121y', 'TDPGDH', '3HAD80', '3OAS181', '3OAS161', 'AACPS_fa1', 'Pseudo_Group_44', '3OAR141', 'KAS1', '3OAR120', 'UAGDP', '3OAS180', '3OAS160', 'PAPPT2_new', 'PPTGS_BL', 'Pseudo_Group_42', 'TDPDRR', 'EAR161y', 'EAR121x', '3HAD180', '3OAS120', 'UGODDS', 'EAR100x', 'EAR141x', 'EAR140y', 'EAR181y', '3OAR121', 'ALAALAr', '3HAD161', '3OAR180', 'Pseudo_Group_43', '3OAS100', '3OAR100', 'EAR141y', 'UAGPT2_new', 'GLUR', 'tempname_new', '3OAR160', 'EAR180x', '3OAS141', '3HAD181', '3OAR80', 'EAR100y', '3HAD121', '3HAD60', 'FAS182ACP_BIF', 'EAR40x', 'EAR161x', 'CFAS_181', '3OAR161', 'EAR181x', 'EAR120x', 'UDCPDP', '3HAD120', 'EAR160y', '3OAR40', '3HAD141', '3OAS80', 'EAR80x', '3OAS121', '3OAS60', 'EAR80y', '3OAS140', '3OAR140', 'UAGCVT', '3HAD140', 'Pseudo_Group_41', '3HAD100', 'UAMAGS', 'UAPGR', 'Pseudo_Group_45', 'EAR40y', 'UAAGOS', 'UAMAS', '3OAR60', '3HAD40', '3OAR181', 'EAR60x']",87,True
+6,Citrate Acid Cycle,"['Pseudo_Group_38', 'Pseudo_Group_37', 'Pseudo_Group_39', 'SUCOAS']",4,True
+7,Cysteine Metabolism,"['CYSTS', 'CYSTGLr', 'CYSTRS', 'Pseudo_Group_5']",4,True
+8,Energy Metabolism,['ATPS4'],1,True
+10,Fatty Acid Metabolism,['ACCOAC'],1,True
+11,Folate Biosynthesis,"['DNMPPA', 'DHFR', 'Pseudo_Group_52', 'DHFS', 'Pseudo_Group_51', 'DHNPA', 'DNTPPA', 'GTPCI', 'Pseudo_Group_9', 'DHPS']",10,True
+12,Folate Metabolism,['Pseudo_Group_52'],1,True
+13,Fructose And Mannose Metabolism,['XYLI2'],1,True
+15,Galactose Metabolism,"['GALU', 'RAFGH', 'RAFH', 'LACZ', 'GALK', 'GALT', 'GALS3']",7,True
+16,Glutamate Metabolism,"['GLUSy', 'GF6PTA', 'GLNTRAT', 'GLUDy', 'NADS2', 'GLUTRS(Gln)', 'GLNS']",7,True
+17,Glycerolipid Metabolism,"['CLPNS2_BIF', 'PGPPH_BIF', 'LPAS_BIF', 'ALCD19', 'G3PD1', 'AGPATr_BIF', 'G3POA_BIF', 'CPD15L_BIF', 'CPD15S_BIF', 'UGALT_BIF', 'PHCYT_BIF', 'CDGPT_BIF']",12,True
+18,"Glycine, Serine Threonine Metabolism","['Pseudo_Group_16', 'SERD_L', 'CYSTS', 'GLYALDDr', 'HSDx', 'Pseudo_Group_17', 'GLYCK', 'THRAr', 'CYSTGLr', 'THRAL', 'Pseudo_Group_18']",11,True
+19,Glycogen Metabolism,"['GLDBRAN2', 'GLCP2', 'Pseudo_Group_40', 'GLCP', 'GLBRAN2']",5,True
+20,Glycolysis,['ALDD2x'],1,True
+21,Glycolysis/Gluconeogenesis,"['PYK', 'Pseudo_Group_33', 'PGMT', 'G6PI3', 'PGI', 'Pseudo_Group_34', 'HEX7', 'Pseudo_Group_32', 'TPI', 'HEX1']",10,True
+22,Histidine Metabolism,"['Pseudo_Group_19', 'HISTRS']",2,True
+23,Lacto-N-Biose,"['AGDC', 'UDPG4E', 'ACGALK_new', 'UGLT', 'ACGAMPM', 'Pseudo_Group_2', 'G6PDA', 'Pseudo_Group_3']",8,True
+24,Lysine Biosynthesis,"['LYSTRS', 'Pseudo_Group_20']",2,True
+25,Membrane Lipid Metabolism,"['KAS15', 'MCOATA', 'Pseudo_Group_47']",3,True
+26,Methionine Metabolism,"['CYSTL', 'CGS', 'SHSL2r', 'Pseudo_Group_22', 'AhCi', 'METAT', 'Pseudo_Group_6', 'Pseudo_Group_4', 'GHMT2', 'Pseudo_Group_21', 'HSST']",11,True
+27,Nicotinate And Nicotinamide Metabolism,"['Pseudo_Group_49', 'NNAT', 'NADTRHD', 'NADS1', 'NAPRT', 'Pseudo_Group_7', 'NADS2', 'Pseudo_Group_8', 'Pseudo_Group_48']",9,True
+28,Nucleotide Salvage Pathway,"['DCTPD', 'Pseudo_Group_57', 'NTD7', 'XPPT', 'ADA', 'Pseudo_Group_55', 'NTD9', 'HXPRT', 'NTD11', 'DUTPDP', 'RNDR1', 'NTPP8', 'GK1', 'Pseudo_Group_56', 'Pseudo_Group_58', 'ADPT', 'ADK1', 'RNTR2', 'ADNUC', 'INSH', 'UPPRTr', 'DADK', 'Pseudo_Group_54', 'NTPP4', 'DTMPK', 'TMDS']",26,True
+30,One Carbon Pool By Folate,"['Pseudo_Group_53', 'MTHFR2', 'MTHFR3', 'FTHFL']",4,True
+31,Other,"['PPA2', 'HCO3E']",2,True
+32,Oxidative Phosphorylation,"['TRDR', 'Pseudo_Group_12']",2,True
+33,Pantothenate And Coa Biosynthesis,['Pseudo_Group_7'],1,True
+34,Pentose And Glucoronate Interconversions,"['RBP4E', 'ARAI', 'RBK_L1']",3,True
+35,Pentose And Glucoronate Metabolism,['Pseudo_Group_0'],1,True
+36,Pentose Phosphate Pathway,"['G6PDH2', 'RBI', 'Pseudo_Group_36', 'PRPPS', 'RBK', 'Pseudo_Group_35', 'TKT2', 'RPE']",8,True
+37,"Phenylalanine, Tyrosine Tryptophan Biosynthesis","['Pseudo_Group_25', 'ANS2']",2,True
+38,Phosphoketolase Pathway,"['TKT2', 'Pseudo_Group_35', 'F6PPK', 'PK']",4,True
+39,Polyketide Sugar Unit Biosynthesis,['TDPDRE'],1,True
+40,Porphyrin And Chlorophyll Metabolism,['CBLAT'],1,True
+41,"Proline, Arginine Metabolism",['Pseudo_Group_14'],1,True
+42,Purine Metabolism,"['NTPP5', 'GK2', 'Pseudo_Group_59', 'Pseudo_Group_55', 'NTP1', 'RNTR1', 'PPK2', 'NTPP2', 'GPPT', 'NTP2', 'NTPP7', 'NTPP6', 'NTP3', 'Pseudo_Group_60', 'NTPTP2']",15,True
+43,Purine Pyrimidine Biosynthesis,"['DHORD_NAD', 'Pseudo_Group_38', 'Pseudo_Group_39', 'ADK2', 'GMPS2', 'IMPD', 'DHORDfum', 'Pseudo_Group_59', 'Pseudo_Group_61', 'Pseudo_Group_62', 'Pseudo_Group_60', 'CTPS2']",12,True
+44,Pyrimidine Metabolism,"['DCTPD2', 'Pseudo_Group_57', 'RNTR4', 'URIDK1r', 'Pseudo_Group_58', 'DTPPT', 'CTPS1', 'Pseudo_Group_54', 'RNTR3', 'UPPT']",10,True
+45,Pyruvate Metabolism,"['PTAr', 'ACALD', 'Pseudo_Group_11', 'PFL', 'Pseudo_Group_10', 'ACKr', 'PPC']",7,True
+46,Starch Sucrose Metabolism,"['Pseudo_Group_1', 'SUCPHOS', 'Pseudo_Group_40']",3,True
+47,Starch Sucrose Metabolismgalactose Metabolism,['SUCR'],1,True
+48,Streptomycin Biosynthesis,['TDPDRE'],1,True
+49,Terpenoid Biosynthesis,"['MECDPS', 'UDCPDPS', 'DMPPS', 'IPDPS', 'DMATT', 'GRTT', 'DXPS', 'CDPMEK', 'DXPRIi', 'MECDPDH2', 'MEPCT']",11,True
+50,Thiamine Metabolism,['TMDPK'],1,True
+51,Threonine Lysine Metabolism,['Pseudo_Group_20'],1,True
+53,Trna Charging,"['METTRS', 'GLYTRS', 'THRTRS', 'ASPTRS', 'GLUTRS', 'SERTRS']",6,True
+54,"Tyrosine, Tryptophan, Phenylalanine Biosynthesis","['Pseudo_Group_25', 'PHETRS', 'Pseudo_Group_24', 'Pseudo_Group_26', 'TRPTRS', 'Pseudo_Group_23']",6,True
+55,"Tyrosine, Tryptophan, Phenylalanine Metabolism","['Pseudo_Group_25', 'TRPS1', 'Pseudo_Group_28', 'ANS', 'CHORM', 'Pseudo_Group_24', 'Pseudo_Group_27', 'Pseudo_Group_26', 'TYRTRS', 'Pseudo_Group_23']",10,True
+56,Unassigned,"['ATPM', 'ACGAMK']",2,True
+57,"Valine, Leucine Isoleucine Degradationvaline, Leucine Isoleucine Biosynthesis","['Pseudo_Group_30', 'Pseudo_Group_29']",2,True
+58,"Valine, Leucine, Isoleucine Biosynthesis","['LEUTRS', 'Pseudo_Group_31', 'ILETRS', 'VALTRS', 'Pseudo_Group_29']",5,True
+60,Vitamine B6 Metabolism,"['Pseudo_Group_50', 'PLPS']",2,True

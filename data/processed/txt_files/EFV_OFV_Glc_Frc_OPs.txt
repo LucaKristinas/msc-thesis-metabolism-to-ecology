@@ -1,0 +1,123 @@
+
+=== DataFrame 1 ===
+Max biomass value: 0.0873921506968431
+Number of rows with max biomass: 1
+
+-- Pathway 1 (Index: 1) --
+Non-zero reactions:
+ACONTa, ACONTb, AKGDH, ATPM, ATPS4r, CO2t_rev, CS, CYTBD, ENO, EX_co2_e, EX_fru_e_rev, EX_h2o_e, EX_h_e, EX_nh4_e_rev, EX_o2_e_rev, EX_pi_e_rev, FBA, FRUpts2, FUM, G6PDH2r, GAPD, GLNS, GLUDy_rev, GND, H2Ot_rev, ICDHyr, MDH, NADH16, NH4t, O2t, PDH, PFK, PGI_rev, PGK_rev, PGL, PGM_rev, PIt2r, PPC, PYK, RPE, RPI_rev, SUCDi, SUCOAS_rev, TALA, TKT1, TKT2, TPI
+
+=== DataFrame 2 ===
+Max biomass value: 0.0895284485359739
+Number of rows with max biomass: 1
+
+-- Pathway 1 (Index: 204918) --
+Non-zero reactions:
+ACONTa, ACONTb, AKGDH, ATPM, ATPS4r, CO2t_rev, CS, CYTBD, ENO, EX_co2_e, EX_fru_e_rev, EX_glc__D_e_rev, EX_h2o_e, EX_h_e, EX_nh4_e_rev, EX_o2_e_rev, EX_pi_e_rev, FBA, FRUpts2, FUM, G6PDH2r, GAPD, GLCpts, GLNS, GLUDy_rev, GND, H2Ot_rev, ICDHyr, MDH, NADH16, NH4t, O2t, PDH, PFK, PGI_rev, PGK_rev, PGL, PGM_rev, PIt2r, PPC, PYK, RPE, RPI_rev, SUCDi, SUCOAS_rev, TALA, TKT1, TKT2, TPI
+
+=== OFV (Fructose) vs EFV (Max. biomass) ===
+🟢 Shared Reactions: 46
+ACONTa, ACONTb, AKGDH, ATPM, ATPS4r, CO2t_rev, CS, CYTBD, ENO, EX_co2_e, EX_glc__D_e_rev, EX_h2o_e, EX_h_e, EX_nh4_e_rev, EX_o2_e_rev, EX_pi_e_rev, FBA, FUM, G6PDH2r, GAPD, GLCpts, GLNS, GLUDy_rev, GND, H2Ot_rev, ICDHyr, MDH, NADH16, NH4t, O2t, PDH, PFK, PGK_rev, PGL, PGM_rev, PIt2r, PPC, PYK, RPE, RPI_rev, SUCDi, SUCOAS_rev, TALA, TKT1, TKT2, TPI
+
+🔵 Only in OFV (Fructose): 1
+  PGI: 0.4860861146496836
+
+🔴 Only in EFV (Max. biomass): 3
+  EX_fru_e_rev: 0.5
+  FRUpts2: 0.5
+  PGI_rev: 0.0558104458598726
+
+📊 Summary:
+  OFV (Fructose) active reactions:   47
+  EFV (Max. biomass) active reactions:   49
+  Shared:                     46
+  Only in OFV (Fructose):            1
+  Only in EFV (Max. biomass):    3
+--------------------------------------------------
+
+=== OFV (Glucose) vs EFV (Max. biomass) ===
+🟢 Shared Reactions: 47
+ACONTa, ACONTb, AKGDH, ATPM, ATPS4r, CO2t_rev, CS, CYTBD, ENO, EX_co2_e, EX_fru_e_rev, EX_h2o_e, EX_h_e, EX_nh4_e_rev, EX_o2_e_rev, EX_pi_e_rev, FBA, FRUpts2, FUM, G6PDH2r, GAPD, GLNS, GLUDy_rev, GND, H2Ot_rev, ICDHyr, MDH, NADH16, NH4t, O2t, PDH, PFK, PGI_rev, PGK_rev, PGL, PGM_rev, PIt2r, PPC, PYK, RPE, RPI_rev, SUCDi, SUCOAS_rev, TALA, TKT1, TKT2, TPI
+
+🔵 Only in OFV (Glucose): 0
+
+🔴 Only in EFV (Max. biomass): 2
+  EX_glc__D_e_rev: 0.5
+  GLCpts: 0.5
+
+📊 Summary:
+  OFV (Glucose) active reactions:   47
+  EFV (Max. biomass) active reactions:   49
+  Shared:                     47
+  Only in OFV (Glucose):            0
+  Only in EFV (Max. biomass):    2
+--------------------------------------------------
+
+🔟 Top 10 biomass-producing EFVs:
+Row 204918: biomass_col = 0.0895284485
+Row 204927: biomass_col = 0.0894147572
+Row 204933: biomass_col = 0.0893084292
+Row 204913: biomass_col = 0.0892126106
+Row 204870: biomass_col = 0.0892030130
+Row 204872: biomass_col = 0.0887927630
+Row 204914: biomass_col = 0.0887820075
+Row 204911: biomass_col = 0.0887469220
+Row 204912: biomass_col = 0.0887469220
+Row 204917: biomass_col = 0.0887284223
+
+🧬 Shared active reactions (flux > 0.001) in top 10 EFVs:
+Count: 46
+ACONTa, ACONTb, AKGDH, ATPM, ATPS4r, CO2t_rev, CS, CYTBD, ENO, EX_co2_e, EX_fru_e_rev, EX_glc__D_e_rev, EX_h2o_e, EX_h_e, EX_nh4_e_rev, EX_o2_e_rev, EX_pi_e_rev, FBA, FRUpts2, FUM, G6PDH2r, GAPD, GLCpts, GLNS, GLUDy_rev, GND, H2Ot_rev, ICDHyr, MDH, NADH16, NH4t, O2t, PDH, PFK, PGK_rev, PGL, PGM_rev, PIt2r, RPE, RPI_rev, SUCDi, SUCOAS_rev, TALA, TKT1, TKT2, TPI
+
+🧷 Unique reactions per EFV (not shared by all):
+
+Row 204918 unique reactions (n = 3):
+  PGI_rev: 0.055810
+  PPC: 0.256553
+  PYK: 0.145893
+
+Row 204927 unique reactions (n = 3):
+  PPC: 0.256227
+  PYK: 0.165345
+  THD2: 0.089301
+
+Row 204933 unique reactions (n = 2):
+  PPC: 0.255922
+  PYK: 0.148975
+
+Row 204913 unique reactions (n = 3):
+  ME2: 0.082694
+  PPC: 0.338342
+  PYK: 0.084162
+
+Row 204870 unique reactions (n = 4):
+  ICL: 0.255620
+  MALS: 0.255620
+  PGI_rev: 0.202800
+  PYK: 0.354947
+
+Row 204872 unique reactions (n = 4):
+  ICL: 0.254445
+  MALS: 0.254445
+  PYK: 0.424437
+  THD2: 0.323415
+
+Row 204914 unique reactions (n = 3):
+  ME2: 0.195436
+  PGI: 0.076090
+  PPC: 0.449850
+
+Row 204911 unique reactions (n = 3):
+  ME2: 0.170335
+  NADTRHD: 0.102862
+  PPC: 0.424648
+
+Row 204912 unique reactions (n = 3):
+  ME1: 0.102862
+  ME2: 0.067472
+  PPC: 0.424648
+
+Row 204917 unique reactions (n = 3):
+  ME1: 0.157099
+  PGI_rev: 0.040121
+  PPC: 0.411360

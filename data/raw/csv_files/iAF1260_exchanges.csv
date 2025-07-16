@@ -1,0 +1,300 @@
+,ID,Name,Lower_FB,Upper_FB,Active_in_FBA,Include
+15,EX_12ppd__R_e,"(R)-Propane-1,2-diol exchange",0,999999,FALSE,FALSE
+21,EX_12ppd__S_e,"(S)-Propane-1,2-diol exchange",0,999999,FALSE,FALSE
+22,EX_14glucan_e,"1,4-alpha-D-glucan exchange",0,999999,FALSE,FALSE
+23,EX_15dap_e,"1,5-Diaminopentane exchange",0,999999,FALSE,FALSE
+24,EX_23camp_e,"2',3'-Cyclic AMP exchange",0,999999,FALSE,FALSE
+26,EX_23ccmp_e,"2',3'-Cyclic CMP exchange",0,999999,FALSE,FALSE
+31,EX_23cgmp_e,"2',3'-Cyclic GMP exchange",0,999999,FALSE,FALSE
+32,EX_23cump_e,"2',3'-Cyclic UMP exchange",0,999999,FALSE,FALSE
+36,EX_23dappa_e,"2,3-diaminopropionate exchange",0,999999,FALSE,FALSE
+37,EX_26dap__M_e,"Meso-2,6-Diaminoheptanedioate exchange",0,999999,FALSE,FALSE
+40,EX_2ddglcn_e,2-Dehydro-3-deoxy-D-gluconate exchange,0,999999,FALSE,FALSE
+42,EX_34dhpac_e,"3,4-Dihydroxyphenylacetaldehyde exchange",0,999999,FALSE,FALSE
+43,EX_3amp_e,3'-AMP exchange,0,999999,FALSE,FALSE
+44,EX_3cmp_e,3'-cmp exchange,0,999999,FALSE,FALSE
+50,EX_3gmp_e,3'-GMP exchange,0,999999,FALSE,FALSE
+51,EX_3hcinnm_e,3-hydroxycinnamic acid exchange,0,999999,FALSE,FALSE
+52,EX_3hpppn_e,3-(3-hydroxy-phenyl)propionate exchange,0,999999,FALSE,FALSE
+53,EX_3ump_e,3'-UMP exchange,0,999999,FALSE,FALSE
+57,EX_4abut_e,4-Aminobutanoate exchange,0,999999,FALSE,FALSE
+58,EX_4hoxpacd_e,4-Hydroxyphenylacetaldehyde exchange,0,999999,FALSE,FALSE
+60,EX_5dglcn_e,5-Dehydro-D-gluconate exchange,0,999999,FALSE,FALSE
+67,EX_ac_e,Acetate exchange,0,999999,FALSE,TRUE
+68,EX_acac_e,Acetoacetate exchange,0,999999,FALSE,FALSE
+69,EX_acald_e,Acetaldehyde exchange,0,999999,FALSE,FALSE
+75,EX_acgal_e,N-Acetyl-D-galactosamine exchange,0,999999,FALSE,FALSE
+74,EX_acgal1p_e,N-Acetyl-D-galactosamine 1-phosphate exchange,0,999999,FALSE,FALSE
+79,EX_acgam_e,N-Acetyl-D-glucosamine exchange,0,999999,FALSE,FALSE
+77,EX_acgam1p_e,N-Acetyl-D-glucosamine 1-phosphate exchange,0,999999,FALSE,FALSE
+80,EX_acmana_e,N-Acetyl-D-mannosamine exchange,0,999999,FALSE,FALSE
+84,EX_acmum_e,N-Acetylmuramate exchange,0,999999,FALSE,FALSE
+85,EX_acnam_e,N-Acetylneuraminate exchange,0,999999,FALSE,FALSE
+86,EX_acolipa_e,4-Amino-4-deoxy-L-arabinose modified core oligosaccharide lipid A exchange,0,999999,FALSE,FALSE
+0,EX_acser_e,O-Acetyl-L-serine exchange,0,999999,FALSE,FALSE
+1,EX_ade_e,Adenine exchange,0,999999,FALSE,FALSE
+3,EX_adn_e,Adenosine exchange,0,999999,FALSE,FALSE
+4,EX_adocbl_e,Adenosylcobalamin exchange,0,999999,FALSE,FALSE
+5,EX_ag_e,Silver exchange,0,999999,FALSE,FALSE
+6,EX_agm_e,Agmatine exchange,0,999999,FALSE,FALSE
+8,EX_akg_e,2-Oxoglutarate exchange,0,999999,FALSE,FALSE
+10,EX_ala__D_e,D-Alanine exchange,0,999999,FALSE,FALSE
+11,EX_ala__L_e,L-Alanine exchange,0,999999,FALSE,FALSE
+9,EX_ala_B_e,Beta-Alanine exchange,0,999999,FALSE,FALSE
+12,EX_alaala_e,D-Alanyl-D-alanine exchange,0,999999,FALSE,FALSE
+13,EX_all__D_e,D-Allose exchange,0,999999,FALSE,FALSE
+14,EX_alltn_e,Allantoin exchange,0,999999,FALSE,FALSE
+16,EX_amp_e,AMP exchange,0,999999,FALSE,FALSE
+18,EX_anhgm_e,N-Acetyl-D-glucosamine(anhydrous)N-Acetylmuramic acid exchange,0,999999,FALSE,FALSE
+19,EX_arab__L_e,L-Arabinose exchange,0,999999,FALSE,TRUE
+20,EX_arbtn_e,Aerobactin minus Fe3 exchange,0,999999,FALSE,FALSE
+25,EX_arbtn_fe3_e,Aerobactin exchange,0,999999,FALSE,FALSE
+27,EX_arg__L_e,L-Arginine exchange,0,999999,FALSE,FALSE
+29,EX_ascb__L_e,L-Ascorbate exchange,0,999999,FALSE,FALSE
+30,EX_asn__L_e,L-Asparagine exchange,0,999999,FALSE,FALSE
+33,EX_aso3_e,Arsenite exchange,0,999999,FALSE,FALSE
+35,EX_asp__L_e,L-Aspartate exchange,0,999999,FALSE,FALSE
+38,EX_but_e,Butyrate (n-C4:0) exchange,0,999999,FALSE,FALSE
+39,EX_butso3_e,Butanesulfonate exchange,0,999999,FALSE,FALSE
+45,EX_ca2_e,Calcium exchange,-999999,999999,TRUE,TRUE
+46,EX_cbi_e,Cobinamide exchange,0,999999,FALSE,FALSE
+47,EX_cbl1_e,Cob(I)alamin exchange,-0.01,999999,FALSE,FALSE
+48,EX_cd2_e,Cadmium exchange,0,999999,FALSE,FALSE
+49,EX_cgly_e,Cys-Gly exchange,0,999999,FALSE,FALSE
+54,EX_chol_e,Choline exchange,0,999999,FALSE,FALSE
+55,EX_cit_e,Citrate exchange,0,999999,FALSE,FALSE
+56,EX_cl_e,Chloride exchange,-999999,999999,TRUE,TRUE
+62,EX_cmp_e,CMP exchange,0,999999,FALSE,FALSE
+63,EX_co2_e,CO2 exchange,-999999,999999,TRUE,TRUE
+64,EX_cobalt2_e,Co2+ exchange,-999999,999999,TRUE,TRUE
+70,EX_colipa_e,Core oligosaccharide lipid A exchange,0,999999,FALSE,FALSE
+71,EX_cpgn_e,Coprogen exchange,0,999999,FALSE,FALSE
+72,EX_cpgn_un_e,Coprogen unloaded (no Fe(III)) exchange,0,999999,FALSE,FALSE
+73,EX_crn_e,L-Carnitine exchange,0,999999,FALSE,FALSE
+76,EX_csn_e,Cytosine exchange,0,999999,FALSE,FALSE
+82,EX_cu_e,Cu+ exchange,0,999999,FALSE,FALSE
+81,EX_cu2_e,Cu2+ exchange,-999999,999999,TRUE,TRUE
+83,EX_cyan_e,Hydrogen cyanide exchange,0,999999,FALSE,FALSE
+87,EX_cynt_e,Cyanate exchange,0,999999,FALSE,FALSE
+88,EX_cys__D_e,D-Cysteine exchange,0,999999,FALSE,FALSE
+89,EX_cys__L_e,L-Cysteine exchange,0,999999,FALSE,FALSE
+91,EX_cytd_e,Cytidine exchange,0,999999,FALSE,FALSE
+92,EX_dad_2_e,Deoxyadenosine exchange,0,999999,FALSE,FALSE
+93,EX_damp_e,DAMP exchange,0,999999,FALSE,FALSE
+98,EX_dca_e,Decanoate (n-C10:0) exchange,0,999999,FALSE,FALSE
+99,EX_dcmp_e,DCMP exchange,0,999999,FALSE,FALSE
+100,EX_dcyt_e,Deoxycytidine exchange,0,999999,FALSE,FALSE
+102,EX_ddca_e,Dodecanoate (n-C12:0) exchange,0,999999,FALSE,FALSE
+107,EX_dgmp_e,DGMP exchange,0,999999,FALSE,FALSE
+108,EX_dgsn_e,Deoxyguanosine exchange,0,999999,FALSE,FALSE
+112,EX_dha_e,Dihydroxyacetone exchange,0,999999,FALSE,FALSE
+113,EX_dimp_e,DIMP exchange,0,999999,FALSE,FALSE
+115,EX_din_e,Deoxyinosine exchange,0,999999,FALSE,FALSE
+120,EX_dms_e,Dimethyl sulfide exchange,0,999999,FALSE,FALSE
+121,EX_dmso_e,Dimethyl sulfoxide exchange,0,999999,FALSE,FALSE
+122,EX_dopa_e,Dopamine exchange,0,999999,FALSE,FALSE
+123,EX_dtmp_e,DTMP exchange,0,999999,FALSE,FALSE
+124,EX_dump_e,DUMP exchange,0,999999,FALSE,FALSE
+125,EX_duri_e,Deoxyuridine exchange,0,999999,FALSE,FALSE
+126,EX_eca4colipa_e,(enterobacterial common antigen)x4 core oligosaccharide lipid A exchange,0,999999,FALSE,FALSE
+127,EX_enlipa_e,Phosphoethanolamine KDO(2)-lipid (A) exchange,0,999999,FALSE,FALSE
+134,EX_enter_e,Enterochelin exchange,0,999999,FALSE,FALSE
+135,EX_etha_e,Ethanolamine exchange,0,999999,FALSE,FALSE
+138,EX_ethso3_e,Ethanesulfonate exchange,0,999999,FALSE,FALSE
+140,EX_etoh_e,Ethanol exchange,0,999999,FALSE,TRUE
+141,EX_f6p_e,D-fructose 6-phosphate exchange,0,999999,FALSE,FALSE
+142,EX_fald_e,Formaldehyde exchange,0,999999,FALSE,FALSE
+147,EX_fe2_e,Fe2+ exchange,-999999,999999,TRUE,TRUE
+149,EX_fe3_e,Fe3+ exchange,-999999,999999,TRUE,TRUE
+154,EX_fe3dcit_e,Fe(III)dicitrate exchange,0,999999,FALSE,FALSE
+155,EX_fe3dhbzs_e,"Ferric 2,3-dihydroxybenzoylserine exchange",0,999999,FALSE,FALSE
+156,EX_fe3hox_e,Fe(III)hydroxamate exchange,0,999999,FALSE,FALSE
+157,EX_fe3hox_un_e,"Fe(III)hydoxamate, unloaded exchange",0,999999,FALSE,FALSE
+159,EX_fecrm_e,Ferrichrome exchange,0,999999,FALSE,FALSE
+164,EX_fecrm_un_e,Ferrichrome minus Fe(III) exchange,0,999999,FALSE,FALSE
+165,EX_feenter_e,Fe-enterobactin exchange,0,999999,FALSE,FALSE
+166,EX_feoxam_e,Ferroxamine exchange,0,999999,FALSE,FALSE
+2,EX_feoxam_un_e,Ferroxamine minus Fe(3) exchange,0,999999,FALSE,FALSE
+7,EX_for_e,Formate exchange,0,999999,FALSE,TRUE
+17,EX_fru_e,D-Fructose exchange,0,999999,FALSE,TRUE
+28,EX_frulys_e,Fructoselysine exchange,0,999999,FALSE,FALSE
+34,EX_fruur_e,D-Fructuronate exchange,0,999999,FALSE,FALSE
+41,EX_fuc__L_e,L-Fucose exchange,0,999999,FALSE,FALSE
+59,EX_fum_e,Fumarate exchange,0,999999,FALSE,FALSE
+66,EX_g1p_e,D-Glucose 1-phosphate exchange,0,999999,FALSE,FALSE
+78,EX_g3pc_e,Sn-Glycero-3-phosphocholine exchange,0,999999,FALSE,FALSE
+90,EX_g3pe_e,Sn-Glycero-3-phosphoethanolamine exchange,0,999999,FALSE,FALSE
+95,EX_g3pg_e,Glycerophosphoglycerol exchange,0,999999,FALSE,FALSE
+104,EX_g3pi_e,Sn-Glycero-3-phospho-1-inositol exchange,0,999999,FALSE,FALSE
+110,EX_g3ps_e,Glycerophosphoserine exchange,0,999999,FALSE,FALSE
+117,EX_g6p_e,D-Glucose 6-phosphate exchange,0,999999,FALSE,FALSE
+168,EX_gal_bD_e,Beta D-Galactose exchange,0,999999,FALSE,FALSE
+151,EX_gal_e,D-Galactose exchange,0,999999,FALSE,FALSE
+139,EX_gal1p_e,Alpha-D-Galactose 1-phosphate exchange,0,999999,FALSE,FALSE
+174,EX_galct__D_e,D-Galactarate exchange,0,999999,FALSE,FALSE
+179,EX_galctn__D_e,D-Galactonate exchange,0,999999,FALSE,FALSE
+187,EX_galctn__L_e,L-Galactonate exchange,0,999999,FALSE,FALSE
+194,EX_galt_e,Galactitol exchange,0,999999,FALSE,FALSE
+211,EX_galur_e,D-Galacturonate exchange,0,999999,FALSE,FALSE
+226,EX_gam_e,D-Glucosamine exchange,0,999999,FALSE,FALSE
+220,EX_gam6p_e,D-Glucosamine 6-phosphate exchange,0,999999,FALSE,FALSE
+236,EX_gbbtn_e,Gamma-butyrobetaine exchange,0,999999,FALSE,FALSE
+240,EX_gdp_e,GDP exchange,0,999999,FALSE,FALSE
+244,EX_glc__D_e,D-Glucose exchange,-8,999999,TRUE,TRUE
+245,EX_glcn_e,D-Gluconate exchange,0,999999,FALSE,FALSE
+246,EX_glcr_e,D-Glucarate exchange,0,999999,FALSE,FALSE
+248,EX_glcur_e,D-Glucuronate exchange,0,999999,FALSE,FALSE
+247,EX_glcur1p_e,D-Glucuronate 1-phosphate exchange,0,999999,FALSE,FALSE
+249,EX_gln__L_e,L-Glutamine exchange,0,999999,FALSE,FALSE
+250,EX_glu__L_e,L-Glutamate exchange,0,999999,FALSE,FALSE
+251,EX_gly_e,Glycine exchange,0,999999,FALSE,FALSE
+252,EX_glyald_e,D-Glyceraldehyde exchange,0,999999,FALSE,FALSE
+253,EX_glyb_e,Glycine betaine exchange,0,999999,FALSE,FALSE
+257,EX_glyc__R_e,(R)-Glycerate exchange,0,999999,FALSE,FALSE
+256,EX_glyc_e,Glycerol exchange,0,999999,FALSE,FALSE
+254,EX_glyc2p_e,Glycerol 2-phosphate exchange,0,999999,FALSE,FALSE
+255,EX_glyc3p_e,Glycerol 3-phosphate exchange,0,999999,FALSE,FALSE
+258,EX_glyclt_e,Glycolate exchange,0,999999,FALSE,FALSE
+259,EX_gmp_e,GMP exchange,0,999999,FALSE,FALSE
+260,EX_gsn_e,Guanosine exchange,0,999999,FALSE,FALSE
+261,EX_gthox_e,Oxidized glutathione exchange,0,999999,FALSE,FALSE
+262,EX_gthrd_e,Reduced glutathione exchange,0,999999,FALSE,FALSE
+263,EX_gtp_e,GTP exchange,0,999999,FALSE,FALSE
+264,EX_gua_e,Guanine exchange,0,999999,FALSE,FALSE
+269,EX_h_e,H+ exchange,-999999,999999,TRUE,TRUE
+265,EX_h2_e,H2 exchange,0,999999,FALSE,TRUE
+267,EX_h2o_e,H2O exchange,-999999,999999,TRUE,TRUE
+266,EX_h2o2_e,Hydrogen peroxide exchange,0,999999,FALSE,FALSE
+268,EX_h2s_e,Hydrogen sulfide exchange,0,999999,FALSE,FALSE
+270,EX_hacolipa_e,Hepta-acylated core oligosaccharide lipid A (E. coli) exchange,0,999999,FALSE,FALSE
+271,EX_halipa_e,Hepta-acylated KDO(2)-lipid (A) exchange,0,999999,FALSE,FALSE
+272,EX_hdca_e,Hexadecanoate (n-C16:0) exchange,0,999999,FALSE,FALSE
+273,EX_hdcea_e,Hexadecenoate (n-C16:1) exchange,0,999999,FALSE,FALSE
+274,EX_hg2_e,Hg2+ exchange,0,999999,FALSE,FALSE
+275,EX_his__L_e,L-Histidine exchange,0,999999,FALSE,FALSE
+276,EX_hom__L_e,L-Homoserine exchange,0,999999,FALSE,FALSE
+277,EX_hxa_e,Hexanoate (n-C6:0) exchange,0,999999,FALSE,FALSE
+278,EX_hxan_e,Hypoxanthine exchange,0,999999,FALSE,FALSE
+279,EX_idon__L_e,L-Idonate exchange,0,999999,FALSE,FALSE
+280,EX_ile__L_e,L-Isoleucine exchange,0,999999,FALSE,TRUE
+281,EX_imp_e,IMP exchange,0,999999,FALSE,FALSE
+282,EX_indole_e,Indole exchange,0,999999,FALSE,FALSE
+283,EX_inost_e,Myo-Inositol exchange,0,999999,FALSE,FALSE
+284,EX_ins_e,Inosine exchange,0,999999,FALSE,FALSE
+285,EX_isetac_e,Isethionic acid exchange,0,999999,FALSE,FALSE
+286,EX_k_e,K+ exchange,-999999,999999,TRUE,TRUE
+287,EX_kdo2lipid4_e,KDO(2)-lipid IV(A) exchange,0,999999,FALSE,FALSE
+288,EX_lac__D_e,D-lactate exchange,0,999999,FALSE,FALSE
+289,EX_lac__L_e,L-Lactate exchange,0,999999,FALSE,FALSE
+65,EX_LalaDgluMdap_e,"L-alanine-D-glutamate-meso-2,6-diaminoheptanedioate exchange",0,999999,FALSE,FALSE
+61,EX_LalaDgluMdapDala_e,"L-alanine-D-glutamate-meso-2,6-diaminoheptanedioate-D-alanine exchange",0,999999,FALSE,FALSE
+290,EX_lcts_e,Lactose exchange,0,999999,FALSE,FALSE
+291,EX_leu__L_e,L-Leucine exchange,0,999999,FALSE,TRUE
+293,EX_lipa_cold_e,Cold adapted KDO(2)-lipid (A) exchange,0,999999,FALSE,FALSE
+292,EX_lipa_e,KDO(2)-lipid (A) exchange,0,999999,FALSE,FALSE
+294,EX_lys__L_e,L-Lysine exchange,0,999999,FALSE,FALSE
+295,EX_lyx__L_e,L-Lyxose exchange,0,999999,FALSE,FALSE
+296,EX_mal__D_e,D-Malate exchange,0,999999,FALSE,FALSE
+297,EX_mal__L_e,L-Malate exchange,0,999999,FALSE,FALSE
+298,EX_malt_e,Maltose exchange,0,999999,FALSE,FALSE
+94,EX_malthx_e,Maltohexaose exchange,0,999999,FALSE,FALSE
+96,EX_maltpt_e,Maltopentaose exchange,0,999999,FALSE,FALSE
+97,EX_malttr_e,Maltotriose exchange,0,999999,FALSE,FALSE
+101,EX_maltttr_e,Maltotetraose exchange,0,999999,FALSE,FALSE
+105,EX_man_e,D-Mannose exchange,0,999999,FALSE,FALSE
+103,EX_man6p_e,D-Mannose 6-phosphate exchange,0,999999,FALSE,FALSE
+106,EX_manglyc_e,2(alpha-D-Mannosyl)-D-glycerate exchange,0,999999,FALSE,FALSE
+109,EX_melib_e,Melibiose exchange,0,999999,FALSE,FALSE
+111,EX_met__D_e,D-Methionine exchange,0,999999,FALSE,TRUE
+114,EX_met__L_e,L-Methionine exchange,0,999999,FALSE,FALSE
+116,EX_metsox_R__L_e,L-methionine-R-sulfoxide exchange,0,999999,FALSE,FALSE
+118,EX_metsox_S__L_e,L-Methionine S-oxide exchange,0,999999,FALSE,FALSE
+119,EX_mg2_e,Mg exchange,-999999,999999,TRUE,TRUE
+128,EX_minohp_e,Myo-Inositol hexakisphosphate exchange,0,999999,FALSE,FALSE
+129,EX_mmet_e,S-Methyl-L-methionine exchange,0,999999,FALSE,FALSE
+130,EX_mn2_e,Mn2+ exchange,-999999,999999,TRUE,TRUE
+131,EX_mnl_e,D-Mannitol exchange,0,999999,FALSE,TRUE
+132,EX_mobd_e,Molybdate exchange,-999999,999999,TRUE,TRUE
+133,EX_mso3_e,Methanesulfonate exchange,0,999999,FALSE,FALSE
+136,EX_n2o_e,Nitrous oxide exchange,0,999999,FALSE,FALSE
+137,EX_na1_e,Sodium exchange,-999999,999999,FALSE,FALSE
+143,EX_nac_e,Nicotinate exchange,0,999999,FALSE,FALSE
+144,EX_nh4_e,Ammonia exchange,-999999,999999,TRUE,TRUE
+145,EX_ni2_e,Ni2+ exchange,0,999999,FALSE,FALSE
+146,EX_nmn_e,NMN exchange,0,999999,FALSE,FALSE
+152,EX_no_e,Nitric oxide exchange,0,999999,FALSE,FALSE
+148,EX_no2_e,Nitrite exchange,0,999999,FALSE,FALSE
+150,EX_no3_e,Nitrate exchange,0,999999,FALSE,FALSE
+153,EX_o16a4colipa_e,(O16 antigen)x4 core oligosaccharide lipid A exchange,0,999999,FALSE,FALSE
+158,EX_o2_e,O2 exchange,-18.5,999999,TRUE,TRUE
+160,EX_o2s_e,Superoxide anion exchange,0,999999,FALSE,FALSE
+161,EX_ocdca_e,Octadecanoate (n-C18:0) exchange,0,999999,FALSE,FALSE
+162,EX_ocdcea_e,Octadecenoate (n-C18:1) exchange,0,999999,FALSE,FALSE
+163,EX_octa_e,Octanoate (n-C8:0) exchange,0,999999,FALSE,FALSE
+167,EX_orn_e,Ornithine exchange,0,999999,FALSE,FALSE
+169,EX_orot_e,Orotate exchange,0,999999,FALSE,FALSE
+170,EX_pacald_e,Phenylacetaldehyde exchange,0,999999,FALSE,FALSE
+171,EX_peamn_e,Phenethylamine exchange,0,999999,FALSE,FALSE
+172,EX_phe__L_e,L-Phenylalanine exchange,0,999999,FALSE,TRUE
+176,EX_pheme_e,Protoheme exchange,0,999999,FALSE,FALSE
+177,EX_pi_e,Phosphate exchange,-999999,999999,TRUE,TRUE
+181,EX_pnto__R_e,(R)-Pantothenate exchange,0,999999,FALSE,FALSE
+182,EX_ppa_e,Propionate exchange,0,999999,FALSE,FALSE
+183,EX_ppal_e,Propanal exchange,0,999999,FALSE,FALSE
+186,EX_pppn_e,Phenylpropanoate exchange,0,999999,FALSE,FALSE
+188,EX_ppt_e,Phosphonate exchange,0,999999,FALSE,FALSE
+189,EX_pro__L_e,L-Proline exchange,0,999999,FALSE,TRUE
+193,EX_progly_e,L-Prolinylglycine exchange,0,999999,FALSE,FALSE
+195,EX_psclys_e,Psicoselysine exchange,0,999999,FALSE,FALSE
+196,EX_pser__L_e,O-Phospho-L-serine exchange,0,999999,FALSE,FALSE
+203,EX_ptrc_e,Putrescine exchange,0,999999,FALSE,FALSE
+204,EX_pyr_e,Pyruvate exchange,0,999999,FALSE,FALSE
+205,EX_r5p_e,Alpha-D-Ribose 5-phosphate exchange,0,999999,FALSE,FALSE
+206,EX_rib__D_e,D-Ribose exchange,0,999999,FALSE,FALSE
+207,EX_rmn_e,L-Rhamnose exchange,0,999999,FALSE,FALSE
+208,EX_sbt__D_e,D-Sorbitol exchange,0,999999,FALSE,FALSE
+215,EX_ser__D_e,D-Serine exchange,0,999999,FALSE,FALSE
+216,EX_ser__L_e,L-Serine exchange,0,999999,FALSE,FALSE
+217,EX_skm_e,Shikimate exchange,0,999999,FALSE,FALSE
+218,EX_so2_e,Sulfur dioxide exchange,0,999999,FALSE,FALSE
+219,EX_so3_e,Sulfite exchange,0,999999,FALSE,FALSE
+221,EX_so4_e,Sulfate exchange,-999999,999999,TRUE,TRUE
+222,EX_spmd_e,Spermidine exchange,0,999999,FALSE,FALSE
+223,EX_succ_e,Succinate exchange,0,999999,FALSE,TRUE
+224,EX_sucr_e,Sucrose exchange,0,999999,FALSE,TRUE
+225,EX_sulfac_e,Sulfoacetate exchange,0,999999,FALSE,FALSE
+227,EX_tartr__L_e,L-tartrate exchange,0,999999,FALSE,FALSE
+228,EX_taur_e,Taurine exchange,0,999999,FALSE,FALSE
+229,EX_tcynt_e,Thiocyanate exchange,0,999999,FALSE,FALSE
+230,EX_thm_e,Thiamin exchange,0,999999,FALSE,FALSE
+231,EX_thr__L_e,L-Threonine exchange,0,999999,FALSE,TRUE
+232,EX_thrp_e,L-Threonine O-3-phosphate exchange,0,999999,FALSE,FALSE
+233,EX_thym_e,Thymine exchange,0,999999,FALSE,FALSE
+234,EX_thymd_e,Thymidine exchange,0,999999,FALSE,FALSE
+235,EX_tma_e,Trimethylamine exchange,0,999999,FALSE,FALSE
+237,EX_tmao_e,Trimethylamine N-oxide exchange,0,999999,FALSE,FALSE
+238,EX_tre_e,Trehalose exchange,0,999999,FALSE,FALSE
+239,EX_trp__L_e,L-Tryptophan exchange,0,999999,FALSE,TRUE
+241,EX_tsul_e,Thiosulfate exchange,0,999999,FALSE,FALSE
+242,EX_ttdca_e,Tetradecanoate (n-C14:0) exchange,0,999999,FALSE,FALSE
+243,EX_ttdcea_e,Tetradecenoate (n-C14:1) exchange,0,999999,FALSE,FALSE
+173,EX_tungs_e,Tungstate exchange,-999999,999999,FALSE,FALSE
+175,EX_tym_e,Tyramine exchange,0,999999,FALSE,FALSE
+178,EX_tyr__L_e,L-Tyrosine exchange,0,999999,FALSE,FALSE
+180,EX_tyrp_e,Phosphotyrosine exchange,0,999999,FALSE,FALSE
+184,EX_uacgam_e,UDP-N-acetyl-D-glucosamine exchange,0,999999,FALSE,FALSE
+185,EX_udpacgal_e,UDP-N-acetyl-D-galactosamine exchange,0,999999,FALSE,FALSE
+190,EX_udpg_e,UDPglucose exchange,0,999999,FALSE,FALSE
+191,EX_udpgal_e,UDPgalactose exchange,0,999999,FALSE,FALSE
+192,EX_udpglcur_e,UDP-D-glucuronate exchange,0,999999,FALSE,FALSE
+197,EX_ump_e,UMP exchange,0,999999,FALSE,FALSE
+198,EX_ura_e,Uracil exchange,0,999999,FALSE,FALSE
+199,EX_urea_e,Urea exchange,0,999999,FALSE,FALSE
+200,EX_uri_e,Uridine exchange,0,999999,FALSE,FALSE
+201,EX_val__L_e,L-Valine exchange,0,999999,FALSE,TRUE
+202,EX_xan_e,Xanthine exchange,0,999999,FALSE,FALSE
+209,EX_xmp_e,Xanthosine 5'-phosphate exchange,0,999999,FALSE,FALSE
+210,EX_xtsn_e,Xanthosine exchange,0,999999,FALSE,FALSE
+212,EX_xyl__D_e,D-Xylose exchange,0,999999,FALSE,FALSE
+213,EX_xylu__L_e,L-Xylulose exchange,0,999999,FALSE,FALSE
+214,EX_zn2_e,Zinc exchange,-999999,999999,TRUE,TRUE

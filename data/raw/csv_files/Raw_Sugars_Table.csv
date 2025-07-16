@@ -1,0 +1,67 @@
+Sugar,Description,B_theta,B_longum,E_coli,Utilisation
+glc_D,D-Glucose,True,True,True,3
+melib,"TG(18:4(6Z,9Z,12Z,15Z)/18:1(9Z)/20:5(5Z,8Z,11Z,14Z,17Z))",True,True,True,3
+arab_L,L-Arabinose,True,True,True,3
+rib_D,D-Ribose,True,True,True,3
+lcts,Alpha-Lactose,True,True,True,3
+malt,D-Maltose,True,True,True,3
+acgal,N-Acetylgalactosamine,True,False,True,2
+arabinogal,"Larch arabinogalactan, gal/ara 6:1, small amount of glcur, MW ~ 116000",True,True,False,2
+fru,D-Fructose,True,True,False,2
+fuc_L,L-Fucose,True,False,True,2
+gal,D-Galactose,True,True,False,2
+tre,Trehalose,True,False,True,2
+glcur,D-Glucuronic acid,True,False,True,2
+man,D-Mannose,True,False,True,2
+xyl_D,D-Xylose,True,False,True,2
+raffin,Raffinose,True,True,False,2
+sucr,Sucrose,True,True,False,2
+pect,Pectin,True,False,False,1
+arabinan101,"Arabinan, polymer of 1,5-a-L-linked arabinofuranose units substituted by 1,3 or 1,2 linked branches, MW ~ 15000 Da (REF: www.meg... <Preview truncated at 128 characters>",True,False,False,1
+cspg_a,Chondroitin Sulfate A (GalNac4S-Glca) Proteoglycan,True,False,False,1
+core8,Core 8,True,False,False,1
+core7,Core 7,True,False,False,1
+core6,Core 6,True,False,False,1
+core5,Core 5,True,False,False,1
+core4,Core 4,True,False,False,1
+core3,Core 3,True,False,False,1
+core2,Core 2,True,False,False,1
+arabinoxyl,"Arabinoxylan, 30 xyl_D, 18 arab_L, 3 gal, 3 glc_D",True,False,False,1
+T_antigen,T-Antigen (Core 1),True,False,False,1
+cspg_c,Chondroitin Sulfate C (GalNac6S-Glca) Proteoglycan,True,False,False,1
+amylose300,"Amylose (n=300 repeat units, alpha-1,4-glc)",True,False,False,1
+amylopect900,Amylopectin,True,False,False,1
+acgam,N-Acetyl-D-glucosamine,True,False,False,1
+Tn_antigen,Tn Antigen,True,False,False,1
+ppa,Propionic acid,False,False,True,1
+pac,Phenylacetic acid,False,False,True,1
+mnl,D-Mannitol,False,False,True,1
+lys_L,L-Lysine,False,False,True,1
+glcn,Gluconic acid,False,False,True,1
+but,Butyric acid,False,False,True,1
+cspg_b,Chondroitin Sulfate B / Dermatan Sulfate (Idoa2S-GalNac4S) Proteoglycan,True,False,False,1
+dextran40,"Dextran 40, 1,6-alpha-D-Glucan",True,False,False,1
+pecticgal,"Pectic galactan (potato), gal: arab-L: rmn: galur = 78: 9: 4: 9 (www.megazyme.com). Assumed to consist of 100 sugars per macromo... <Preview truncated at 128 characters>",True,False,False,1
+dsT_antigen,Disialyl-T Antigen,True,False,False,1
+mannan,"Alpha-mannan, yeast, has a MW of about 25000 (PMID: 5461381), equals ~ 140 mannose units. ID according to iMM904",True,False,False,1
+pullulan1200,"Pullulan (n=1200 repeat units, alpha-1,4 and alph-1,6 bounds)",True,False,False,1
+levan1000,Levan,True,False,False,1
+rhamnogalurI,"Potato rhamnogalacturonan I, MW assumed ~200000, 62 galur, 20 rmn, 12 gal, 3 arab-L, 1 xyl-D (www.megazyme.com, PMID: 16661590)",True,False,False,1
+kestottr,"Kestotetraose (3 fru, 1 glc inulin-type fructo-oligosaccharide)",True,False,False,1
+kestopt,"Kestopentaose (4 fru, 1 glc inulin-type fructo-oligosaccharide)",True,False,False,1
+kesto,"Kestose (2 fru, 1 glc inulin-type fructo-oligosaccharide)",True,False,False,1
+inulin,Inulin,True,False,False,1
+hspg,Heparan Sulfate Proteoglycan,True,False,False,1
+homogal,"Homogalacturonan, 100 galacturonate residues. Assumed to be methylated/ acetylated in every 5th residue. Citrus HG consists of 7... <Preview truncated at 128 characters>",True,False,False,1
+ha,Hyaluronic acid,True,False,False,1
+gncore2,"GlcNac-Alpha-1,4-Core 2",True,False,False,1
+gncore1,"GlcNac-Alpha-1,4-Core 1",True,False,False,1
+glygn2,"Glycogen, Structure 2 (Glycogenin-1,6-{7[1,4-Glc], 4[1,4-Glc]})",True,False,False,1
+rhamnogalurII,"Wine rhamnogalacturonan II, MW ~ 5-10 kDa, 37% galur, 16% rmn, 3% fuc-L, 11% arab-L, 6% gal, 5% glcur, 4% 2omfuc, 3% 2omxyl, 6% ... <Preview truncated at 128 characters>",True,False,False,1
+rmn,L-Rhamnose,True,False,False,1
+gam,Glucosamine,True,False,False,1
+galur,D-Galacturonate,True,False,False,1
+sT_antigen,Sialyl-T Antigen,True,False,False,1
+sTn_antigen,Sialyl-Tn Antigen,True,False,False,1
+strch1,"Starch, Structure 1 (1,6-{7[1,4-Glc], 4[1,4-Glc]})",True,False,False,1
+acnam,N-Acetylneuraminic acid,False,False,True,1

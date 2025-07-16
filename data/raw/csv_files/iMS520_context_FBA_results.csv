@@ -1,0 +1,9 @@
+,Model,Carbon_Source,Objective_Value
+0,Original,EX_glc-D(e),0.3143925004702808
+1,Original,EX_fru(e),0.21074662119435852
+2,Original,EX_sucr(e),0.8153475836371957
+3,Original,EX_arab-L(e),0.2452952476187685
+0,daugther,EX_glc-D(e)_reversed,0.31439250047027856
+1,daugther,EX_fru(e)_reversed,0.21074662119435916
+2,daugther,EX_sucr(e)_reversed,0.8153475836372079
+3,daugther,EX_arab-L(e)_reversed,0.24529524761967203

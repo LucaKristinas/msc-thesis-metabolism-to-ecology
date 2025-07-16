@@ -1,0 +1,109 @@
+
+=== DataFrame 1 ===
+Average pathway length (raw): 51.00
+Average pathway length (threshold > 0.001): 48.00
+
+Pathway Length Table (raw):
+  Length 49: 1
+  Length 53: 1
+
+Pathway Length Table (threshold > 0.001):
+  Length 48: 2
+
+=== DataFrame 2 ===
+Average pathway length (raw): 49.90
+Average pathway length (threshold > 0.001): 49.04
+
+Pathway Length Table (raw):
+  Length 15: 2
+  Length 16: 3
+  Length 17: 6
+  Length 18: 14
+  Length 19: 17
+  Length 20: 28
+  Length 21: 46
+  Length 22: 61
+  Length 23: 86
+  Length 24: 121
+  Length 25: 141
+  Length 26: 164
+  Length 27: 197
+  Length 28: 208
+  Length 29: 246
+  Length 30: 341
+  Length 31: 471
+  Length 32: 630
+  Length 33: 849
+  Length 34: 1180
+  Length 35: 1544
+  Length 36: 2041
+  Length 37: 2535
+  Length 38: 2891
+  Length 39: 3125
+  Length 40: 3005
+  Length 41: 2985
+  Length 42: 3152
+  Length 43: 3247
+  Length 44: 3541
+  Length 45: 4278
+  Length 46: 6022
+  Length 47: 9473
+  Length 48: 14952
+  Length 49: 22937
+  Length 50: 32297
+  Length 51: 40301
+  Length 52: 43256
+  Length 53: 37780
+  Length 54: 26077
+  Length 55: 14337
+  Length 56: 5941
+  Length 57: 1987
+  Length 58: 514
+  Length 59: 47
+
+Pathway Length Table (threshold > 0.001):
+  Length 15: 2
+  Length 16: 3
+  Length 17: 6
+  Length 18: 14
+  Length 19: 17
+  Length 20: 28
+  Length 21: 46
+  Length 22: 61
+  Length 23: 86
+  Length 24: 121
+  Length 25: 141
+  Length 26: 164
+  Length 27: 197
+  Length 28: 208
+  Length 29: 246
+  Length 30: 341
+  Length 31: 471
+  Length 32: 630
+  Length 33: 849
+  Length 34: 1180
+  Length 35: 1544
+  Length 36: 2041
+  Length 37: 2535
+  Length 38: 2931
+  Length 39: 3326
+  Length 40: 3637
+  Length 41: 4150
+  Length 42: 4787
+  Length 43: 5786
+  Length 44: 8128
+  Length 45: 10707
+  Length 46: 13122
+  Length 47: 16243
+  Length 48: 20001
+  Length 49: 24064
+  Length 50: 27943
+  Length 51: 31851
+  Length 52: 33617
+  Length 53: 30059
+  Length 54: 21828
+  Length 55: 12366
+  Length 56: 5337
+  Length 57: 1747
+  Length 58: 470
+  Length 59: 45

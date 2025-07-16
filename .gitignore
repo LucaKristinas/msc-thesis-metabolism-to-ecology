@@ -1,0 +1,26 @@
+# Python cache files (auto-generated)
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments (in case you use one later)
+env/
+venv/
+
+# VS Code editor settings (optional, personal)
+.vscode/
+
+# OS-specific junk files
+.DS_Store
+Thumbs.db
+
+# Folders
+data/raw/sbml_files/temporary_files/
+data/raw/mplrs_data/ecolicore_model_v1_frc10.evfs
+
+# Ignore large EFV/EFM result files
+data/processed/csv_files/EFVs_paths.csv
+data/processed/csv_files/EFMs_paths.csv
+data/processed/csv_files/Martino_EFMs_paths_scaled.csv
+data/processed/csv_files/Martino_EFVs_paths_scaled.csv
+
