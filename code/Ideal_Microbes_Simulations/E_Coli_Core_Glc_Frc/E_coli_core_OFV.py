@@ -14,7 +14,7 @@ import seaborn as sns
 # -------------------------------
 
 # Add Repo Root 
-project_root = Path(__file__).resolve().parents[2] 
+project_root = Path(__file__).resolve().parents[3] 
 
 # processed path
 processed_path = project_root / "data" / "processed" 
@@ -132,7 +132,7 @@ react_rate[biomass_index] = 1.1 # division 1 time/ hour
 met_noise = 0.00238 * Vmax
 mich_ment = np.full(num_reactions, Km)
 met_ext_total = np.full(2, mmol_in_liter) 
-exp_pot = np.array([0.76,0.76,0.4])
+exp_pot = np.array([0.76,0.76,0.4003])
 
 print(" Done! ✅")
 
@@ -158,10 +158,13 @@ microbe = im.Microbe(
 
 print(" Initialised Microbe! 🦠")
 
-with np.errstate(invalid='ignore', divide='ignore'):
-    result = microbe.infer_monod_parameters(np.zeros(2), 0, met_ext_total)
-r, m, p, p0, K = result
-print(f"        Microbe is growing with max.: {r:.4f}[per hour] and Ks: {K:.6f}[mM]")
+substrate_names = {0: "Fructose", 1: "Glucose"}
+
+for i in [0, 1]:
+    with np.errstate(invalid='ignore', divide='ignore'):
+        result = microbe.infer_monod_parameters(np.zeros(2), i, met_ext_total)
+    r, m, p, p0, K = result
+    print(f"{substrate_names[i]} Monod parameters → r: {r:.4f} (per hour), K: {K:.6f} (mmol/L)")
 
 # Initialize Culture Object
 culture = im.Culture([microbe],0,np.asarray([0, 0]), met_ext_total)

@@ -18,7 +18,7 @@ from cobra.util.array import create_stoichiometric_matrix
 from pathlib import Path  
 
 # Add Repo Root to sys.path 
-project_root = Path(__file__).resolve().parents[2]  
+project_root = Path(__file__).resolve().parents[3]  
 sys.path.append(str(project_root))
 
 # Import Helper Functions

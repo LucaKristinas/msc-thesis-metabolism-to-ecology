@@ -19,7 +19,7 @@ from cobra.util.array import create_stoichiometric_matrix  # type: ignore
 # -------------------------------
 
 # Project Root
-project_root = Path(__file__).resolve().parents[2]  
+project_root = Path(__file__).resolve().parents[3]  
 
 # raw path
 raw_path = project_root / "data" / "raw"

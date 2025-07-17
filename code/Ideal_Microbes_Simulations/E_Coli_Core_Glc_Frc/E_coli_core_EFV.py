@@ -16,7 +16,7 @@ from cobra.io import read_sbml_model
 from cobra.util.array import create_stoichiometric_matrix
 
 # Add Repo Root to sys.path 
-project_root = Path(__file__).resolve().parents[2]  
+project_root = Path(__file__).resolve().parents[3]  
 sys.path.append(str(project_root))
 
 # Import Helper Functions
@@ -240,7 +240,7 @@ react_rate[biomass_index] = 1.1 # division 1 time/ hour
 met_noise = 0.00238 * Vmax
 mich_ment = np.full(num_reactions, Km)
 met_ext_total = np.full(2, mmol_in_liter) # mmol of water molecules in 1 liter of water
-exp_pot[-1] = 0.76 / 1.64 # set protein pathway 
+exp_pot[-1] = 0.76 / 1.625 # set protein pathway 
 
 print(" Done! ✅")
 
@@ -266,10 +266,13 @@ microbe = im.Microbe(
 
 print(" Initialised Microbe! 🦠")
 
-with np.errstate(invalid='ignore', divide='ignore'):
-    result = microbe.infer_monod_parameters(np.zeros(2), 0, met_ext_total)
-r, m, p, p0, K = result
-print(f"        Microbe is growing with max.: {r:.4f}[per hour] and Ks: {K:.6f}[mM]")
+substrate_names = {0: "Fructose", 1: "Glucose"}
+
+for i in [0, 1]:
+    with np.errstate(invalid='ignore', divide='ignore'):
+        result = microbe.infer_monod_parameters(np.zeros(2), i, met_ext_total)
+    r, m, p, p0, K = result
+    print(f"{substrate_names[i]} Monod parameters → r: {r:.4f} (per hour), K: {K:.6f} (mmol/L)")
 
 # Initialize Culture Object
 culture = im.Culture([microbe],0,np.asarray([0, 0]), met_ext_total)
