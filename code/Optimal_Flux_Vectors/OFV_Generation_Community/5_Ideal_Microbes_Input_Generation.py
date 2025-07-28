@@ -261,7 +261,7 @@ print("Data Export...")
 
 for name in model_names:
     # Export modified OFVs
-    modified_flux_df_dict[name].to_csv(raw_csv_path / f"{name}_OFVs.csv")
+    modified_flux_df_dict[name].to_csv(processed_csv_path / f"{name}_OFVs.csv")
 
     # Export internal stoichiometric matrix
     stoich_matrices[name].to_csv(processed_csv_path / f"{name}_int_S.csv")

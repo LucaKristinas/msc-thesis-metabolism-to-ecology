@@ -1,3 +1,6 @@
+# Using the E. coli core metabolic model (Orth et al.) under aerobic conditions (OFVs)
+# 0.02 mM Ks / 0.75 µmax / 0.028 Km (transporter)
+
 # -------------------------------
 # Imports
 # -------------------------------
@@ -110,9 +113,9 @@ print(" Done! ✅")
 print("Adjusting to correct units & define other parameters...")
 
 # Basis values
-µmax = 0.76 # literature value
+µmax = 0.75 # literature value
 mmol_in_liter = 55510 # H2O only
-Km = 0.1/mmol_in_liter # global Michaelis-Menten constant 
+Km = 0.028/mmol_in_liter # global Michaelis-Menten constant 
 Vmax = µmax / extreme_final_df['BIOMASS_Ecoli_core_w_GAM'].max() 
 
 # adjust for maximum reaction rate
@@ -126,13 +129,17 @@ biomass_index = reaction_names.index(biomass_col)
 stoich_biomass = np.zeros(len(reaction_names))
 stoich_biomass[biomass_index] = 1.0 
 
+# converting wanted Ks
+Ks = 3400/ 180160
+print(f'Ks: {Ks}')
+
 # Define other required arrays with sensible defaults
 react_rate = np.full(num_reactions, Vmax)
 react_rate[biomass_index] = 1.1 # division 1 time/ hour
 met_noise = 0.00238 * Vmax
 mich_ment = np.full(num_reactions, Km)
 met_ext_total = np.full(2, mmol_in_liter) 
-exp_pot = np.array([0.76,0.76,0.4003])
+exp_pot = np.array([0.75,0.75,0.382])
 
 print(" Done! ✅")
 
@@ -155,7 +162,6 @@ microbe = im.Microbe(
     fba_approach=True #i.e., biomass is pseudo-reaction in different unit
 )
 
-
 print(" Initialised Microbe! 🦠")
 
 substrate_names = {0: "Fructose", 1: "Glucose"}
@@ -170,6 +176,10 @@ for i in [0, 1]:
 culture = im.Culture([microbe],0,np.asarray([0, 0]), met_ext_total)
 
 print(" Initialised Culture! 🧫")
+
+# optional break
+
+#exit()
 
 # -------------------------------
 # Generate Plots

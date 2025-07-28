@@ -532,7 +532,7 @@ EX_rhamnogalurI_e,0
 EX_s2l2n2m2m_e,0
 EX_s2l2n2m2mn_e,0
 EX_Ser_Thr_e,0
-EX_sphmyln_BT_e,0
+EX_sphmyln_BT_e,1
 EX_strch1_e,0
 EX_strch2_e,0
 EX_Tn_antigen_e,0
@@ -738,7 +738,7 @@ EX_rmn_e,0
 EX_s2l2fn2m2masn_e,0
 EX_s2l2n2m2masn_e,0
 EX_ser_L_e,0
-EX_so4_e,2
+EX_so4_e,0
 EX_spmd_e,0
 EX_sT_antigen_e,0
 EX_starch1200_e,0
@@ -761,7 +761,7 @@ EX_uri_e,0
 EX_val_L_e,0
 EX_xan_e,0
 EX_zn2_e,2
-sink_chols,0
+sink_chols,2
 sink_nh4,2
 sink_s,1
 FTHFCL,0
@@ -847,7 +847,7 @@ IPDCOATA,1
 ITDCOATA,1
 IVCOATA,1
 MCOATA,1
-PMTCOATA,0
+PMTCOATA,1
 STCOATA,0
 TDCOATA,0
 GPDDA1,0
@@ -931,7 +931,7 @@ HSDxi2,4
 HSDyi2,4
 THRS,1
 THRAr,4
-CHOLSH,0
+CHOLSH,1
 GLYCK,0
 GLYAT,0
 PSERTr,0
@@ -1306,17 +1306,17 @@ SPMDAT2,0
 NCPTRCA,0
 CSPMDDH,0
 CSPMDDC,0
-CHLPCTD,0
-SERPT,0
-3DSPHR,0
-CEPTC_BT,0
+CHLPCTD,1
+SERPT,1
+3DSPHR,1
+CEPTC_BT,1
 CEPTE_BT,0
-CERS_BT,0
-CHOLK,0
+CERS_BT,1
+CHOLK,1
 DAGK160,0
 PE_CER1_BTt,0
 PEPT160,0
-SPHMYLN_BTt,0
+SPHMYLN_BTt,1
 SUCD1,2
 FRD3,0
 OOR2r,0
@@ -1377,7 +1377,7 @@ ORNabc,0
 MGt5,2
 ACGAMtr,0
 ZNabc,0
-SO4t2,1
+SO4t2,0
 CAt7r,2
 FUMt2r,0
 SUCCt2r,0
@@ -1415,7 +1415,7 @@ ZN2t4,2
 HEMEti,0
 PHEMEt,4
 ARBt2r,0
-GLCt2r,4
+GLCt2r,6
 GLCt4,4
 PROt4r,2
 CARPEPT1tr,0

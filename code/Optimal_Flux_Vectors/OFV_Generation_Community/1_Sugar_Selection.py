@@ -11,7 +11,7 @@ from pathlib import Path  # type: ignore
 # -------------------------------
 
 # Add Repo Root 
-project_root = Path(__file__).resolve().parents[2] 
+project_root = Path(__file__).resolve().parents[3] 
 
 # raw data
 raw_path = project_root / "data" / "raw" 

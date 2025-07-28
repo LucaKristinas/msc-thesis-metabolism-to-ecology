@@ -12,7 +12,7 @@ from cobra import Model  # type: ignore
 # -------------------------------
 
 # Add Repo Root 
-project_root = Path(__file__).resolve().parents[2] 
+project_root = Path(__file__).resolve().parents[3] 
 
 # raw data
 raw_path = project_root / "data" / "raw" 
@@ -69,13 +69,13 @@ modifications = {
     "iKS1119": {
         "EX_his_L_e": 0.0,
         "EX_glc_e": -10.0,
-        "EX_so4_e": -1000.0
+        #"EX_so4_e": -1000.0
     },
     "iJO1366": {
         "EX_cbl1_e": 0.0,
         "EX_glc__D_e": -10.0,
         "EX_o2_e": 0.0,
-        "EX_cys__L_e": -1000.0
+        #"EX_cys__L_e": -1000.0
     },
     "e_coli_core": {
         "EX_glc__D_e": -10.0,
@@ -89,7 +89,7 @@ modifications = {
         "EX_4abz(e)": 0.0,
         "EX_ncam(e)": 0.0,
         "EX_nac(e)": 0.0,
-        "EX_so4(e)": -1000.0
+        #"EX_so4(e)": -1000.0
     }
 }
 

@@ -1,3 +1,7 @@
+
+# Using the E. coli core metabolic model (Orth et al.) under aerobic conditions (EFVs)
+# 0.02 mM Ks / 0.75 µmax / 0.028 Km (transporter)
+
 # -------------------------------
 # Imports
 # -------------------------------
@@ -216,10 +220,11 @@ stoich_int = int_S_final_df.to_numpy(dtype=float)
 stoich_ext = ext_S_final_df.to_numpy(dtype=float)
 
 # Unit Basis
-µmax = 0.76 # literature value
+µmax = 0.75 # literature value
 mmol_in_liter = 55510 # H2O
-Km = 0.1/mmol_in_liter # global Km
+Km = 0.028/mmol_in_liter # global Km (batch culture)
 Vmax = µmax / extreme_final_df['BIOMASS_Ecoli_core_w_GAM'].max() 
+print(f"Vmax:{Vmax}")
 
 # adjust for maximum reaction rate
 extreme_path = extreme_path * Vmax
@@ -240,7 +245,7 @@ react_rate[biomass_index] = 1.1 # division 1 time/ hour
 met_noise = 0.00238 * Vmax
 mich_ment = np.full(num_reactions, Km)
 met_ext_total = np.full(2, mmol_in_liter) # mmol of water molecules in 1 liter of water
-exp_pot[-1] = 0.76 / 1.625 # set protein pathway 
+exp_pot[-1] = 0.4475 # set protein pathway 
 
 print(" Done! ✅")
 
@@ -263,6 +268,8 @@ microbe = im.Microbe(
     fba_approach=True #i.e., biomass is pseudo-reaction in different unit
 )
 
+# Basic expression potential
+#np.save(npy_path /'EFV_default_exp_pot.npy', microbe.exp_pot)
 
 print(" Initialised Microbe! 🦠")
 
@@ -278,6 +285,11 @@ for i in [0, 1]:
 culture = im.Culture([microbe],0,np.asarray([0, 0]), met_ext_total)
 
 print(" Initialised Culture! 🧫")
+
+
+# optinal break here for fitting
+
+exit()
 
 # -------------------------------
 # Generate Plots
