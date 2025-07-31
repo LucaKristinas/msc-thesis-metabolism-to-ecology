@@ -10,6 +10,9 @@ import pandas as pd
 import IdealMicrobe as im
 from pathlib import Path  
 import matplotlib.pyplot as plt
+from matplotlib.patches import Rectangle
+from matplotlib import cm
+from matplotlib.colors import Normalize
 import seaborn as sns
 
 # ════════════════════════════════════════════════════════════════
@@ -18,6 +21,9 @@ import seaborn as sns
 
 # Add Repo Root 
 project_root = Path(__file__).resolve().parents[3] 
+
+# raw path 
+raw_csv_path = project_root / "data" / "raw" / "csv_files"
 
 # processed path
 processed_path = project_root / "data" / "processed" 
@@ -55,11 +61,18 @@ substrate_names = {
 
 cols_of_interest = [fru_col, glc_col, gal_col, mal_col, lac_col, suc_col, biomass_col]
 
+Lendenmann_df = pd.read_csv(raw_csv_path / "LM_Glc_Gal_Growthplane.csv")
+
 print(" Done! ✅")
 
 # ════════════════════════════════════════════════════════════════
 # Data preparation: Internal/ External S and OFVs
 # ════════════════════════════════════════════════════════════════
+
+# Correct units for Lendenmann
+MW = 180.16  # g/mol → 180160 µg/mmol
+Lendenmann_df["Glc_mM"] = Lendenmann_df["Glc_res"] / (MW * 1000)
+Lendenmann_df["Gal_mM"] = Lendenmann_df["Gal_res"] / (MW * 1000)
 
 # Reorder columns in ofv_df to match ext_S_df
 ofv_df = ofv_df[ext_S_df.columns]
@@ -190,6 +203,181 @@ print(f"\n💾 Saved Monod parameters\n")
 # ════════════════════════════════════════════════════════════════
 # Generate Plots
 # ════════════════════════════════════════════════════════════════
+
+# -------------------------------
+# Lendenmann: Glc Gal Values
+# -------------------------------
+
+### VERSION 1 ###
+
+# Access correct K values
+K1 = monod_params["Glucose"]["K"]
+K2 = monod_params["Galactose"]["K"]
+
+# Setup
+met_ext = np.full(6, 0.0)  # baseline metabolite levels (length = 6)
+met_ext_index = [2, 1]
+met_ext_max = [0.00056, 0.00056]
+
+fig, ax = plt.subplots(figsize=(5, 4))
+result = microbe.plot_growth_plane(
+    met_ext=met_ext,
+    met_ext_index=met_ext_index,
+    met_ext_max=met_ext_max,
+    ax=ax,
+    contours=True,
+    prod_cons=False,
+    met_ext_total=met_ext_total,
+    cmap='rocket_r'
+)
+
+# Extract just the heatmap for colorbar (first return value)
+heatmap = result[0]  # QuadMesh
+
+# Manually add one colorbar
+cbar = plt.colorbar(heatmap, ax=ax)
+cbar.set_label("Growth Rate [h⁻¹]", fontsize=10)
+
+# Axes labels
+ax.set_title("OFV Growth Plane", fontsize=10)
+# Add a rectangle: lower left at (x, y), width and height in data coords
+
+# Define tick positions (in mM)
+tick_step = 0.0001
+tick_max = 0.0006  # Slightly beyond your max of 0.00056
+xticks = np.arange(0, tick_max, tick_step)
+yticks = np.arange(0, tick_max, tick_step)
+
+# Convert to µg/L for labels using MW of glucose/galactose
+MW = 180.16  # g/mol → 180160 µg/mmol
+xtick_labels = [f"{tick * MW * 1000:.0f}" for tick in xticks]
+ytick_labels = [f"{tick * MW * 1000:.0f}" for tick in yticks]
+
+# Apply to plot
+ax.set_xticks(xticks)
+ax.set_yticks(yticks)
+ax.set_xticklabels(xtick_labels)
+ax.set_yticklabels(ytick_labels)
+
+# Update axis labels if desired
+ax.set_xlabel("Glucose [µg/L]", fontsize=10)
+ax.set_ylabel("Galactose [µg/L]", fontsize=10)
+
+# Plot the white bubbles with thin black edge
+ax.scatter(
+    Lendenmann_df["Glc_mM"],
+    Lendenmann_df["Gal_mM"],
+    s=140,  # bubble size (adjust as needed)
+    facecolors='white',
+    edgecolors='black',
+    linewidths=0.5,
+    zorder=5,  # ensures they're on top of heatmap
+    clip_on=False
+)
+
+# Add the text inside each bubble
+for _, row in Lendenmann_df.iterrows():
+    ax.text(
+        row["Glc_mM"],
+        row["Gal_mM"],
+        f"{row['Dilution']}",
+        color='black',
+        fontsize=5,     # small font
+        ha='center',    # horizontal alignment
+        va='center',    # vertical alignment
+        zorder=6,        # on top of bubbles
+        clip_on=False
+    )
+
+plt.tight_layout()
+plt.savefig(output_dir / "LM_Sim_GP_GlcGal_batch_O2_v1.png", dpi=300)
+plt.savefig(output_dir / "LM_Sim_GP_GlcGal_batch_O2_v1.svg")
+plt.show()
+plt.close()
+
+### VERSION 2 ###
+
+# Access correct K values
+K1 = monod_params["Glucose"]["K"]
+K2 = monod_params["Galactose"]["K"]
+
+# Setup
+met_ext = np.full(6, 0.0)  # baseline metabolite levels (length = 6)
+met_ext_index = [2, 1]
+met_ext_max = [0.00056, 0.00056]
+
+fig, ax = plt.subplots(figsize=(5, 4))
+result = microbe.plot_growth_plane(
+    met_ext=met_ext,
+    met_ext_index=met_ext_index,
+    met_ext_max=met_ext_max,
+    ax=ax,
+    contours=True,
+    prod_cons=False,
+    met_ext_total=met_ext_total,
+    cmap='rocket_r'
+)
+
+# Extract just the heatmap for colorbar (first return value)
+heatmap = result[0]  # QuadMesh
+
+# Manually add one colorbar
+cbar = plt.colorbar(heatmap, ax=ax)
+cbar.set_label("Growth Rate [h⁻¹]", fontsize=10)
+
+# Axes labels
+ax.set_title("OFV Growth Plane", fontsize=10)
+# Add a rectangle: lower left at (x, y), width and height in data coords
+
+# Define tick positions (in mM)
+tick_step = 0.0001
+tick_max = 0.0006  # Slightly beyond your max of 0.00056
+xticks = np.arange(0, tick_max, tick_step)
+yticks = np.arange(0, tick_max, tick_step)
+
+# Convert to µg/L for labels using MW of glucose/galactose
+MW = 180.16  # g/mol → 180160 µg/mmol
+xtick_labels = [f"{tick * MW * 1000:.0f}" for tick in xticks]
+ytick_labels = [f"{tick * MW * 1000:.0f}" for tick in yticks]
+
+# Apply to plot
+ax.set_xticks(xticks)
+ax.set_yticks(yticks)
+ax.set_xticklabels(xtick_labels)
+ax.set_yticklabels(ytick_labels)
+
+# Update axis labels if desired
+ax.set_xlabel("Glucose [µg/L]", fontsize=10)
+ax.set_ylabel("Galactose [µg/L]", fontsize=10)
+
+# Create the same normalization as the heatmap
+vmin = heatmap.get_clim()[0]
+vmax = heatmap.get_clim()[1]
+norm = Normalize(vmin=vmin, vmax=vmax)
+cmap = cm.get_cmap('rocket_r')  # Use same colormap as heatmap
+
+# Get RGBA color for each point based on its growth rate
+colors = cmap(norm(Lendenmann_df["Dilution"]))  # assuming Dilution = growth rate
+
+# Plot colored bubbles
+ax.scatter(
+    Lendenmann_df["Glc_mM"],
+    Lendenmann_df["Gal_mM"],
+    s=140,
+    facecolors=colors,
+    edgecolors='white',
+    linewidths=1,
+    zorder=5,
+    clip_on=False
+)
+
+plt.tight_layout()
+plt.savefig(output_dir / "LM_Sim_GP_GlcGal_batch_O2_v2.png", dpi=300)
+plt.savefig(output_dir / "LM_Sim_GP_GlcGal_batch_O2_v2.svg")
+plt.show()
+plt.close()
+
+exit()
 
 # -------------------------------
 # Growth Plane

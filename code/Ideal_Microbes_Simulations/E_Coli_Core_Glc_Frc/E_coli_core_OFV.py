@@ -225,10 +225,17 @@ print(" Saved Growth Plane! 💾")
 print("Running Growth and Nutrient Consumption Simulations...")
 
 # Choose meaningful nutrient levels 
+
 # mimick Lendenmann after 2.1h (lag phase ca done): 0.015 mM Glc and 0.012 mM Frc and 0.0098 g/L cells
 t_span = (0, 8)
 mic_level0 = np.array([0.0016])
 met_ext0 = np.array([2.1152/180 , 2.7585/180])
+
+# mimick Deng after 6.5h (lag phase ca done): 8.1417 mM Glucose and 0.1518122 g/L cells 
+t_span = (0, 3)
+mic_level0 = np.array([0.1518])
+met_ext0 = np.array([0 , 8.1417])
+
 
 # Run the simulation
 solution = culture.cr_model_ode(t_span, mic_level0, met_ext0, atol=1e-8, rtol=1e-8)

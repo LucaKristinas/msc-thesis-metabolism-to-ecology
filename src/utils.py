@@ -518,3 +518,21 @@ def smooth_line(x, y, points=300, degree=1):
         return x_new, y_smooth
     else:
         return x, y
+    
+def smooth_line2(x, y, points=300, degree=1):
+    """Returns a smoothed curve using spline interpolation, ignoring NaNs/infs."""
+    x = np.asarray(x)
+    y = np.asarray(y)
+
+    # Remove NaNs and infs from both x and y
+    mask = (~np.isnan(x)) & (~np.isnan(y)) & (~np.isinf(x)) & (~np.isinf(y))
+    x = x[mask]
+    y = y[mask]
+
+    if len(x) > degree:
+        x_new = np.linspace(x.min(), x.max(), points)
+        spline = make_interp_spline(x, y, k=degree)
+        y_smooth = spline(x_new)
+        return x_new, y_smooth
+    else:
+        return x, y

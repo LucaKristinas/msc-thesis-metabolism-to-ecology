@@ -340,6 +340,11 @@ t_span = (0, 8)
 mic_level0 = np.array([0.0016])
 met_ext0 = np.array([2.1152/180 , 2.7585/180])
 
+# mimick Deng after 6.5h (lag phase ca done): 8.1417 mM Glucose and 0.1518122 g/L cells 
+t_span = (0, 3)
+mic_level0 = np.array([0.1518])
+met_ext0 = np.array([0 , 8.1417])
+
 # Run the simulation
 solution = culture.cr_model_ode(t_span, mic_level0, met_ext0, atol=1e-8, rtol=1e-8)
 mic_level, met_ext = culture.slice_cr_solution(solution)
@@ -431,7 +436,7 @@ df_out = pd.DataFrame({
 })
 
 # Save to CSV
-output_file = processed_csv_path / "E_coli_core_sim_EFVs.csv"
+output_file = processed_csv_path / "E_coli_core_sim_EFVs_Deng.csv"
 df_out.to_csv(output_file, sep=';', index=False)
 
 print(f"Saved simulation data to {output_file} 📁")

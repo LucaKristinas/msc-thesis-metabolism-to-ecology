@@ -364,6 +364,61 @@ plt.close()
 
 print(" Saved: LM_Sim_GlcGal_Fig_9.1.png and LM_Sim_GlcGal_Fig_9.1.svg")
 
+# ────────────────────────────────────────────────────────────────
+# Save individual plots for Glc/Gal Empirical and OFV Simulation
+# ────────────────────────────────────────────────────────────────
+# 1. Empirical Data (5x4) with axis labels
+fig1, ax1 = plt.subplots(figsize=(5, 4))
+ax1.scatter(raw_all["glcgal_glc_values"]["time"], raw_all["glcgal_glc_values"]["value"], color=color_glc, s=30)
+ax1.plot(smoothed_all["glcgal_glc_values"]["time"], smoothed_all["glcgal_glc_values"]["value"], color=color_glc)
+
+ax1.scatter(raw_all["glcgal_gal_values"]["time"], raw_all["glcgal_gal_values"]["value"], color=color_gal, s=30)
+ax1.plot(smoothed_all["glcgal_gal_values"]["time"], smoothed_all["glcgal_gal_values"]["value"], color=color_gal)
+
+ax1.set_ylabel("Carbon Source [mg/L]", fontsize=10)
+ax1.set_xlabel("Time [h]", fontsize=10)
+ax1.set_ylim(0, 4.5)
+ax1.tick_params(axis='both', labelsize=10)
+ax1.set_title("Empirical Data", fontsize=11)
+ax1.set_facecolor("#f2f2f2")
+
+# Right y-axis
+ax1_right = ax1.twinx()
+ax1_right.scatter(raw_all["glcgal_OD546"]["time"], raw_all["glcgal_OD546"]["value"] * 1000, color=color_cdw, s=30)
+ax1_right.plot(smoothed_all["glcgal_OD546"]["time"], smoothed_all["glcgal_OD546"]["value"] * 1000, color=color_cdw)
+ax1_right.set_ylim(1, 6)
+ax1_right.tick_params(axis='y', labelsize=10)
+ax1_right.set_ylabel("Biomass [mgCDW/L]", fontsize=10)
+
+plt.tight_layout()
+fig1.savefig(export_path / "LM_GlcGal_Empirical.png", dpi=300, bbox_inches="tight")
+fig1.savefig(export_path / "LM_GlcGal_Empirical.svg", format="svg", bbox_inches="tight")
+plt.close(fig1)
+
+# 2. OFV Simulation (5x4) with axis labels
+fig2, ax2 = plt.subplots(figsize=(5, 4))
+ax2.plot(sim_data["glcgal_glc"]["smooth"]["time"], sim_data["glcgal_glc"]["smooth"]["value"], color=color_glc, linewidth=3)
+ax2.plot(sim_data["glcgal_gal"]["smooth"]["time"], sim_data["glcgal_gal"]["smooth"]["value"], color=color_gal, linewidth=3)
+
+ax2.set_xlabel("Time [h]", fontsize=10)
+ax2.set_ylabel("Carbon Source [mg/L]", fontsize=10)
+ax2.set_ylim(0, 4.5)
+ax2.tick_params(axis='both', labelsize=10)
+ax2.set_title("OFV Simulation", fontsize=11)
+
+# Right y-axis
+ax2_right = ax2.twinx()
+ax2_right.plot(sim_data["glcgal_cdw"]["smooth"]["time"], sim_data["glcgal_cdw"]["smooth"]["value"] * 1000, color=color_cdw, linewidth=3)
+ax2_right.set_ylabel("Biomass [mgCDW/L]", fontsize=10)
+ax2_right.set_ylim(1, 6)
+ax2_right.tick_params(axis='y', labelsize=10)
+
+plt.tight_layout()
+fig2.savefig(export_path / "LM_GlcGal_OFV.png", dpi=300, bbox_inches="tight")
+fig2.savefig(export_path / "LM_GlcGal_OFV.svg", format="svg", bbox_inches="tight")
+plt.close(fig2)
+
+
 #-----------------------------------------------------------------
 # Glucose Fructose (Fig 9.2) Panel 
 #-----------------------------------------------------------------
@@ -464,6 +519,83 @@ plt.savefig(export_path / "LM_Sim_GlcFrc_Fig_9.1.png", dpi=300, bbox_inches="tig
 plt.savefig(export_path / "LM_Sim_GlcFrc_Fig_9.1.svg", format="svg", bbox_inches="tight")
 plt.show()
 plt.close()
+
+# ────────────────────────────────────────────────────────────────
+# Save individual panels (5x4) with prefix "LM_"
+# ────────────────────────────────────────────────────────────────
+
+# 1. Empirical Data
+fig1, ax1 = plt.subplots(figsize=(5, 4))
+ax1.scatter(raw_all["glcfrc_glc"]["time"], raw_all["glcfrc_glc"]["value"], color=color_glc, s=30)
+ax1.plot(smoothed_all["glcfrc_glc"]["time"], smoothed_all["glcfrc_glc"]["value"], color=color_glc)
+
+ax1.scatter(raw_all["glcfrc_frc"]["time"], raw_all["glcfrc_frc"]["value"], color=color_frc, s=30)
+ax1.plot(smoothed_all["glcfrc_frc"]["time"], smoothed_all["glcfrc_frc"]["value"], color=color_frc)
+
+ax1.set_ylabel("Carbon Source [mg/L]", fontsize=10)
+ax1.set_xlabel("Time [h]", fontsize=10)
+ax1.set_ylim(0, 5)
+ax1.set_title("Empirical Data", fontsize=11)
+ax1.tick_params(axis='both', labelsize=10)
+ax1.set_facecolor("#f2f2f2")
+
+ax1r = ax1.twinx()
+ax1r.scatter(raw_all["glcfrc_OD546"]["time"], raw_all["glcfrc_OD546"]["value"] * 1000, color=color_cdw, s=30)
+ax1r.plot(smoothed_all["glcfrc_OD546"]["time"], smoothed_all["glcfrc_OD546"]["value"] * 1000, color=color_cdw)
+ax1r.set_ylim(1, 4.5)
+ax1r.tick_params(axis='y', labelsize=10)
+ax1r.set_ylabel("Biomass [mgCDW/L]", fontsize=10)
+
+plt.tight_layout()
+fig1.savefig(export_path / "LM_GlcFrc_Empirical.png", dpi=300, bbox_inches="tight")
+fig1.savefig(export_path / "LM_GlcFrc_Empirical.svg", format="svg", bbox_inches="tight")
+plt.close(fig1)
+
+# 2. OFV Simulation
+fig2, ax2 = plt.subplots(figsize=(5, 4))
+ax2.plot(sim_data["ofv"]["smooth"]["glc92"]["time"], sim_data["ofv"]["smooth"]["glc92"]["value"], color=color_glc, linewidth=3)
+ax2.plot(sim_data["ofv"]["smooth"]["frc"]["time"], sim_data["ofv"]["smooth"]["frc"]["value"], color=color_frc, linewidth=3)
+
+ax2.set_xlabel("Time [h]", fontsize=10)
+ax2.set_ylabel("Carbon Source [mg/L]", fontsize=10)
+ax2.set_ylim(0, 5)
+ax2.set_title("OFV Simulation", fontsize=11)
+ax2.tick_params(axis='both', labelsize=10)
+ax2.set_ylabel("Carbon Source [mg/L]", fontsize=10)
+
+ax2r = ax2.twinx()
+ax2r.plot(sim_data["ofv"]["smooth"]["cdw"]["time"], sim_data["ofv"]["smooth"]["cdw"]["value"] * 1000, color=color_cdw, linewidth=3)
+ax2r.set_ylim(1, 4.5)
+ax2r.tick_params(axis='y', labelsize=10)
+ax2r.set_ylabel("Biomass [mgCDW/L]", fontsize=10)
+
+plt.tight_layout()
+fig2.savefig(export_path / "LM_GlcFrc_OFV.png", dpi=300, bbox_inches="tight")
+fig2.savefig(export_path / "LM_GlcFrc_OFV.svg", format="svg", bbox_inches="tight")
+plt.close(fig2)
+
+# 3. EFV Simulation
+fig3, ax3 = plt.subplots(figsize=(5, 4))
+ax3.plot(sim_data["efv"]["smooth"]["glc92"]["time"], sim_data["efv"]["smooth"]["glc92"]["value"], color=color_glc, linewidth=3)
+ax3.plot(sim_data["efv"]["smooth"]["frc"]["time"], sim_data["efv"]["smooth"]["frc"]["value"], color=color_frc, linewidth=3)
+
+ax3.set_xlabel("Time [h]", fontsize=10)
+ax3.set_ylabel("Carbon Source [mg/L]", fontsize=10)
+ax3.set_ylim(0, 5)
+ax3.set_title("EFV Simulation", fontsize=11)
+ax3.tick_params(axis='both', labelsize=10)
+ax3.set_ylabel("Carbon Source [mg/L]", fontsize=10)
+
+ax3r = ax3.twinx()
+ax3r.plot(sim_data["efv"]["smooth"]["cdw"]["time"], sim_data["efv"]["smooth"]["cdw"]["value"] * 1000, color=color_cdw, linewidth=3)
+ax3r.set_ylabel("Biomass [mgCDW/L]", fontsize=10)
+ax3r.set_ylim(1, 4.5)
+ax3r.tick_params(axis='y', labelsize=10)
+
+plt.tight_layout()
+fig3.savefig(export_path / "LM_GlcFrc_EFV.png", dpi=300, bbox_inches="tight")
+fig3.savefig(export_path / "LM_GlcFrc_EFV.svg", format="svg", bbox_inches="tight")
+plt.close(fig3)
 
 print(" Saved: LM_Sim_GlcFrc_Fig_9.1.png and LM_Sim_GlcFrc_Fig_9.1.svg")
 

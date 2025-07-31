@@ -191,15 +191,7 @@ print(f"\n💾 Saved Monod parameters\n")
 # Generate Plots
 # ════════════════════════════════════════════════════════════════
 
-# -------------------------------
-# Growth Plane
-# -------------------------------
-
-# -------------------------------
-# Microbe and Nutrient levels
-# -------------------------------
-
-#----
+exit()
 
 # Choose meaningful nutrient levels 
 # mimick Lendenmann after 1.3h (lag phase ca done): 0.017 mM Glc and 0.021 mM Gal and 0.0091 g/L cells
@@ -285,8 +277,6 @@ for ax in axes:
 
 # Final formatting
 plt.tight_layout()
-#plt.savefig(output_dir / "E_coli_core_nutrientlevel_OFVs.png", dpi=300)  
-#plt.savefig(output_dir / "E_coli_core_nutrientlevel_OFVs.svg")  
 plt.show()
 plt.close()
 
@@ -306,11 +296,9 @@ df_out.to_csv(output_file, sep=';', index=False)
 
 print(f"Saved simulation data to {output_file} 📁")
 
-#----
-
-# here the generation of 1000 plots starts
-
-exit()
+# -------------------------------
+# Growth Plane
+# -------------------------------
 
 print("Constructing Growth Planes...")
 
@@ -359,6 +347,10 @@ for idx1, idx2, name1, name2 in substrate_pairs:
     plt.savefig(output_dir / f"{filename_base}_batch_O2.svg")
     plt.close()
     print(f"     ✔ Saved {filename_base}")
+
+# -------------------------------
+# Microbe and Nutrient levels
+# -------------------------------
 
 # Define simulation pairs 
 substrate_pairs = [
