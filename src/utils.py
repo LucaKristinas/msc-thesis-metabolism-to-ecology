@@ -8,6 +8,7 @@ import re
 import copy
 from collections import defaultdict
 import cvxpy as cp
+from scipy.interpolate import make_interp_spline
 
 import cobra
 from cobra import Model, Reaction
@@ -476,3 +477,44 @@ def print_summary_to_file(category_name, result_dict, file_path, total_counts=No
             f.write(f"✅ Found in old_bigg_ids:   {n_old}\n")
             f.write(f"❌ Still not found:         {n_missing}\n")
             f.write(f"🔎 BiGG Coverage:           {coverage:.1f}%\n\n")
+
+def smooth_line(x, y, points=300, degree=1):
+    """
+    Returns a smoothed curve using spline interpolation.
+
+    Parameters:
+    ----------
+    x : array-like
+        The x-values of the input data (independent variable). Must be sorted and strictly increasing.
+    y : array-like
+        The y-values corresponding to `x` (dependent variable).
+    points : int, optional (default = 100)
+        Number of points to generate in the smoothed output. Higher values result in a smoother, higher-resolution curve.
+        Lower values give a coarser curve. Does not affect the interpolation itself, only the density of the output.
+    degree : int, optional (default = 1)
+        Degree of the spline used for interpolation:
+            - 1 = linear spline (piecewise straight lines)
+            - 2 = quadratic spline
+            - 3 = cubic spline (smooth and commonly used)
+        Higher degrees can produce smoother curves but require more data points. If `len(x) <= degree`, the original (x, y) is returned.
+
+    Returns:
+    -------
+    x_new : ndarray
+        A new x-array with `points` evenly spaced values over the range of `x`.
+    y_smooth : ndarray
+        The interpolated y-values corresponding to `x_new`, forming the smoothed curve.
+
+    Notes:
+    -----
+    - Uses scipy's `make_interp_spline` for B-spline interpolation.
+    - This function assumes `x` and `y` are numeric and of the same length.
+    - It is especially useful for creating smooth visualizations of noisy or low-resolution data.
+    """
+    if len(x) > degree:
+        x_new = np.linspace(x.min(), x.max(), points)
+        spline = make_interp_spline(x, y, k=degree)
+        y_smooth = spline(x_new)
+        return x_new, y_smooth
+    else:
+        return x, y

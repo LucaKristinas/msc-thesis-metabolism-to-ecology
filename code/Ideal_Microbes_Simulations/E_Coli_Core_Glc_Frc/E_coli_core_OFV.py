@@ -135,7 +135,7 @@ print(f'Ks: {Ks}')
 
 # Define other required arrays with sensible defaults
 react_rate = np.full(num_reactions, Vmax)
-react_rate[biomass_index] = 1.1 # division 1 time/ hour
+react_rate[biomass_index] = µmax
 met_noise = 0.00238 * Vmax
 mich_ment = np.full(num_reactions, Km)
 met_ext_total = np.full(2, mmol_in_liter) 
@@ -224,10 +224,11 @@ print(" Saved Growth Plane! 💾")
 
 print("Running Growth and Nutrient Consumption Simulations...")
 
-# Choose meaningful nutrient levels
-t_span = (0, 6)
-mic_level0 = np.array([0.008])
-met_ext0 = np.array([0.02, 0.02])
+# Choose meaningful nutrient levels 
+# mimick Lendenmann after 2.1h (lag phase ca done): 0.015 mM Glc and 0.012 mM Frc and 0.0098 g/L cells
+t_span = (0, 8)
+mic_level0 = np.array([0.0016])
+met_ext0 = np.array([2.1152/180 , 2.7585/180])
 
 # Run the simulation
 solution = culture.cr_model_ode(t_span, mic_level0, met_ext0, atol=1e-8, rtol=1e-8)
@@ -309,6 +310,20 @@ plt.savefig(output_dir / "E_coli_core_nutrientlevel_OFVs.svg")
 plt.show()
 
 print(" Saved Nutrient Utilisation Plot! 💾")
+
+# Create a DataFrame with glucose, fructose, and microbe levels
+# Create a DataFrame with time, glucose, fructose, and microbe levels
+df_out = pd.DataFrame({
+    "time_h": times,
+    "glc": met_ext[1],
+    "frc": met_ext[0],
+    "mic": mic_level[0]
+})
+# Save to CSV
+output_file = processed_csv_path / "E_coli_core_sim_OFVs.csv"
+df_out.to_csv(output_file, sep=';', index=False)
+
+print(f"Saved simulation data to {output_file} 📁")
 
 print('Everything complete! 🎉')
 

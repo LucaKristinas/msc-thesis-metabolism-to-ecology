@@ -98,10 +98,8 @@ stoich_ext = ext_S_final_df.to_numpy(dtype=float)
 # ════════════════════════════════════════════════════════════════
 
 # Basis values
-µmax_batch_anaerobic = 0.76 # literature value (need to check if really anaerobic - guess not)
 µmax_continuous_aerobic = 0.92
 mmol_in_liter = 55510 # H2O only
-Km_batch = 0.028/mmol_in_liter # transporter Km
 Km_const = 0.001/mmol_in_liter # transporter Km
 Vmax = µmax_continuous_aerobic / extreme_final_df[biomass_col].max() 
 
@@ -126,7 +124,7 @@ print(f"K: {Ks_cont} (mmol/L)")
 
 # Define other required arrays with sensible defaults
 react_rate = np.full(num_reactions, Vmax)
-react_rate[biomass_index] = 1.3 # division 1.3 cell divisions/ hour
+react_rate[biomass_index] = µmax_continuous_aerobic
 met_noise = 0.00238 * Vmax
 mich_ment = np.full(num_reactions, Km_const) # Km_batch or Km_const
 met_ext_total = np.full(6, mmol_in_liter) 

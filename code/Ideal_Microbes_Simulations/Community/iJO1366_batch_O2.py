@@ -126,7 +126,7 @@ print(f"K: {Ks_cont} (mmol/L)")
 
 # Define other required arrays with sensible defaults
 react_rate = np.full(num_reactions, Vmax)
-react_rate[biomass_index] = 1.3 # division 1.3 cell divisions/ hour
+react_rate[biomass_index] = µmax_batch
 met_noise = 0.00238 * Vmax
 mich_ment = np.full(num_reactions, Km_batch) # Km_batch or Km_const
 met_ext_total = np.full(6, mmol_in_liter) 
@@ -195,6 +195,123 @@ print(f"\n💾 Saved Monod parameters\n")
 # Growth Plane
 # -------------------------------
 
+# -------------------------------
+# Microbe and Nutrient levels
+# -------------------------------
+
+#----
+
+# Choose meaningful nutrient levels 
+# mimick Lendenmann after 1.3h (lag phase ca done): 0.017 mM Glc and 0.021 mM Gal and 0.0091 g/L cells
+t_span = (0, 8)
+mic_level0 = np.array([0.0015])
+met_ext0 = np.zeros(6)
+met_ext0[1] = 3.7137/180 # Galactose
+met_ext0[2] = 3.1297/180 # Glucose
+
+# Run the simulation
+solution = culture.cr_model_ode(t_span, mic_level0, met_ext0, atol=1e-8, rtol=1e-8)
+mic_level, met_ext = culture.slice_cr_solution(solution)
+
+# Extract time points from the solution
+times = solution.t  
+
+# Set Seaborn whitegrid style
+plt.rcParams.update({'font.size': 10})
+
+# Plot Microbe Growth
+plt.figure(figsize=(8, 4))
+plt.plot(times, mic_level[0], marker='o', color='black')
+
+# Titles and labels
+plt.title("E. coli Growth", fontsize=12)
+plt.xlabel("Time [h]")
+plt.ylabel("Growth Level [g/L]")
+plt.grid(
+    True,               
+    which='major',     
+    linewidth=0.5,    
+    color='gray',      
+    alpha=0.3           
+)
+plt.tight_layout()
+
+# Styling the plot frame (thinner, cleaner)
+ax = plt.gca()
+for spine in ['top', 'right']:
+    ax.spines[spine].set_visible(False)
+for spine in ['left', 'bottom']:
+    ax.spines[spine].set_linewidth(0.8)
+ax.tick_params(width=0.8, length=4, direction='out', labelsize=10)
+
+# Save and show
+#plt.savefig(output_dir / "E_coli_core_microbegrowth_OFVs.png", dpi=300)  
+#plt.savefig(output_dir / "E_coli_core_microbegrowth_OFVs.svg")  
+plt.show()
+plt.close()
+
+print(" Saved Microbe Growth Plot! 💾")
+
+# Generate 5 colors from the 'rocket' palette
+colors = sns.color_palette("rocket", 10)
+
+# Use the first (index 0) and fourth (index 3) colors
+color1 = colors[2]
+color2 = colors[7]
+
+# Create figure with two subplots side by side
+fig, axes = plt.subplots(1, 2, figsize=(8, 4), sharey=True)
+
+# Plot Metabolite 1 with first rocket color
+axes[0].plot(times, met_ext[1], marker='s', color=color1)
+axes[0].set_title("Fructose",fontsize=12)
+axes[0].set_xlabel("Time [h]")
+axes[0].set_ylabel("Concentration [mM]")
+axes[0].grid(True, linewidth=0.5, alpha=0.3)
+
+# Plot Metabolite 2 with fourth rocket color
+axes[1].plot(times, met_ext[2], marker='s', color=color2)
+axes[1].set_title("Glucose",fontsize=12)
+axes[1].set_xlabel("Time [h]")
+axes[1].grid(True, linewidth=0.5, alpha=0.3)
+
+# Styling the plot frames (apply to both axes)
+for ax in axes:
+    for spine in ['top', 'right']:
+        ax.spines[spine].set_visible(False)
+    for spine in ['left', 'bottom']:
+        ax.spines[spine].set_linewidth(0.8)
+    ax.tick_params(width=0.8, length=4, direction='out', labelsize=10)
+
+# Final formatting
+plt.tight_layout()
+#plt.savefig(output_dir / "E_coli_core_nutrientlevel_OFVs.png", dpi=300)  
+#plt.savefig(output_dir / "E_coli_core_nutrientlevel_OFVs.svg")  
+plt.show()
+plt.close()
+
+print(" Saved Nutrient Utilisation Plot! 💾")
+
+# Create a DataFrame with glucose, fructose, and microbe levels
+# Create a DataFrame with time, glucose, fructose, and microbe levels
+df_out = pd.DataFrame({
+    "time_h": times,
+    "gal": met_ext[1],
+    "glc": met_ext[2],
+    "mic": mic_level[0]
+})
+# Save to CSV
+output_file = processed_csv_path / "iJO1366_sim_GlcGal_1.3.csv"
+df_out.to_csv(output_file, sep=';', index=False)
+
+print(f"Saved simulation data to {output_file} 📁")
+
+#----
+
+# here the generation of 1000 plots starts
+
+exit()
+
 print("Constructing Growth Planes...")
 
 substrate_pairs = [
@@ -242,10 +359,6 @@ for idx1, idx2, name1, name2 in substrate_pairs:
     plt.savefig(output_dir / f"{filename_base}_batch_O2.svg")
     plt.close()
     print(f"     ✔ Saved {filename_base}")
-
-# -------------------------------
-# Microbe and Nutrient levels
-# -------------------------------
 
 # Define simulation pairs 
 substrate_pairs = [
