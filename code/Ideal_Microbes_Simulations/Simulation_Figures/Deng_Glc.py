@@ -181,11 +181,13 @@ for sim_type in sim_data:
 #-----------------------------------------------------------------
 
 # Define colors
+# Define colors
 colors = sns.color_palette("rocket", 10)
-color_cdw = colors[0]
-color_glc = colors[4]
-color_frc = colors[8]
-color_gal = colors[9]
+colors2 = sns.color_palette("mako", 10)
+color_cdw = "black"
+color_glc = colors[5]
+color_frc = colors2[6]
+color_gal = colors2[3]
 
 #-----------------------------------------------------------------
 # Glucose (Fig 6) Panel 
@@ -458,3 +460,33 @@ plt.tight_layout()
 fig_ofv.savefig(export_path / "Deng_OFV_Glc_Fig6.png", dpi=300, bbox_inches="tight")
 fig_ofv.savefig(export_path / "Deng_OFV_Glc_Fig6.svg", format="svg", bbox_inches="tight")
 plt.close(fig_ofv)
+
+
+# Define legend handles for Glucose and Biomass
+legend_elements = [
+    Line2D([0], [0], marker='o', color='w', label='Glucose', markerfacecolor=color_glc, markersize=8),
+    Line2D([0], [0], marker='o', color='w', label='Biomass', markerfacecolor=color_cdw, markersize=8)
+]
+
+# Create a separate figure for the legend
+fig_leg3, ax_leg3 = plt.subplots(figsize=(3.5, 1.5))  # Size may be adjusted as needed
+ax_leg3.axis('off')  # Hide axes
+
+# Create and customize the legend
+legend = ax_leg3.legend(
+    handles=legend_elements,
+    loc='center',
+    frameon=True,
+    framealpha=1,
+    edgecolor='black',
+    fancybox=True,
+    fontsize=9
+)
+
+# Make the legend frame thinner
+legend.get_frame().set_linewidth(0.8)
+
+# Save the legend as PNG and SVG
+fig_leg3.savefig(export_path / "Deng_OFV_Glc_Legend.png", dpi=300, bbox_inches="tight",transparent=True)
+fig_leg3.savefig(export_path / "Deng_OFV_Glc_Legend.svg", format="svg", bbox_inches="tight")
+plt.close(fig_leg3)

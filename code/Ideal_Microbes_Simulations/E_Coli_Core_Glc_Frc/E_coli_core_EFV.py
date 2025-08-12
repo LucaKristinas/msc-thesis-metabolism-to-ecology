@@ -19,6 +19,7 @@ from cobra import Reaction
 from cobra.io import read_sbml_model
 from cobra.util.array import create_stoichiometric_matrix
 
+
 # Add Repo Root to sys.path 
 project_root = Path(__file__).resolve().parents[3]  
 sys.path.append(str(project_root))
@@ -62,6 +63,10 @@ fru_col = "EX_fru_e_rev"
 glc_col = "EX_glc__D_e_rev"
 
 print(" Done! ✅")
+
+print(len(EFVs_df))
+
+exit()
 
 # -------------------------------
 # Prepare EFVs as input files
@@ -219,10 +224,13 @@ extreme_path = extreme_final_df.to_numpy(dtype=float)
 stoich_int = int_S_final_df.to_numpy(dtype=float)
 stoich_ext = ext_S_final_df.to_numpy(dtype=float)
 
+fru_index = list(extreme_final_df.columns).index("EX_fru_e_rev")
+
 # Unit Basis
 µmax = 0.75 # literature value
 mmol_in_liter = 55510 # H2O
-Km = 0.028/mmol_in_liter # global Km (batch culture)
+Km_glc = 0.028/mmol_in_liter # global Km (batch culture)
+Km_fru = 0.018/mmol_in_liter 
 Vmax = µmax / extreme_final_df['BIOMASS_Ecoli_core_w_GAM'].max() 
 print(f"Vmax:{Vmax}")
 
@@ -243,9 +251,10 @@ stoich_biomass[biomass_index] = 1.0  # set 1 at biomass reaction
 react_rate = np.full(num_reactions, Vmax)
 react_rate[biomass_index] = µmax
 met_noise = 0.00238 * Vmax
-mich_ment = np.full(num_reactions, Km)
+mich_ment = np.full(num_reactions, Km_glc)
+mich_ment[fru_index] = Km_fru
 met_ext_total = np.full(2, mmol_in_liter) # mmol of water molecules in 1 liter of water
-exp_pot[-1] = 0.4475 # set protein pathway 
+exp_pot[-1] = 0.448 # set protein pathway 
 
 print(" Done! ✅")
 
@@ -286,10 +295,7 @@ culture = im.Culture([microbe],0,np.asarray([0, 0]), met_ext_total)
 
 print(" Initialised Culture! 🧫")
 
-
-# optinal break here for fitting
-
-#exit()
+exit()
 
 # -------------------------------
 # Generate Plots
@@ -335,15 +341,16 @@ print(" Saved Growth Plane! 💾")
 print("Running Growth and Nutrient Consumption Simulations...")
 
 # Choose meaningful nutrient levels 
-# mimick Lendenmann after 2.1h (lag phase ca done): 0.015 mM Glc and 0.012 mM Frc and 0.0098 g/L cells
-t_span = (0, 8)
-mic_level0 = np.array([0.0016])
-met_ext0 = np.array([2.1152/180 , 2.7585/180])
 
 # mimick Deng after 6.5h (lag phase ca done): 8.1417 mM Glucose and 0.1518122 g/L cells 
 t_span = (0, 3)
 mic_level0 = np.array([0.1518])
 met_ext0 = np.array([0 , 8.1417])
+
+# mimick Lendenmann after 2.1h (lag phase ca done): 0.015 mM Glc and 0.012 mM Frc and 0.0098 g/L cells
+t_span = (0, 8)
+mic_level0 = np.array([0.0016])
+met_ext0 = np.array([2.1152/180 , 2.7585/180])
 
 # Run the simulation
 solution = culture.cr_model_ode(t_span, mic_level0, met_ext0, atol=1e-8, rtol=1e-8)
@@ -436,7 +443,7 @@ df_out = pd.DataFrame({
 })
 
 # Save to CSV
-output_file = processed_csv_path / "E_coli_core_sim_EFVs_Deng.csv"
+output_file = processed_csv_path / "E_coli_core_sim_EFVs_GlcFrc.csv"
 df_out.to_csv(output_file, sep=';', index=False)
 
 print(f"Saved simulation data to {output_file} 📁")

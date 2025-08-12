@@ -10,7 +10,6 @@ import pandas as pd
 import IdealMicrobe as im
 from pathlib import Path  
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 # -------------------------------
 # File Paths
@@ -108,6 +107,8 @@ extreme_path = extreme_final_df.to_numpy(dtype=float)
 stoich_int = int_S_final_df.to_numpy(dtype=float)
 stoich_ext = ext_S_final_df.to_numpy(dtype=float)
 
+fru_index = list(extreme_final_df.columns).index("EX_fru_e_rev")
+
 print(" Done! ✅")
 
 print("Adjusting to correct units & define other parameters...")
@@ -115,7 +116,8 @@ print("Adjusting to correct units & define other parameters...")
 # Basis values
 µmax = 0.75 # literature value
 mmol_in_liter = 55510 # H2O only
-Km = 0.028/mmol_in_liter # global Michaelis-Menten constant 
+Km_glc = 0.028/mmol_in_liter # global Michaelis-Menten constant 
+Km_fru = 0.018/mmol_in_liter  # your desired value
 Vmax = µmax / extreme_final_df['BIOMASS_Ecoli_core_w_GAM'].max() 
 
 # adjust for maximum reaction rate
@@ -137,7 +139,8 @@ print(f'Ks: {Ks}')
 react_rate = np.full(num_reactions, Vmax)
 react_rate[biomass_index] = µmax
 met_noise = 0.00238 * Vmax
-mich_ment = np.full(num_reactions, Km)
+mich_ment = np.full(num_reactions, Km_glc)
+mich_ment[fru_index] = Km_fru
 met_ext_total = np.full(2, mmol_in_liter) 
 exp_pot = np.array([0.75,0.75,0.382])
 
@@ -178,9 +181,7 @@ culture = im.Culture([microbe],0,np.asarray([0, 0]), met_ext_total)
 print(" Initialised Culture! 🧫")
 
 # optional break
-
-#exit()
-
+exit()
 # -------------------------------
 # Generate Plots
 # -------------------------------
@@ -226,16 +227,15 @@ print("Running Growth and Nutrient Consumption Simulations...")
 
 # Choose meaningful nutrient levels 
 
-# mimick Lendenmann after 2.1h (lag phase ca done): 0.015 mM Glc and 0.012 mM Frc and 0.0098 g/L cells
-t_span = (0, 8)
-mic_level0 = np.array([0.0016])
-met_ext0 = np.array([2.1152/180 , 2.7585/180])
-
 # mimick Deng after 6.5h (lag phase ca done): 8.1417 mM Glucose and 0.1518122 g/L cells 
 t_span = (0, 3)
 mic_level0 = np.array([0.1518])
 met_ext0 = np.array([0 , 8.1417])
 
+# mimick Lendenmann after 2.1h (lag phase ca done): 0.015 mM Glc and 0.012 mM Frc and 0.0098 g/L cells
+t_span = (0, 8)
+mic_level0 = np.array([0.0016])
+met_ext0 = np.array([2.1152/180 , 2.7585/180])
 
 # Run the simulation
 solution = culture.cr_model_ode(t_span, mic_level0, met_ext0, atol=1e-8, rtol=1e-8)
@@ -327,7 +327,7 @@ df_out = pd.DataFrame({
     "mic": mic_level[0]
 })
 # Save to CSV
-output_file = processed_csv_path / "E_coli_core_sim_OFVs.csv"
+output_file = processed_csv_path / "E_coli_core_sim_OFVs_GlcFrc.csv"
 df_out.to_csv(output_file, sep=';', index=False)
 
 print(f"Saved simulation data to {output_file} 📁")

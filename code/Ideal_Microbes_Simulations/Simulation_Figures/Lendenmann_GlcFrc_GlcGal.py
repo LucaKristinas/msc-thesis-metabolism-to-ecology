@@ -43,9 +43,9 @@ print("📦 Importing data...")
 
 # Ideal Microbes (mimick Lendenmann after 2.1h (lag phase ca done): 0.015 mM Glc and 0.012 mM Frc and 0.0098 g/L cells)
 
-sim_glcfrc_OFV = pd.read_csv(csv_processed_path / "LM_Sim_Ecolicore_OFV_GlcFrc.csv", sep=";")
-sim_glcfrc_EFV = pd.read_csv(csv_processed_path / "LM_Sim_Ecolicore_EFV_GlcFrc.csv", sep=";")
-sim_glcgal_iJO1366 = pd.read_csv(csv_processed_path / "LM_Sim_iJO1366_GlcGal.csv", sep=";")
+sim_glcfrc_OFV = pd.read_csv(csv_processed_path / "E_coli_core_sim_OFVs_GlcFrc.csv", sep=";")
+sim_glcfrc_EFV = pd.read_csv(csv_processed_path / "E_coli_core_sim_EFVs_GlcFrc.csv", sep=";")
+sim_glcgal_iJO1366 = pd.read_csv(csv_processed_path / "iJO1366_sim_GlcGal.csv", sep=";")
 
 # LendenMann Data for Glucose / Fructose (Fig 9.2) and Glucose / Galactose (Fig 9.1)
 
@@ -274,10 +274,11 @@ print(' ✅ Done!')
 
 # Define colors
 colors = sns.color_palette("rocket", 10)
-color_cdw = colors[0]
-color_glc = colors[4]
-color_frc = colors[8]
-color_gal = colors[9]
+colors2 = sns.color_palette("mako", 10)
+color_cdw = "black"
+color_glc = colors[5]
+color_frc = colors2[6]
+color_gal = colors2[3]
 
 #-----------------------------------------------------------------
 # Glucose Galactose (Fig 9.1) Panel 
@@ -378,9 +379,9 @@ ax1.plot(smoothed_all["glcgal_gal_values"]["time"], smoothed_all["glcgal_gal_val
 ax1.set_ylabel("Carbon Source [mg/L]", fontsize=10)
 ax1.set_xlabel("Time [h]", fontsize=10)
 ax1.set_ylim(0, 4.5)
+ax1.set_xlim(0, 4)
 ax1.tick_params(axis='both', labelsize=10)
 ax1.set_title("Empirical Data", fontsize=11)
-ax1.set_facecolor("#f2f2f2")
 
 # Right y-axis
 ax1_right = ax1.twinx()
@@ -389,6 +390,8 @@ ax1_right.plot(smoothed_all["glcgal_OD546"]["time"], smoothed_all["glcgal_OD546"
 ax1_right.set_ylim(1, 6)
 ax1_right.tick_params(axis='y', labelsize=10)
 ax1_right.set_ylabel("Biomass [mgCDW/L]", fontsize=10)
+ax1_right.axvspan(ax1.get_xlim()[0], 1.34, color="gray", zorder=0, alpha=0.1)
+ax1_right.axvspan(1.34, 4, color="darkred", zorder=0, alpha=0.1)
 
 plt.tight_layout()
 fig1.savefig(export_path / "LM_GlcGal_Empirical.png", dpi=300, bbox_inches="tight")
@@ -403,6 +406,7 @@ ax2.plot(sim_data["glcgal_gal"]["smooth"]["time"], sim_data["glcgal_gal"]["smoot
 ax2.set_xlabel("Time [h]", fontsize=10)
 ax2.set_ylabel("Carbon Source [mg/L]", fontsize=10)
 ax2.set_ylim(0, 4.5)
+ax2.set_xlim(0, 8)
 ax2.tick_params(axis='both', labelsize=10)
 ax2.set_title("OFV Simulation", fontsize=11)
 
@@ -412,11 +416,39 @@ ax2_right.plot(sim_data["glcgal_cdw"]["smooth"]["time"], sim_data["glcgal_cdw"][
 ax2_right.set_ylabel("Biomass [mgCDW/L]", fontsize=10)
 ax2_right.set_ylim(1, 6)
 ax2_right.tick_params(axis='y', labelsize=10)
+ax2_right.axvspan(0,5.9, color="darkred", zorder=0, alpha=0.1)
 
 plt.tight_layout()
 fig2.savefig(export_path / "LM_GlcGal_OFV.png", dpi=300, bbox_inches="tight")
 fig2.savefig(export_path / "LM_GlcGal_OFV.svg", format="svg", bbox_inches="tight")
 plt.close(fig2)
+
+# Define legend elements using your colors
+legend_elements = [
+    Line2D([0], [0], marker='o', color='w', label='Glucose', markerfacecolor=color_glc, markersize=8),
+    Line2D([0], [0], marker='o', color='w', label='Galactose', markerfacecolor=color_gal, markersize=8),
+    Line2D([0], [0], marker='o', color='w', label='Biomass', markerfacecolor=color_cdw, markersize=8)
+]
+
+# Create a separate figure for the legend
+fig_leg, ax_leg = plt.subplots(figsize=(3, 1.5))
+ax_leg.axis('off')  # Hide axes
+
+# Create the legend in the new figure
+legend = ax_leg.legend(
+    handles=legend_elements,
+    loc='center',
+    frameon=True,
+    framealpha=1,
+    edgecolor='black',
+    fancybox=True,
+    fontsize=9
+)
+
+# Save the legend as standalone image
+fig_leg.savefig(export_path / "LM_GlcGal_Legend.png", dpi=300, bbox_inches="tight",transparent=True)
+fig_leg.savefig(export_path / "LM_GlcGal_Legend.svg", format="svg", bbox_inches="tight")
+plt.close(fig_leg)
 
 
 #-----------------------------------------------------------------
@@ -535,9 +567,9 @@ ax1.plot(smoothed_all["glcfrc_frc"]["time"], smoothed_all["glcfrc_frc"]["value"]
 ax1.set_ylabel("Carbon Source [mg/L]", fontsize=10)
 ax1.set_xlabel("Time [h]", fontsize=10)
 ax1.set_ylim(0, 5)
+ax1.set_xlim(0, 4)
 ax1.set_title("Empirical Data", fontsize=11)
 ax1.tick_params(axis='both', labelsize=10)
-ax1.set_facecolor("#f2f2f2")
 
 ax1r = ax1.twinx()
 ax1r.scatter(raw_all["glcfrc_OD546"]["time"], raw_all["glcfrc_OD546"]["value"] * 1000, color=color_cdw, s=30)
@@ -545,6 +577,8 @@ ax1r.plot(smoothed_all["glcfrc_OD546"]["time"], smoothed_all["glcfrc_OD546"]["va
 ax1r.set_ylim(1, 4.5)
 ax1r.tick_params(axis='y', labelsize=10)
 ax1r.set_ylabel("Biomass [mgCDW/L]", fontsize=10)
+ax1r.axvspan(ax1.get_xlim()[0], 2.1, color="gray", zorder=0, alpha=0.1)
+ax1r.axvspan(2.1, 4, color="darkred", zorder=0, alpha=0.1)
 
 plt.tight_layout()
 fig1.savefig(export_path / "LM_GlcFrc_Empirical.png", dpi=300, bbox_inches="tight")
@@ -559,15 +593,17 @@ ax2.plot(sim_data["ofv"]["smooth"]["frc"]["time"], sim_data["ofv"]["smooth"]["fr
 ax2.set_xlabel("Time [h]", fontsize=10)
 ax2.set_ylabel("Carbon Source [mg/L]", fontsize=10)
 ax2.set_ylim(0, 5)
+ax2.set_xlim(0, 8)
 ax2.set_title("OFV Simulation", fontsize=11)
 ax2.tick_params(axis='both', labelsize=10)
 ax2.set_ylabel("Carbon Source [mg/L]", fontsize=10)
 
 ax2r = ax2.twinx()
 ax2r.plot(sim_data["ofv"]["smooth"]["cdw"]["time"], sim_data["ofv"]["smooth"]["cdw"]["value"] * 1000, color=color_cdw, linewidth=3)
-ax2r.set_ylim(1, 4.5)
+ax2r.set_ylim(1, 4)
 ax2r.tick_params(axis='y', labelsize=10)
 ax2r.set_ylabel("Biomass [mgCDW/L]", fontsize=10)
+ax2r.axvspan(ax2.get_xlim()[0], 4, color="darkred", zorder=0, alpha=0.1)
 
 plt.tight_layout()
 fig2.savefig(export_path / "LM_GlcFrc_OFV.png", dpi=300, bbox_inches="tight")
@@ -582,6 +618,7 @@ ax3.plot(sim_data["efv"]["smooth"]["frc"]["time"], sim_data["efv"]["smooth"]["fr
 ax3.set_xlabel("Time [h]", fontsize=10)
 ax3.set_ylabel("Carbon Source [mg/L]", fontsize=10)
 ax3.set_ylim(0, 5)
+ax3.set_xlim(0, 8)
 ax3.set_title("EFV Simulation", fontsize=11)
 ax3.tick_params(axis='both', labelsize=10)
 ax3.set_ylabel("Carbon Source [mg/L]", fontsize=10)
@@ -591,11 +628,42 @@ ax3r.plot(sim_data["efv"]["smooth"]["cdw"]["time"], sim_data["efv"]["smooth"]["c
 ax3r.set_ylabel("Biomass [mgCDW/L]", fontsize=10)
 ax3r.set_ylim(1, 4.5)
 ax3r.tick_params(axis='y', labelsize=10)
+ax3.axvspan(ax3.get_xlim()[0], 4.5, color="darkred", zorder=0, alpha=0.1)
 
 plt.tight_layout()
 fig3.savefig(export_path / "LM_GlcFrc_EFV.png", dpi=300, bbox_inches="tight")
 fig3.savefig(export_path / "LM_GlcFrc_EFV.svg", format="svg", bbox_inches="tight")
 plt.close(fig3)
+
+# Define legend handles with colored dots for Glucose, Fructose, Biomass
+legend_elements = [
+    Line2D([0], [0], marker='o', color='w', label='Glucose', markerfacecolor=color_glc, markersize=8),
+    Line2D([0], [0], marker='o', color='w', label='Fructose', markerfacecolor=color_frc, markersize=8),
+    Line2D([0], [0], marker='o', color='w', label='Biomass', markerfacecolor=color_cdw, markersize=8)
+]
+
+# Create a new figure for the standalone legend
+fig_leg2, ax_leg2 = plt.subplots(figsize=(3, 1.5))  # Adjust size if needed
+ax_leg2.axis('off')  # Hide the axes
+
+# Add the legend to the figure
+legend = ax_leg2.legend(
+    handles=legend_elements,
+    loc='center',
+    frameon=True,
+    framealpha=1,
+    edgecolor='black',
+    fancybox=True,
+    fontsize=9
+)
+
+# Set thinner frame line width
+legend.get_frame().set_linewidth(0.8)
+
+# Save the legend as PNG and SVG
+fig_leg2.savefig(export_path / "LM_GlcFrc_Legend.png", dpi=300, bbox_inches="tight",transparent=True)
+fig_leg2.savefig(export_path / "LM_GlcFrc_Legend.svg", format="svg", bbox_inches="tight")
+plt.close(fig_leg2)
 
 print(" Saved: LM_Sim_GlcFrc_Fig_9.1.png and LM_Sim_GlcFrc_Fig_9.1.svg")
 

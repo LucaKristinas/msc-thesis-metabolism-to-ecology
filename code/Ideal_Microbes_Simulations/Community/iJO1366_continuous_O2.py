@@ -141,7 +141,6 @@ react_rate[biomass_index] = µmax_continuous_aerobic
 met_noise = 0.00238 * Vmax
 mich_ment = np.full(num_reactions, Km_const) # Km_batch or Km_const
 met_ext_total = np.full(6, mmol_in_liter) 
-pot_batch = -0.556
 exp_pot_def = np.array([0.92, 0.91028921, 0.92, 0.91514461, 0.92, 0.92, 0])
 exp_pot_fit = np.array([0.92, 0.91028921, 0.92, 0.91514461, 0.92, 0.92, 0.436])
 

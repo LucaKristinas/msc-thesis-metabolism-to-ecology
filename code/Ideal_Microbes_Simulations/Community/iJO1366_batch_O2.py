@@ -93,6 +93,11 @@ extreme_path = extreme_final_df.to_numpy(dtype=float)
 stoich_int = int_S_final_df.to_numpy(dtype=float)
 stoich_ext = ext_S_final_df.to_numpy(dtype=float)
 
+gal_index = list(extreme_final_df.columns).index("EX_gal_e_rev")
+print(f"gal_index: {gal_index}")
+frc_index = list(extreme_final_df.columns).index("EX_fru_e_rev")
+print(f"gal_index: {frc_index}")
+
 # ════════════════════════════════════════════════════════════════
 # Data preparation: Adjusting to correct units & parametrization
 # ════════════════════════════════════════════════════════════════
@@ -101,8 +106,9 @@ stoich_ext = ext_S_final_df.to_numpy(dtype=float)
 µmax_batch = 0.75 # literature value 
 #µmax_continuous_aerobic = 0.92
 mmol_in_liter = 55510 # H2O only
-Km_batch = 0.028/mmol_in_liter # transporter Km
-#Km_const = 0.001/mmol_in_liter # transporter Km
+Km_glc = 0.028/mmol_in_liter # transporter Km
+Km_gal = 0.024/mmol_in_liter # global Michaelis-Menten constant 
+Km_fru = 0.018/mmol_in_liter  # your desired value
 Vmax = µmax_batch / extreme_final_df[biomass_col].max() 
 
 # adjust for maximum reaction rate
@@ -128,10 +134,12 @@ print(f"K: {Ks_cont} (mmol/L)")
 react_rate = np.full(num_reactions, Vmax)
 react_rate[biomass_index] = µmax_batch
 met_noise = 0.00238 * Vmax
-mich_ment = np.full(num_reactions, Km_batch) # Km_batch or Km_const
+mich_ment = np.full(num_reactions, Km_glc) # Km_batch or Km_const
+mich_ment[frc_index] = Km_fru
+mich_ment[gal_index] = Km_gal
 met_ext_total = np.full(6, mmol_in_liter) 
 exp_pot_def = np.array([0.75, 0.7420836, 0.75, 0.7460418, 0.75, 0.75, 0])
-exp_pot_fit = np.array([0.75, 0.7420836, 0.75, 0.7460418, 0.75, 0.75, 0.4275])
+exp_pot_fit = np.array([0.75, 0.7420836, 0.75, 0.7460418, 0.75, 0.75, 0.428])
 
 # ════════════════════════════════════════════════════════════════
 # Initialise Ideal Microbe
@@ -185,13 +193,11 @@ monod_df.to_csv(processed_csv_path / "iJO1366_GR_Ks_batch.csv")
 print(f"\n💾 Saved Monod parameters\n")
 
 # optinal break
-#exit()
+exit()
 
 # ════════════════════════════════════════════════════════════════
 # Generate Plots
 # ════════════════════════════════════════════════════════════════
-
-exit()
 
 # Choose meaningful nutrient levels 
 # mimick Lendenmann after 1.3h (lag phase ca done): 0.017 mM Glc and 0.021 mM Gal and 0.0091 g/L cells
@@ -291,7 +297,7 @@ df_out = pd.DataFrame({
     "mic": mic_level[0]
 })
 # Save to CSV
-output_file = processed_csv_path / "iJO1366_sim_GlcGal_1.3.csv"
+output_file = processed_csv_path / "iJO1366_sim_GlcGal.csv"
 df_out.to_csv(output_file, sep=';', index=False)
 
 print(f"Saved simulation data to {output_file} 📁")

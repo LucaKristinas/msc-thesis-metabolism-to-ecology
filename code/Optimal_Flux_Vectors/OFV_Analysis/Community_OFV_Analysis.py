@@ -362,7 +362,7 @@ print(" Done! ✅")
 print("Starting FBA Analysis...")
 
 #------------------------------------------------------------------------------
-# Fluxes between models and conditions: Basic Statistics and Consrvation
+# Fluxes between models and conditions: Basic Statistics and Conservation
 #------------------------------------------------------------------------------
 
 txt_file = txt_path / "COM_OFV_FBA_Flux_Conservation_Summary.txt"
