@@ -35,6 +35,10 @@ ext_S_df = pd.read_csv(processed_csv_path / "iJO1366_ext_S_O2.csv", index_col=0)
 int_S_df = pd.read_csv(processed_csv_path / "iJO1366_int_S_O2.csv", index_col=0)
 ofv_df = pd.read_csv(processed_csv_path / "iJO1366_OFVs_O2.csv", index_col=0)
 
+print(ofv_df["BIOMASS_Ec_iJO1366_core_53p95M"])
+
+exit()
+
 # Define the columns of interest
 biomass_col = "BIOMASS_Ec_iJO1366_core_53p95M" # careful: BIOMASS_Ec_iJO1366_WT_53p95M
 fru_col = "EX_fru_e_rev"

@@ -66,8 +66,6 @@ print(" Done! ✅")
 
 print(len(EFVs_df))
 
-exit()
-
 # -------------------------------
 # Prepare EFVs as input files
 # -------------------------------

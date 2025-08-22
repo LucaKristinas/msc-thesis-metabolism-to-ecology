@@ -17,6 +17,7 @@ Thumbs.db
 # Folders
 data/raw/sbml_files/temporary_files/
 data/raw/mplrs_data/ecolicore_model_v1_frc10.evfs
+data/processed/figures
 
 # Ignore large EFV/EFM result files
 data/processed/csv_files/EFVs_paths.csv

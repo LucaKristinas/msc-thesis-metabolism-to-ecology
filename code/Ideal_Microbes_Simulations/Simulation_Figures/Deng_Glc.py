@@ -50,6 +50,61 @@ EFV_df = pd.read_csv(csv_processed_path / "E_coli_core_sim_EFVs_Deng.csv", sep='
 # 4. Data Processing
 # ════════════════════════════════════════════════════════════════
 
+### Print statements 
+
+threshold = 1e-3
+
+MW_glucose = 180.16
+MW_fructose = 180.16
+
+# Convert mM to g/L
+# Convert units
+Deng_df['glucose_g_L'] = Deng_df['glucose_mean_mM'] * MW_glucose / 1000
+Deng_df['biomass_g_L'] = Deng_df['biomass_mean_mg_l'] / 1000
+
+OFV_df['glc_g_L'] = OFV_df['glc'] * MW_glucose / 1000
+OFV_df['frc_g_L'] = OFV_df['frc'] * MW_fructose / 1000
+
+EFV_df['glc_g_L'] = EFV_df['glc'] * MW_glucose / 1000
+EFV_df['frc_g_L'] = EFV_df['frc'] * MW_fructose / 1000
+
+# ----- Empirical_df -----
+
+print("\n===== Deng_df =====")
+print("First row (glc [g/L], biomass [g/L]):")
+print(Deng_df[['glucose_g_L', 'biomass_g_L']].head(1).to_string(index=False))
+
+print(f"\nMaximum biomass value [g/L]: {Deng_df['biomass_g_L'].max():.6f}")
+
+first_time_glc_OFV = Deng_df.loc[Deng_df['glucose_g_L'] < threshold, 'glucose_t_min'].iloc[0]
+print(f"\nFirst time_h where glc < {threshold} g/L: {first_time_glc_OFV}")
+
+# ----- OFV_df -----
+print("\n===== OFV_df =====")
+print("First row (glc [g/L], frc [g/L], mic):")
+print(OFV_df[['glc_g_L', 'frc_g_L', 'mic']].head(1).to_string(index=False))
+
+print(f"\nMaximum mic value: {OFV_df['mic'].max():.6f}")
+
+first_time_glc_OFV = OFV_df.loc[OFV_df['glc_g_L'] < threshold, 'time_h'].iloc[0]
+first_time_frc_OFV = OFV_df.loc[OFV_df['frc_g_L'] < threshold, 'time_h'].iloc[0]
+print(f"\nFirst time_h where glc < {threshold} g/L: {first_time_glc_OFV}")
+print(f"First time_h where frc < {threshold} g/L: {first_time_frc_OFV}")
+
+# ----- EFV_df -----
+print("\n===== EFV_df =====")
+print("First row (glc [g/L], frc [g/L], mic):")
+print(EFV_df[['glc_g_L', 'frc_g_L', 'mic']].head(1).to_string(index=False))
+
+print(f"\nMaximum mic value: {EFV_df['mic'].max():.6f}")
+
+first_time_glc_EFV = EFV_df.loc[EFV_df['glc_g_L'] < threshold, 'time_h'].iloc[0]
+first_time_frc_EFV = EFV_df.loc[EFV_df['frc_g_L'] < threshold, 'time_h'].iloc[0]
+print(f"\nFirst time_h where glc < {threshold} g/L: {first_time_glc_EFV}")
+print(f"First time_h where frc < {threshold} g/L: {first_time_frc_EFV}")
+
+exit()
+
 #--------------------------------------------------------------------------------------------------------
 # Deng Data (Fig. 6?) 
 #--------------------------------------------------------------------------------------------------------

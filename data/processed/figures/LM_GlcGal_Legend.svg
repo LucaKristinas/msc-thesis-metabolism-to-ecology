@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2025-08-08T12:21:04.530116</dc:date>
+    <dc:date>2025-08-12T14:33:51.708846</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -49,7 +49,7 @@ L 64.942734 34.903125
 L 73.942734 34.903125 
 " style="fill: none; stroke: #ffffff; stroke-width: 1.5; stroke-linecap: square"/>
      <defs>
-      <path id="mbf622750e4" d="M 0 4 
+      <path id="m4d491c88e8" d="M 0 4 
 C 1.060812 4 2.078319 3.578535 2.828427 2.828427 
 C 3.578535 2.078319 4 1.060812 4 0 
 C 4 -1.060812 3.578535 -2.078319 2.828427 -2.828427 
@@ -62,7 +62,7 @@ z
 " style="stroke: #ffffff"/>
      </defs>
      <g>
-      <use xlink:href="#mbf622750e4" x="64.942734" y="34.903125" style="fill: #d92847; stroke: #ffffff"/>
+      <use xlink:href="#m4d491c88e8" x="64.942734" y="34.903125" style="fill: #d92847; stroke: #ffffff"/>
      </g>
     </g>
     <g id="text_1">
@@ -237,7 +237,7 @@ L 64.942734 48.113438
 L 73.942734 48.113438 
 " style="fill: none; stroke: #ffffff; stroke-width: 1.5; stroke-linecap: square"/>
      <defs>
-      <path id="m97e0e29b70" d="M 0 4 
+      <path id="md707b71187" d="M 0 4 
 C 1.060812 4 2.078319 3.578535 2.828427 2.828427 
 C 3.578535 2.078319 4 1.060812 4 0 
 C 4 -1.060812 3.578535 -2.078319 2.828427 -2.828427 
@@ -250,7 +250,7 @@ z
 " style="stroke: #ffffff"/>
      </defs>
      <g>
-      <use xlink:href="#m97e0e29b70" x="64.942734" y="48.113438" style="fill: #3d5296; stroke: #ffffff"/>
+      <use xlink:href="#md707b71187" x="64.942734" y="48.113438" style="fill: #3d5296; stroke: #ffffff"/>
      </g>
     </g>
     <g id="text_2">
@@ -329,7 +329,7 @@ L 64.942734 61.32375
 L 73.942734 61.32375 
 " style="fill: none; stroke: #ffffff; stroke-width: 1.5; stroke-linecap: square"/>
      <defs>
-      <path id="me86e8e335f" d="M 0 4 
+      <path id="m1d5766293c" d="M 0 4 
 C 1.060812 4 2.078319 3.578535 2.828427 2.828427 
 C 3.578535 2.078319 4 1.060812 4 0 
 C 4 -1.060812 3.578535 -2.078319 2.828427 -2.828427 
@@ -342,7 +342,7 @@ z
 " style="stroke: #ffffff"/>
      </defs>
      <g>
-      <use xlink:href="#me86e8e335f" x="64.942734" y="61.32375" style="stroke: #ffffff"/>
+      <use xlink:href="#m1d5766293c" x="64.942734" y="61.32375" style="stroke: #ffffff"/>
      </g>
     </g>
     <g id="text_3">

@@ -72,6 +72,70 @@ print(' ✅ Done!')
 
 print("Processing data...")
 
+#---
+
+
+# === Settings ===
+MW_glucose = 180.16
+MW_fructose = 180.16
+MW_galactose = 180.16
+OD_to_mg_L = 0.05
+threshold_mgL = 0.001  # equivalent to 0.001 g/L
+
+# === Functions ===
+def report_empirical(df, label):
+    df = df.copy()
+    if "OD546" in df.columns:
+        df["biomass_mg_L"] = df["OD546"] * OD_to_mg_L * 1000
+        col_to_report = "biomass_mg_L"
+    else:
+        col_to_report = [c for c in df.columns if c.endswith("_mg_per_l")][0]
+
+    print(f"\n===== Empirical: {label} =====")
+    print("First row:")
+    print(df[[col_to_report]].head(1).to_string(index=False))
+    print(f"\nMax value [mg/L]: {df[col_to_report].max():.2f}")
+    if (df[col_to_report] < threshold_mgL).any():
+        first_time = df.loc[df[col_to_report] < threshold_mgL, "time_h"].iloc[0]
+        print(f"First time_h where value < {threshold_mgL} mg/L: {first_time}")
+
+def report_simulation(df, label, sugar_cols):
+    df = df.copy()
+    for col in sugar_cols:
+        df[f"{col}_g_L"] = df[col] * MW_glucose / 1000
+    print(f"\n===== Simulation: {label} =====")
+    print("First row (g/L):")
+    print(df[[f"{col}_g_L" for col in sugar_cols] + ["mic"]].head(1).to_string(index=False))
+    print(f"\nMax mic value: {df['mic'].max():.6f}")
+    for col in sugar_cols:
+        if (df[f"{col}_g_L"] < threshold_mgL / 1000).any():
+            first_time = df.loc[df[f"{col}_g_L"] < threshold_mgL / 1000, "time_h"].iloc[0]
+            print(f"First time_h where {col} < {threshold_mgL} mg/L: {first_time}")
+
+# === Reports ===
+# Empirical Glc/Frc
+report_empirical(dataframes["glcfrc_glc"], "Glucose (empirical, Glc/Frc)")
+report_empirical(dataframes["glcfrc_frc"], "Fructose (empirical, Glc/Frc)")
+report_empirical(dataframes["glcfrc_OD546"], "Biomass from OD (empirical, Glc/Frc)")
+
+# Empirical Glc/Gal
+report_empirical(dataframes["glcgal_glc_values"], "Glucose (empirical, Glc/Gal)")
+report_empirical(dataframes["glcgal_gal_values"], "Galactose (empirical, Glc/Gal)")
+report_empirical(dataframes["glcgal_OD546"], "Biomass from OD (empirical, Glc/Gal)")
+
+# Simulation Glc/Frc
+report_simulation(sim_glcfrc_OFV, "Glc/Frc OFV", ["glc", "frc"])
+report_simulation(sim_glcfrc_EFV, "Glc/Frc EFV", ["glc", "frc"])
+
+# Simulation Glc/Gal
+report_simulation(sim_glcgal_iJO1366, "Glc/Gal iJO1366", ["glc", "gal"])
+
+print("\n✅ Done!")
+
+
+
+#---
+
 #--------------------------------------------------------------------------------------------------------
 # Lendenmann Data for Glucose / Fructose (Fig 9.2) and Glucose / Galactose (Fig 9.1) 
 #--------------------------------------------------------------------------------------------------------
@@ -182,7 +246,6 @@ for label, keys in datasets.items():
     print(f"         Glucose @ {t_glc:.2f}h = {v_glc:.4f} mg/L")
     print(f"         {'Fructose' if 'frc' in keys['frc_or_gal'] else 'Galactose'} @ {t_frcgal:.2f}h = {v_frcgal:.4f} mg/L")
     print(f"         Biomass @ {t_cdw:.2f}h = {v_cdw:.4f} gCDW/L\n")
-
 #-----------------------------------------------------------------------------------------------------------------------
 # Ideal Microbes (mimick Lendenmann 9.2 after 2.1h (lag phase ca done): 0.015 mM Glc and 0.012 mM Frc and 0.0098 g/L cells) 
 #-----------------------------------------------------------------------------------------------------------------------
@@ -390,8 +453,8 @@ ax1_right.plot(smoothed_all["glcgal_OD546"]["time"], smoothed_all["glcgal_OD546"
 ax1_right.set_ylim(1, 6)
 ax1_right.tick_params(axis='y', labelsize=10)
 ax1_right.set_ylabel("Biomass [mgCDW/L]", fontsize=10)
-ax1_right.axvspan(ax1.get_xlim()[0], 1.34, color="gray", zorder=0, alpha=0.1)
-ax1_right.axvspan(1.34, 4, color="darkred", zorder=0, alpha=0.1)
+ax1_right.axvspan(ax1.get_xlim()[0], 1.3, color="gray", zorder=0, alpha=0.1)
+ax1_right.axvspan(1.3, 3.7, color="darkred", zorder=0, alpha=0.1)
 
 plt.tight_layout()
 fig1.savefig(export_path / "LM_GlcGal_Empirical.png", dpi=300, bbox_inches="tight")
@@ -416,7 +479,7 @@ ax2_right.plot(sim_data["glcgal_cdw"]["smooth"]["time"], sim_data["glcgal_cdw"][
 ax2_right.set_ylabel("Biomass [mgCDW/L]", fontsize=10)
 ax2_right.set_ylim(1, 6)
 ax2_right.tick_params(axis='y', labelsize=10)
-ax2_right.axvspan(0,5.9, color="darkred", zorder=0, alpha=0.1)
+ax2_right.axvspan(0,6, color="darkred", zorder=0, alpha=0.1)
 
 plt.tight_layout()
 fig2.savefig(export_path / "LM_GlcGal_OFV.png", dpi=300, bbox_inches="tight")
@@ -578,7 +641,7 @@ ax1r.set_ylim(1, 4.5)
 ax1r.tick_params(axis='y', labelsize=10)
 ax1r.set_ylabel("Biomass [mgCDW/L]", fontsize=10)
 ax1r.axvspan(ax1.get_xlim()[0], 2.1, color="gray", zorder=0, alpha=0.1)
-ax1r.axvspan(2.1, 4, color="darkred", zorder=0, alpha=0.1)
+ax1r.axvspan(2.1, 3.5, color="darkred", zorder=0, alpha=0.1)
 
 plt.tight_layout()
 fig1.savefig(export_path / "LM_GlcFrc_Empirical.png", dpi=300, bbox_inches="tight")

@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2025-08-01T10:06:19.628905</dc:date>
+    <dc:date>2025-08-12T10:55:54.361116</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -49,7 +49,7 @@ L 82.329609 41.508281
 L 91.329609 41.508281 
 " style="fill: none; stroke: #ffffff; stroke-width: 1.5; stroke-linecap: square"/>
      <defs>
-      <path id="maa3c5fdd41" d="M 0 4 
+      <path id="m1616c99adb" d="M 0 4 
 C 1.060812 4 2.078319 3.578535 2.828427 2.828427 
 C 3.578535 2.078319 4 1.060812 4 0 
 C 4 -1.060812 3.578535 -2.078319 2.828427 -2.828427 
@@ -62,7 +62,7 @@ z
 " style="stroke: #ffffff"/>
      </defs>
      <g>
-      <use xlink:href="#maa3c5fdd41" x="82.329609" y="41.508281" style="fill: #d92847; stroke: #ffffff"/>
+      <use xlink:href="#m1616c99adb" x="82.329609" y="41.508281" style="fill: #d92847; stroke: #ffffff"/>
      </g>
     </g>
     <g id="text_1">
@@ -237,7 +237,7 @@ L 82.329609 54.718594
 L 91.329609 54.718594 
 " style="fill: none; stroke: #ffffff; stroke-width: 1.5; stroke-linecap: square"/>
      <defs>
-      <path id="m26cd835c26" d="M 0 4 
+      <path id="m13240a0310" d="M 0 4 
 C 1.060812 4 2.078319 3.578535 2.828427 2.828427 
 C 3.578535 2.078319 4 1.060812 4 0 
 C 4 -1.060812 3.578535 -2.078319 2.828427 -2.828427 
@@ -250,7 +250,7 @@ z
 " style="stroke: #ffffff"/>
      </defs>
      <g>
-      <use xlink:href="#m26cd835c26" x="82.329609" y="54.718594" style="stroke: #ffffff"/>
+      <use xlink:href="#m13240a0310" x="82.329609" y="54.718594" style="stroke: #ffffff"/>
      </g>
     </g>
     <g id="text_2">
