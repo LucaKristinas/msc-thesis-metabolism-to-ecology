@@ -1,30 +1,30 @@
-# Python cache files (auto-generated)
+# Python cache files
 __pycache__/
 *.py[cod]
 *.pyo
 
-# Virtual environments (in case you use one later)
+# Virtual environments
 env/
 venv/
 
-# VS Code editor settings (optional, personal)
+# Editor settings
 .vscode/
 
-# OS-specific junk files
+# OS-specific junk
 .DS_Store
 Thumbs.db
 
-# Folders
+# Data folders
 data/raw/sbml_files/temporary_files/
 data/raw/mplrs_data/ecolicore_model_v1_frc10.evfs
-data/processed/figures
+data/processed/figures/
 
-# Ignore large EFV/EFM result files
+# Large EFV/EFM result files
 data/processed/csv_files/EFVs_paths.csv
 data/processed/csv_files/EFMs_paths.csv
 data/processed/csv_files/Martino_EFMs_paths_scaled.csv
 data/processed/csv_files/Martino_EFVs_paths_scaled.csv
 
-# Ideal Microbes Package
-/Users/Luca/Desktop/Thesis_Rep/GitHub_Repo/code/Ideal_Microbes_Simulations/Core/IdealMicrobe.py
-/Users/Luca/Desktop/Thesis_Rep/GitHub_Repo/code/Ideal_Microbes_Simulations/GEM/IdealMicrobe.py
+# Local Ideal Microbes package variants
+code/Ideal_Microbes_Simulations/Core/IdealMicrobe.py
+code/Ideal_Microbes_Simulations/GEM/IdealMicrobe.py
