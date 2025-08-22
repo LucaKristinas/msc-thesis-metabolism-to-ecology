@@ -28,6 +28,3 @@ data/processed/csv_files/Martino_EFVs_paths_scaled.csv
 # Ideal Microbes Package
 /Users/Luca/Desktop/Thesis_Rep/GitHub_Repo/code/Ideal_Microbes_Simulations/Core/IdealMicrobe.py
 /Users/Luca/Desktop/Thesis_Rep/GitHub_Repo/code/Ideal_Microbes_Simulations/GEM/IdealMicrobe.py
-
-# Gitignore file
-/Users/Luca/Desktop/Thesis_Rep/GitHub_Repo/.gitignore
