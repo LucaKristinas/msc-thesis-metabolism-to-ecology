@@ -9,30 +9,23 @@ This repository contains the code, data, and environment configuration for this 
 ## 🗂️ Repository Structure
 
 ```
-├── code/                          # Core scripts for analyses and simulations
-│   ├── GEM_Reduction/            
-│   ├── Ideal_Microbes_Benchmarking/  
-│   ├── Ideal_Microbes_Simulations/  
-│   └── Mplrs_Analysis/           
+├── code/ # Core scripts for analyses and simulations
+│ ├── GEM_Reduction/ # Scripts for GEM reduction strategies
+│ ├── Ideal_Microbes_Benchmarking/ # Benchmarking Ideal Microbes framework
+│ ├── Ideal_Microbes_Simulations/ # Simulations with Ideal Microbes package
+│ ├── Mplrs_Analysis/ # Analysis of mode enumeration with mplrs
+│ └── Optimal_Flux_Vectors/ # Scripts for OFV preparation and analysis
 │
 ├── data/
-│   ├── processed/                # Cleaned and derived datasets
-│   │   ├── csv_files/
-│   │   ├── figures/
-│   │   ├── memote_files/
-│   │   └── sbml_files/
-│   │
-│   └── raw/                      # Raw input data
-│       ├── csv_files/
-│       ├── matlab_files/
-│       ├── mplrs_data/
-│       ├── sbml_files/
-│       └── txt_files/
+│ ├── processed/ # Processed/derived datasets
+│ └── raw/ # Raw input data
 │
-├── src/                          # Source utilities and helper functions
-├── .gitignore                    
-├── environment.yml              # Conda environment for reproducibility
-└── README.md                     # Project overview
+├── src/ # Source utilities and helper functions
+│ └── utils.py # Common utility functions
+│
+├── .gitignore # Ignore rules for git
+├── environment.yml # Conda environment for reproducibility
+└── README.md # Project overview (this file)
 ```
 
 ## 🛠️ Note on External Tools Used
