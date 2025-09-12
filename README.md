@@ -1,9 +1,13 @@
-# ⚡️ From Genomes to Ecology: A Metabolic-Mode–Based Framework for Modeling Microbial Growth Strategies
+# ⚡️ From Metabolic Networks to Ecology: A Hybrid Framework for Modelling Microbial Growth
+
+<p align="center">
+  <img src="graphical_abstract_v3.png" alt="A Hybrid Framework for Modelling Microbial Growth" width="600"/>
+</p>
 
 This project integrates a hybrid framework that bridges constraint-based metabolic models (FBA) 
 and consumer–resource models using elementary flux vectors (EFVs). With *E. coli* as a case study, 
 we show how EFVs informed by molecular noise improve predictions of flux distributions, growth, 
-and nutrient dynamics, while highlighting computational limits at larger scales.
+and nutrient dynamics.
 
 This repository contains the code, data, and environment configuration for this project.
 
