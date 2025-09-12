@@ -33,7 +33,41 @@ This repository contains the code, data, and environment configuration for this 
 └── README.md # Project overview (this file)
 ```
 
-## 🛠️ Note on External Tools Used
+## ⚙️ Setup & Installation
+
+To reproduce the analyses and run the code in this repository, we recommend using [conda](https://docs.conda.io/).
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/LucaKristinas/msc-thesis-metabolism-to-ecology.git
+cd /msc-thesis-metabolism-to-ecology
+```
+
+### 2. Create the environment
+```bash
+conda env create -f environment.yml
+```
+
+### 3. Activate the environment
+```bash
+conda activate met_to_eco_env
+```
+
+## ▶️ Running Analyses
+
+Once the environment is active, analyses can be reproduced by running the scripts inside the `code/` directory. Each subfolder contains scripts for a different part of the project:
+
+- **`code/GEM_Reduction/`** → strategies for genome-scale metabolic model (GEM) reduction.  
+- **`code/Ideal_Microbes_Benchmarking/`** → benchmarking the *Ideal Microbes* framework.  
+- **`code/Ideal_Microbes_Simulations/`** → simulations using the *Ideal Microbes* package.  
+  > **Note:** These analyses can only be run once the package associated with the manuscript  
+  *“Metabolic Ecology of Microbes: From Metabolic Networks to Growth Laws and Population Dynamics”*  
+  (V. Piskovsky, L. Schnepp-Pesch, and K. Foster; status as of September 2025: in preparation for submission)  
+  is publicly available.  
+- **`code/Mplrs_Analysis/`** → mode enumeration with `mplrs`.  
+
+
+## 🛠️ Dependencies
 
 This project makes use of the following external tools:
 
