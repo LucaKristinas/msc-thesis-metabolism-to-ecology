@@ -31,10 +31,10 @@ This repository contains the code, data, and environment configuration for this 
 
 This project makes use of the following external tools:
 
-- **EFMlrs**: Buchner, Bianca A., and Jürgen Zanghellini. "EFMlrs: a Python package for elementary flux mode enumeration via lexicographic reverse search." BMC bioinformatics 22.1 (2021): 547.
-- **mplrs**: Avis, David, and Charles Jordan. "mplrs: A scalable parallel vertex/facet enumeration code." Mathematical Programming Computation 10.2 (2018): 267-302.
-- **COBRApy**: Ebrahim, Ali, et al. "COBRApy: constraints-based reconstruction and analysis for python." BMC systems biology 7.1 (2013): 74.
-- **Memote**: Lieven, Christian, et al. "MEMOTE for standardized genome-scale metabolic model testing." Nature biotechnology 38.3 (2020): 272-276.
+- **[EFMlrs](https://github.com/BeeAnka/EFMlrs)**: Buchner, Bianca A., and Jürgen Zanghellini. "EFMlrs: a Python package for elementary flux mode enumeration via lexicographic reverse search." BMC bioinformatics 22.1 (2021): 547.
+- **[mplrs](https://cgm.cs.mcgill.ca/~avis/C/lrs.html)**: Avis, David, and Charles Jordan. "mplrs: A scalable parallel vertex/facet enumeration code." Mathematical Programming Computation 10.2 (2018): 267-302.
+- **[COBRApy](https://github.com/opencobra/cobrapy)**: Ebrahim, Ali, et al. "COBRApy: constraints-based reconstruction and analysis for python." BMC systems biology 7.1 (2013): 74.
+- **[Memote](https://github.com/opencobra/memote)**: Lieven, Christian, et al. "MEMOTE for standardized genome-scale metabolic model testing." Nature biotechnology 38.3 (2020): 272-276.
 
 ## 📄 License
 This repository is part of a Master's thesis and is not licensed for reuse without permission. For academic use or inquiries, please contact the author.

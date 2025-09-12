@@ -40,7 +40,7 @@ export_path = processed_data_path / "figures"
 # 3. Data Import
 # ════════════════════════════════════════════════════════════════
 
-# Manually rmoved point of glc measurement at 480min, because glc increases there again which is not possible! (clean version)
+# Manually removed point of glc measurement at 480min, because glc increases there again which is not possible! (clean version)
 Deng_df = pd.read_csv(csv_raw_path / "Deng_glc_biomass_clean.csv")
 
 OFV_df = pd.read_csv(csv_processed_path / "E_coli_core_sim_OFVs_Deng.csv", sep=';')
