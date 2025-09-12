@@ -56,15 +56,13 @@ conda activate met_to_eco_env
 ## ▶️ Running Analyses
 
 Once the environment is active, analyses can be reproduced by running the scripts inside the `code/` directory. Each subfolder contains scripts for a different part of the project:
-
-- **`code/GEM_Reduction/`** → strategies for genome-scale metabolic model (GEM) reduction.  
+ 
 - **`code/Ideal_Microbes_Benchmarking/`** → benchmarking the *Ideal Microbes* framework.  
 - **`code/Ideal_Microbes_Simulations/`** → simulations using the *Ideal Microbes* package.  
   > **Note:** These analyses can only be run once the package associated with the manuscript  
-  *“Metabolic Ecology of Microbes: From Metabolic Networks to Growth Laws and Population Dynamics”*  
-  (V. Piskovsky, L. Schnepp-Pesch, and K. Foster; status as of September 2025: in preparation for submission)  
-  is publicly available.  
-- **`code/Mplrs_Analysis/`** → mode enumeration with `mplrs`.  
+  *“Metabolic Ecology of Microbes: From Metabolic Networks to Growth Laws and Population Dynamics”* (V. Piskovsky, L. Schnepp-Pesch, and K. Foster; status as of September 2025: in preparation for submission) is publicly available.  
+- **`code/Mplrs_Analysis/`** → mode enumeration with `mplrs` and scalability analysis.  
+- **`code/GEM_Reduction/`** → idea(s) for genome-scale metabolic model (GEM) reduction. 
 
 
 ## 🛠️ Dependencies
