@@ -75,4 +75,6 @@ This project makes use of the following external tools:
 - **[Memote](https://github.com/opencobra/memote)**: Lieven, Christian, et al. "MEMOTE for standardized genome-scale metabolic model testing." Nature biotechnology 38.3 (2020): 272-276.
 
 ## 📄 License
-This repository is part of a Master's thesis and is not licensed for reuse without permission. For academic use or inquiries, please contact the author.
+
+This repository is licensed under the [MIT License](./LICENSE) © 2025 LucaKristinas.  
+You are free to use, modify, and distribute this work, provided proper attribution is given.
