@@ -28,7 +28,7 @@ raw_csv_path = project_root / "data" / "raw" / "csv_files"
 # processed path
 processed_path = project_root / "data" / "processed" 
 processed_csv_path = processed_path / "csv_files"
-output_dir = processed_path / "figures"
+output_dir = processed_path / "figures/metabolic_ecology_2"
 
 # ════════════════════════════════════════════════════════════════
 # Import Data
@@ -197,8 +197,6 @@ print(f"\n💾 Saved Monod parameters\n")
 
 # optinal break
 
-#exit()
-
 # ════════════════════════════════════════════════════════════════
 # Generate Plots
 # ════════════════════════════════════════════════════════════════
@@ -227,7 +225,7 @@ result = microbe.plot_growth_plane(
     contours=True,
     prod_cons=False,
     met_ext_total=met_ext_total,
-    cmap='rocket_r'
+    cmap='viridis_r'
 )
 
 # Extract just the heatmap for colorbar (first return value)
@@ -238,7 +236,7 @@ cbar = plt.colorbar(heatmap, ax=ax)
 cbar.set_label("Growth Rate [h⁻¹]", fontsize=10)
 
 # Axes labels
-ax.set_title("OFV Growth Plane", fontsize=10)
+ax.set_title("OFV Growth Plane", fontsize=16)
 # Add a rectangle: lower left at (x, y), width and height in data coords
 
 # Define tick positions (in mM)
@@ -314,7 +312,7 @@ result = microbe.plot_growth_plane(
     contours=True,
     prod_cons=False,
     met_ext_total=met_ext_total,
-    cmap='rocket_r'
+    cmap='viridis_r'
 )
 
 # Extract just the heatmap for colorbar (first return value)
@@ -322,10 +320,11 @@ heatmap = result[0]  # QuadMesh
 
 # Manually add one colorbar
 cbar = plt.colorbar(heatmap, ax=ax)
-cbar.set_label("Growth Rate [h⁻¹]", fontsize=10)
+cbar.set_label("Growth Rate [h⁻¹]", fontsize=14)
+cbar.ax.tick_params(labelsize=14)
 
 # Axes labels
-ax.set_title("OFV Growth Plane", fontsize=10)
+ax.set_title("OFV Growth Plane", fontsize=16)
 # Add a rectangle: lower left at (x, y), width and height in data coords
 
 # Define tick positions (in mM)
@@ -333,6 +332,8 @@ tick_step = 0.0001
 tick_max = 0.0006  # Slightly beyond your max of 0.00056
 xticks = np.arange(0, tick_max, tick_step)
 yticks = np.arange(0, tick_max, tick_step)
+ax.tick_params(axis='x', labelsize=14)
+ax.tick_params(axis='y', labelsize=14)
 
 # Convert to µg/L for labels using MW of glucose/galactose
 MW = 180.16  # g/mol → 180160 µg/mmol
@@ -342,18 +343,18 @@ ytick_labels = [f"{tick * MW * 1000:.0f}" for tick in yticks]
 # Apply to plot
 ax.set_xticks(xticks)
 ax.set_yticks(yticks)
-ax.set_xticklabels(xtick_labels)
-ax.set_yticklabels(ytick_labels)
+ax.set_xticklabels(xtick_labels, fontsize=14)
+ax.set_yticklabels(ytick_labels, fontsize=14)
 
 # Update axis labels if desired
-ax.set_xlabel("Glucose [µg/L]", fontsize=10)
-ax.set_ylabel("Galactose [µg/L]", fontsize=10)
+ax.set_xlabel("Glucose [µg/L]", fontsize=14)
+ax.set_ylabel("Galactose [µg/L]", fontsize=14)
 
 # Create the same normalization as the heatmap
 vmin = heatmap.get_clim()[0]
 vmax = heatmap.get_clim()[1]
 norm = Normalize(vmin=vmin, vmax=vmax)
-cmap = cm.get_cmap('rocket_r')  # Use same colormap as heatmap
+cmap = cm.get_cmap('viridis_r')  # Use same colormap as heatmap
 
 # Get RGBA color for each point based on its growth rate
 colors = cmap(norm(Lendenmann_df["Dilution"]))  # assuming Dilution = growth rate
@@ -375,8 +376,6 @@ plt.savefig(output_dir / "LM_Sim_GP_GlcGal_batch_O2_v2.png", dpi=300)
 plt.savefig(output_dir / "LM_Sim_GP_GlcGal_batch_O2_v2.svg")
 plt.show()
 plt.close()
-
-exit()
 
 # -------------------------------
 # Growth Plane
@@ -413,14 +412,14 @@ for idx1, idx2, name1, name2 in substrate_pairs:
         contours=True,
         prod_cons=False,
         met_ext_total=met_ext_total,
-        cmap='rocket_r'
+        cmap='viridis_r'
     )
 
     # Final formatting
     plt.colorbar(heatmap, ax=ax, label="Growth Rate")
-    ax.set_xlabel(f"{name1} [mM]", fontsize=10)
-    ax.set_ylabel(f"{name2} [mM]", fontsize=10)
-    ax.set_title("Growth Rate", fontsize=12)
+    ax.set_xlabel(f"{name1} [mM]", fontsize=14)
+    ax.set_ylabel(f"{name2} [mM]", fontsize=14)
+    ax.set_title("Growth Rate", fontsize=16)
     plt.tight_layout()
 
     # Save plot
@@ -429,6 +428,8 @@ for idx1, idx2, name1, name2 in substrate_pairs:
     plt.savefig(output_dir / f"{filename_base}_const_O2.svg")
     plt.close()
     print(f"     ✔ Saved {filename_base}")
+
+exit()
 
 # -------------------------------
 # Microbe and Nutrient levels

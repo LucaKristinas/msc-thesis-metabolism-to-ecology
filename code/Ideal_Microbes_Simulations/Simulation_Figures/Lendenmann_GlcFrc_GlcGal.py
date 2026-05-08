@@ -72,9 +72,6 @@ print(' ✅ Done!')
 
 print("Processing data...")
 
-#---
-
-
 # === Settings ===
 MW_glucose = 180.16
 MW_fructose = 180.16

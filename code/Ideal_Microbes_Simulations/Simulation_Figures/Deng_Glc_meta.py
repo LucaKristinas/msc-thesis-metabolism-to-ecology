@@ -42,8 +42,8 @@ export_path = processed_data_path / "figures/metabolic_ecology_2"
 # Manually removed point of glc measurement at 480min, because glc increases there again which is not possible! (clean version)
 Deng_df = pd.read_csv(csv_raw_path / "Deng_glc_biomass_clean.csv")
 
-OFV_df = pd.read_csv(csv_processed_path / "E_coli_core_sim_OFVs_Deng.csv", sep=';')
-EFV_df = pd.read_csv(csv_processed_path / "E_coli_core_sim_EFVs_Deng.csv", sep=';')
+OFV_df = pd.read_csv(csv_processed_path / "E_coli_core_sim_OFVs_Glc_meta.csv", sep=';')
+EFV_df = pd.read_csv(csv_processed_path / "E_coli_core_sim_EFVs_Glc_meta.csv", sep=';')
 
 # ════════════════════════════════════════════════════════════════
 # 4. Data Processing
@@ -252,7 +252,7 @@ fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(12, 4), sharex=False)
 titles = [
     "Empirical Data",
     "EFV Simulation",
-    "OFV Simulation"
+    "OFV Simulation",
 ]
 
 # 1. Empirical Data (Deng)
@@ -394,8 +394,8 @@ legend.get_frame().set_linewidth(0.8)  # e.g. 0.8 for thin, default is ~1.5
 
 # Save and show
 plt.tight_layout()
-plt.savefig(export_path / "Deng_Sim_Glc_Fig_6.png", dpi=300, bbox_inches="tight")
-plt.savefig(export_path / "Deng_Sim_Glc_Fig_6.svg", format="svg", bbox_inches="tight")
+#plt.savefig(export_path / "Deng_Sim_Glc_Fig_6.png", dpi=300, bbox_inches="tight")
+#plt.savefig(export_path / "Deng_Sim_Glc_Fig_6.svg", format="svg", bbox_inches="tight")
 plt.show()
 plt.close()
 
@@ -464,9 +464,10 @@ ax1r.set_ylabel("Biomass [gCDW/L]", fontsize=14)
 ax1r.tick_params(axis='y', labelsize=14)
 
 plt.tight_layout()
-fig_emp.savefig(export_path / "Deng_Empirical_Glc_Fig6.png", dpi=300, bbox_inches="tight")
-fig_emp.savefig(export_path / "Deng_Empirical_Glc_Fig6.svg", format="svg", bbox_inches="tight")
-plt.close(fig_emp)
+#fig_emp.savefig(export_path / "Deng_Empirical_Glc_Fig6.png", dpi=300, bbox_inches="tight")
+#fig_emp.savefig(export_path / "Deng_Empirical_Glc_Fig6.svg", format="svg", bbox_inches="tight")
+plt.show()
+#plt.close(fig_emp)
 
 # 2. EFV Only
 fig_efv, ax2 = plt.subplots(figsize=(5, 4))
@@ -487,9 +488,10 @@ ax2r.tick_params(axis='y', labelsize=14)
 ax2r.set_ylabel("Biomass [gCDW/L]", fontsize=14)
 
 plt.tight_layout()
-fig_efv.savefig(export_path / "Deng_EFV_Glc_Fig6.png", dpi=300, bbox_inches="tight")
-fig_efv.savefig(export_path / "Deng_EFV_Glc_Fig6.svg", format="svg", bbox_inches="tight")
-plt.close(fig_efv)
+#fig_efv.savefig(export_path / "Deng_EFV_Glc_Fig6.png", dpi=300, bbox_inches="tight")
+#fig_efv.savefig(export_path / "Deng_EFV_Glc_Fig6.svg", format="svg", bbox_inches="tight")
+plt.show()
+#plt.close(fig_efv)
 
 # 3. OFV Only
 fig_ofv, ax3 = plt.subplots(figsize=(5, 4))
@@ -510,9 +512,10 @@ ax3r.tick_params(axis='y', labelsize=14)
 ax3r.set_ylabel("Biomass [gCDW/L]", fontsize=14)
 
 plt.tight_layout()
-fig_ofv.savefig(export_path / "Deng_OFV_Glc_Fig6.png", dpi=300, bbox_inches="tight")
-fig_ofv.savefig(export_path / "Deng_OFV_Glc_Fig6.svg", format="svg", bbox_inches="tight")
-plt.close(fig_ofv)
+#fig_ofv.savefig(export_path / "Deng_OFV_Glc_Fig6.png", dpi=300, bbox_inches="tight")
+#fig_ofv.savefig(export_path / "Deng_OFV_Glc_Fig6.svg", format="svg", bbox_inches="tight")
+plt.show()
+#plt.close(fig_ofv)
 
 
 # Define legend handles for Glucose and Biomass
@@ -540,6 +543,7 @@ legend = ax_leg3.legend(
 legend.get_frame().set_linewidth(0.8)
 
 # Save the legend as PNG and SVG
-fig_leg3.savefig(export_path / "Deng_OFV_Glc_Legend.png", dpi=300, bbox_inches="tight",transparent=True)
-fig_leg3.savefig(export_path / "Deng_OFV_Glc_Legend.svg", format="svg", bbox_inches="tight")
-plt.close(fig_leg3)
+#fig_leg3.savefig(export_path / "Deng_OFV_Glc_Legend.png", dpi=300, bbox_inches="tight",transparent=True)
+#fig_leg3.savefig(export_path / "Deng_OFV_Glc_Legend.svg", format="svg", bbox_inches="tight")
+plt.show()
+#plt.close(fig_leg3)
