@@ -74,6 +74,15 @@ This project makes use of the following external tools:
 - **[COBRApy](https://github.com/opencobra/cobrapy)**: Ebrahim, Ali, et al. "COBRApy: constraints-based reconstruction and analysis for python." BMC systems biology 7.1 (2013): 74.
 - **[Memote](https://github.com/opencobra/memote)**: Lieven, Christian, et al. "MEMOTE for standardized genome-scale metabolic model testing." Nature biotechnology 38.3 (2020): 272-276.
 
+
+## 👥 Contributors
+
+- Luca Schnepp-Pesch, Sunagawa Lab - ETH Zurich (Project Bioinformatics)
+- Vit Piskovsky, Foster Lab - University of Oxford (Project Guidance)
+- Francisco Zorrilla, Sunagawa Lab - ETH Zurich (Supervision)
+- Prof. Kevin Foster, Foster Lab - University of Oxford (Referee)
+- Prof. Shinichi Sunagawa, Sunagawa Lab - ETH Zurich (Referee)
+
 ## 📄 License
 
 This repository is licensed under the [MIT License](./LICENSE) © 2025 LucaKristinas.  
